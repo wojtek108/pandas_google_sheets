@@ -27,7 +27,10 @@ jobs:
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
           
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          branch: main
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add .  # This will stage all the changes, including the JSON file created by main.py
+          git commit -m "Add generated JSON file"
+          git push origin HEAD
