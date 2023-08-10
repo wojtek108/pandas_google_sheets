@@ -8,8 +8,10 @@ import pandas as pd
 import google.auth  # Add this import for google.auth
 
 # Initialize the client using the service account credentials
-credentials, project = google.auth.default()
-gc = gspread.service_account(credentials=credentials)
+#credentials, project = google.auth.default()
+#gc = gspread.service_account(credentials=credentials)
+
+gc = gspread.service_account()
 
 sheet = gc.open('WGA_Training_Log').sheet1
 data = sheet.get_all_values()
