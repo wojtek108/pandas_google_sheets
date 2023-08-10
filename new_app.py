@@ -1,20 +1,16 @@
 import gspread
 import pandas as pd
-import google.auth  # Add this import for google.auth
-from google.oauth2.service_account import Credentials
+import json
 import os
 
 # Load the credentials JSON from the environment variable
 credentials_json = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
-# Load the credentials using google.oauth2.service_account.Credentials
-credentials = Credentials.from_authorized_user_info(credentials_json)
+# Parse the JSON string to a dictionary
+credentials_dict = json.loads(credentials_json)
 
 # Initialize the client using the provided service account credentials
-gc = gspread.authorize(credentials)
-
-sheet = gc.open('WGA_Training_Log').sheet1
-data = sheet.get_all_values()
+gc = gspread.service_account_from_dict(credentials_dict)
 
 sheet = gc.open('WGA_Training_Log').sheet1
 data = sheet.get_all_values()
