@@ -1,11 +1,12 @@
-# https://chat.openai.com/share/b4dcf44e-7a60-4bc5-91b1-64dd557a6f1a/continue
-# copy yml file for github actions and see instructions for inserting secrets in github
-
-
-
 import gspread
 import pandas as pd
 import google.auth  # Add this import for google.auth
+
+import os
+
+# Load the credentials JSON from the environment variable
+credentials = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
 
 # Initialize the client using the service account credentials
 #credentials, project = google.auth.default()
