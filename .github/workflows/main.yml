@@ -1,15 +1,17 @@
-name: Run Python Script
+name: Run new_app.py
 
 on:
   workflow_dispatch:  # Trigger the workflow manually using the "Run workflow" button
 
 jobs:
-  run_script:
+  run-main:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v2
