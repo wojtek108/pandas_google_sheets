@@ -1,0 +1,3917 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.my-table-class {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.my-table-class th, .my-table-class td {
+  padding: 8px;
+  text-align: center;
+}
+.my-table-class th {
+  background-color: #f2f2f2;
+}
+.my-table-class td:nth-child(3) {
+  text-align: left;
+  white-space: pre-wrap;
+  width: 50%; /* Adjust the width as needed */
+}
+.my-table-class td:nth-child(4) {
+  text-align: center;
+  width: 30%; /* Adjust the width as needed */
+}
+.my-table-class td:nth-child(1) {
+  width: 5%; /* Adjust the width as needed */
+}
+</style>
+</head>
+<body>
+<table border="1" class="dataframe my-table-class" id="my-table">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Row_Number</th>
+      <th>Date</th>
+      <th>Workout</th>
+      <th>Uwagi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>645</td>
+      <td>2023-08-09 19:03:55</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 655x5<br>IBP: 20x1x10, 30x1x5, 40x5x3<br>STU 5x10, +2x10kg<br>SS: 5x8, +2x8kg<br>SGM: 20x2x10, 30x2x10, 40x1x10<br>evening:<br>Rowing:<br>5x2k</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>644</td>
+      <td>2023-08-08</td>
+      <td>Rowingg:<br>5k, time: 23.10<br>5k, time. 23.09<br>evening:<br>PU: 10x1x5. 20x5x5, 10x1x12<br>WC: 15x6x12<br>DSQ: 1x5min<br>JC: 20x2x5, 30x3x5</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>643</td>
+      <td>2023-08-06</td>
+      <td>Rowing: 30min (5k, time. 23.27 + cool down)<br>BE: 5x15<br>SS wedge 4x8, +2x7kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>642</td>
+      <td>2023-08-06</td>
+      <td>KB, PR: 20 (1+2+3+4)x5, L/R<br>PSU 6x10, +2x8kg<br>sled 22x10m, +55kg (10min)<br>KB, SW: 32x10x10 on minute</td>
+      <td>ostatni KB, PR na lewa nie wszedl. Spory ubytek sily notuje po paru tygodniach</td>
+    </tr>
+    <tr>
+      <td>641</td>
+      <td>2023-08-04</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x10, 120x1x5<br>DL knees: 150x5x3<br>PU: 10x1x5, 20x5x5<br>WC: 15x6x12<br>FC: 6x1min/1min, 2x24kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>640</td>
+      <td>2023-08-03</td>
+      <td>Rowing:<br>5k, time: 22.59<br>5k, time: 22.45</td>
+      <td>evening session</td>
+    </tr>
+    <tr>
+      <td>639</td>
+      <td>2023-08-03</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x5, 45x1x10<br>IBP 20x1x10, 30x1x5, 40x3x3<br>SS: 4x10, +2x8kg<br>TR: 5x20<br>WPSU: 4x10, +2x5kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>638</td>
+      <td>2023-08-02</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x2x5, 60x5x5, 40x1x10<br>IBP: 20x1x10, 30x1x5, 35x4x4<br>SS: 4x8, +2x8kg<br>SGM 20x2x10, 30x2x10, 40x1x10</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>637</td>
+      <td>2023-07-27</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x5x5<br>trapbar DL: 30x1x10, 60x1x10, 100x1x5, 110x2x5, 120x2x5</td>
+      <td>Przy FSQ kolano lewe juz mniej czulem. Jakis tylko lekki cien bolu w pozniejszych seriach</td>
+    </tr>
+    <tr>
+      <td>636</td>
+      <td>2023-07-27</td>
+      <td>Rowing: <br>5k, time. 23.18<br>5k, time: 22.52<br>FC: 6x1min/1min, +2x24kg<br>JC: 20x2x5, 30x2x5<br>DSQ: 1x6min<br>evening:<br>PU: 10x1x5, 20x5x5<br>WC: 15x5x12<br>RDL: 40x1x10, 80x1x10<br>DL: 120x4x5<br>BE: 3x10</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>635</td>
+      <td>2023-07-26</td>
+      <td>Rowing:<br>5k, time. 23.18<br>5k, time: 22.52<br>FC: 6x1min/1min, +2x24kg<br>JC 20x2x5, 30x2x5<br>DSQ: 1x6min</td>
+      <td>morning session</td>
+    </tr>
+    <tr>
+      <td>634</td>
+      <td>2023-07-25</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x5<br>IBP: 20x1x5, 30x5x5<br>SS: 5x8, +2x8kg<br>SGM: 20x1x10, 30x3x10</td>
+      <td>lewe kolano dalej troche boli przy FSQ. sila jest, ale kolano ogranicza.</td>
+    </tr>
+    <tr>
+      <td>633</td>
+      <td>2023-07-24</td>
+      <td>Rowing: <br>5k, time: 23.57<br>5k, time: 24.27<br>evening:<br>PU: 10x1x5, 20x5x5, 10x1x10<br>WC: 15x5x12<br>DSQ: 1x6min<br>BE: 2x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>632</td>
+      <td>2023-07-24</td>
+      <td>SS: 4x8, +2x7kg<br>BE: 5x10<br>JC: 20x3x5</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>631</td>
+      <td>2023-07-21</td>
+      <td>RDL: 20x1x10, 40x1x10<br>DL: 80x5x5, 100x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>630</td>
+      <td>2023-07-20</td>
+      <td>FSQ: 20x1x10, 40x2x5, 60x5x5<br>WC: 15x6x12<br>slant bench press: 20x5x6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>629</td>
+      <td>2023-07-19</td>
+      <td>Rowing:<br>2k, time: 9.28<br>2k, time: 9.21<br>2k, time: 9.18<br>PU: 10x1x5, 20x5x5</td>
+      <td>drugi trening dzis</td>
+    </tr>
+    <tr>
+      <td>628</td>
+      <td>2023-07-19</td>
+      <td>RDL: 20x1x0, 4,0x1x10<br>DL: 80x1x5, 100x1x5<br>DSQ 1x5min</td>
+      <td>jestem na zdecydowanie mniejszych obrotach. w trakcie 3 dnia glodowki.</td>
+    </tr>
+    <tr>
+      <td>627</td>
+      <td>2023-07-19</td>
+      <td>Rowing: <br>5k, time 23.38</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>626</td>
+      <td>2023-07-18</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x5x4<br>SGM: 20x1x10, 30x2x10, 40x2x10<br>SS: 4x5, +2x10kg</td>
+      <td>troche czulem lewe kolano przy FSQ i do tego jestem w trakcie glodowki, wiec nie robilem 5x5</td>
+    </tr>
+    <tr>
+      <td>625</td>
+      <td>2023-07-18</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5, 20x1x10<br>WC: 15x4x12, 17.5x2x10<br>SS: 4x8, +2x10kg</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>624</td>
+      <td>2023-07-16</td>
+      <td>FC: 8x1min/1min, +2x24kg<br>sled: 30x10, +40kg<br>KB, SW: 32x10x10, on a minute</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>623</td>
+      <td>2023-07-15</td>
+      <td>KB, PR: 20 (1+2+3+4+5)x 5 <br>PSU: 4x15<br>KB, SN 20x5x10<br>JC: 20x1x5, 30x1x5</td>
+      <td>KB, PR ostatnie ruchy w 5 serii nie weszly w R, L</td>
+    </tr>
+    <tr>
+      <td>622</td>
+      <td>2023-07-15</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5<br>BE: 3x10, slowly down<br>DSQ: 1x5min</td>
+      <td>wczorajszy, evening session</td>
+    </tr>
+    <tr>
+      <td>621</td>
+      <td>2023-07-14</td>
+      <td>Rowing:<br>5k, time: 22.27<br>5k, time: 22.38</td>
+      <td>morning session</td>
+    </tr>
+    <tr>
+      <td>620</td>
+      <td>2023-07-14</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x5x5<br>GM: 20x3x10<br>evening:<br>SS: 4x8, +2x10kg<br>JC: 20x2x5, 30x3x5<br>DSQ: 1x6min<br>Rowing: 2k, time: 8.38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>619</td>
+      <td>2023-07-13</td>
+      <td>Rowing:<br>5k, time: 22.18<br>5k, time: 22.40<br>FC: 6x1min/1min +2x24kg<br>PSU: 4x15<br>DSQ: 1x5min<br><br>evening:<br>PU: 10x1x5, 20x5x5<br>WC: 15x5x12<br>RDL 40x1x10, 80x1x10, 120x1x5<br>DL 160x2x5, 120x1x5<br>DSQ: 1x5min</td>
+      <td>wczorajszy trening to byl</td>
+    </tr>
+    <tr>
+      <td>618</td>
+      <td>2023-07-11</td>
+      <td>PU: 10x1x5, 20x5x5<br>WC:15x6x12<br>RDL: 20x1x10, 4,0x1x10, 80x1x10, 120x1x5<br>DL: 160x2x5<br>DSQ: 1x5min</td>
+      <td>wczorajszy trening. wieczorny. Czulem, ze 2 tygodniowa przerwa sprawila, ze ciezko mi sie cwiczylo.</td>
+    </tr>
+    <tr>
+      <td>617</td>
+      <td>2023-07-10</td>
+      <td>Rowing:<br>5k, time: 22.20<br>5k, time: 22.30<br>DSQ 1x5min</td>
+      <td>morning session. Po 2 tygodniach przerwy Rowing w sumie dobrze poszedl. Wyswietlacz w ERG sie popsul i nie znam SPM, ale pewnie ok 16 bylo.</td>
+    </tr>
+    <tr>
+      <td>616</td>
+      <td>2023-07-03</td>
+      <td>Rowing: 5k, time: 21.36, SPM 16<br>RDL: 40x1x10, 80x1x10, 120x4x5<br>DSQ: 1x4min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>615</td>
+      <td>2023-06-23</td>
+      <td>Rowing:<br>5k, time: 22.03, SPM 16<br>PU: 10x1x5, 20x4x7<br>WC: 15x5x12<br>DSQ: 1x7min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>614</td>
+      <td>2023-06-22</td>
+      <td>FSQ: 20x1x10, 50x1x5, 60x1x5, 75x5x3<br>SS: 3x8, +2x10kg</td>
+      <td>morning session. FSQ z 75kg w sumie dobrze poszly</td>
+    </tr>
+    <tr>
+      <td>613</td>
+      <td>2023-06-22</td>
+      <td>Rowing:<br>5k, time: 22.38, SPM 16<br>5k, time: 22.37, SPM 16<br>FC: 8x1min/1min,  +2x24kg<br>evening:<br>RDL: 40x1x10, 80x1x10, 120x1x5<br>DL: 160x1x3, 180x1x5, 160x1x5<br>SSwedge: 3x5<br>DSQ: 2x5min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>612</td>
+      <td>2023-06-20</td>
+      <td>FSQ: 20x1x10, 50x1x5, 70x5x5<br>SGM: 20x1x10, 30x1x10, 40x2x10, 50x1x10<br>SS: 2x10, +2x10kg</td>
+      <td>FSQ dosc latwo poszły, SS tez coraz lepiej. mobilnosc w prawej nodze coraz lepsza i sie wyrownuje z lewa.</td>
+    </tr>
+    <tr>
+      <td>611</td>
+      <td>2023-06-19</td>
+      <td>PU: 10x1x5, 20x1x5, 30x5x5<br>WC: 15x6x12<br>SS: 4x8, +2x10kg<br>DSQ: 1x5min</td>
+      <td>SS juz duzo lepiej. mobilnosc prawej nogi sie poprawila. DSQ tez juz duzo bardziej komfortowo.</td>
+    </tr>
+    <tr>
+      <td>610</td>
+      <td>2023-06-19</td>
+      <td>Rowing:<br>5k, time: 22.27, SPM 16<br>5k, time: 22.11, SPM 16<br>JC: 20x1x5, 30x3x5<br>SS wedge: 2x5, +2x10kg<br>deep SQ: 1x5min</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>609</td>
+      <td>2023-06-18</td>
+      <td>KB, PR: 20 (1+2+3+4+5)x5 L/R<br>elbow reha<br>PSU 5x15<br>DL: 60x1x10, 110x1x5, 140x1x3, 160x3x3<br>sled: 20x10m, +55kg<br>deepSQ, weighted: 1x5min</td>
+      <td>wczorajszy trening. bylem zmeczony po calym tygodniu.</td>
+    </tr>
+    <tr>
+      <td>608</td>
+      <td>2023-06-16</td>
+      <td>FSQ: 20x1x10, 50x1x5, 70x5x5<br>SS: 3x8, +2x10kg</td>
+      <td>2 raz w tym tygodniu FSQ. Dobrze poszly. W SS tez czuje, ze prawa noga sie poprawia i zaczyna byc podobnie, jak w lewej.</td>
+    </tr>
+    <tr>
+      <td>607</td>
+      <td>2023-06-15</td>
+      <td>Rowing:<br>5k, time: 22.25, SPM 17<br>5k, time: 22.54, SPM 16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>606</td>
+      <td>2023-06-14</td>
+      <td>SGM 20x1x10, 30x1x10, 40x2x10<br>FSQ: 20x1x10, 50x1x5, 70x5x5<br>SS:3x8, +2x10kg<br>evening:<br>PU: 10x1x5, 20x5x7<br>WC: 15x6x12<br>PSU: 3x15<br>TR: 4x20<br>SS wedge: 5x5, +2x10kg<br>JC: 20x1x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>605</td>
+      <td>2023-06-12</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x10, 120x1x5<br>DL: 160x1x3, 180x1x1, 200x1x1, 140x1x5<br>Rowing:<br>5k, time: 21.56, SPM 17<br>5k, time: 22.39, SPM 16<br>deep SQ: 1x5min<br>evening:<br>PU: 10x1x5, 20x1x5, 30x5x5<br>WC: 17.5x6x10<br>SS: 3x8, +2x10kg</td>
+      <td>DL 200x1x1 poszlo dosc latwo. Pewnie by poszlo nawet 210, ale nie ma pospiechu. Technika byla ok. Plecy trzymaly.</td>
+    </tr>
+    <tr>
+      <td>604</td>
+      <td>2023-06-08</td>
+      <td>PU: 10x1x5, 20x5x7<br>WC: 15x6x12<br>deep SQ: 5x2-3min<br>JC: 20x1x5, 30x1x5, 40x2x5<br>SS: 2x8, +2x10kg<br>SS wedge: 2x5, +2x10kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>603</td>
+      <td>2023-06-07</td>
+      <td>Rowing:<br>5k, time: 22.33, SPM 16<br>5k, time: 22.25, SPM 16<br>5min cool-down<br>FC: 8x1min/1min, +2x10kg<br>evening session:<br>RDL: 20x1x15, 40x1x10, 80x1x10, 120x1x5<br>DL: 160x1x3<br>DL knees: 180x1x1, 190x2x2<br>deep squat: 1x3min<br>weighted DS: 1x5min</td>
+      <td>DL knees ze 190x2x2 poszly b. dobrze. Jest sila. Ostatni ruch juz ciezej, ale w sumie ok. Technicznie tez dobrze, wiec dobra perspektywa na 200kg.</td>
+    </tr>
+    <tr>
+      <td>602</td>
+      <td>2023-06-06</td>
+      <td>FSQ: 20x1x10, 50x1x5, 70x5x5<br>SS: 3x8, +2x10kg<br>SGM:: 20x1x10, 30x1x10, 40x2x10</td>
+      <td>FSQ dosc dobrze poszly. W pierwszej serii tylko nadgarstki czulem, potem juz wszystko ok. Sila w nogach jest i korpus tez silny.</td>
+    </tr>
+    <tr>
+      <td>601</td>
+      <td>2023-06-06</td>
+      <td>rowing:<br>5k, time: 22.36, SPM 17<br>5k, time: 22.26, SPM 17<br>evening:<br>PU: 10x1x5, 20x1x5, 30x5x5<br>WC: 15x6x12<br>SS: 3x8, +2x10kg<br>Deep squat: 1x2min</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>600</td>
+      <td>2023-06-04</td>
+      <td>RDL: 20x1x15, 40x1x10, 80x1x10, 120x1x5<br>DL: 160x1x3, 180x2x3, 160x1x5<br>TR: 5x20<br>SS: 4x8, +2x10kg<br>deep squat, heel raised: 1x2min<br>weighted deep squat, heel raised: 1x3min</td>
+      <td>w DL 180x2x3 w sumie poszlo dosc latwo, wiec jest sila. niedlugo bede atakowal 200kg</td>
+    </tr>
+    <tr>
+      <td>599</td>
+      <td>2023-06-04</td>
+      <td>KB; PR 22 (1+2+3+4)x3, L/R<br>elbow reha<br>PSU: 4x15<br>DH: 1.5min<br>KB, SW: 32x5x20<br>sled: 20x10m, +60kg</td>
+      <td>ostatnie 4ruchy w 2 seriach KB, PR mi nie weszly. Ostatnia 3 ruchy w serii zorbilem 21kg</td>
+    </tr>
+    <tr>
+      <td>598</td>
+      <td>2023-06-01</td>
+      <td>Rowing:<br>5k, time: 22.16, SPM 16<br>5k, time: 22.27, SPM 17<br>5min cool-down</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>597</td>
+      <td>2023-05-31</td>
+      <td>RDL: 20x1x15, 40x1x10, 80x1x10, 120x1x5<br>DL: 160x1x3<br>DL knees: 180x3x3<br>DL paused: 140x2x5<br>RDL: 120x2x10<br>FC: 1min/1min x8, +2x24kg</td>
+      <td>DL knees ze 180 dosc latwo poszlo!</td>
+    </tr>
+    <tr>
+      <td>596</td>
+      <td>2023-05-30</td>
+      <td>PSU: 5x15, L+R<br>Rowing: 5k, time: 22.14, SPM 16<br>ankle mob</td>
+      <td>evening session</td>
+    </tr>
+    <tr>
+      <td>595</td>
+      <td>2023-05-30</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x5x5<br>SS: 3x8, +2x10kg<br>SGM: 20x1x10, 30x3x10</td>
+      <td>FSQ 70x5x5 wyjatkowo latwo. Juz przy zdejmowaniu sztangi z rack-a czulem sie pewnie i silnie Zadziwiajace! To byla ranna sesja.</td>
+    </tr>
+    <tr>
+      <td>594</td>
+      <td>2023-05-29</td>
+      <td>PU: 10x1x5, 20x5x7<br>WC: 17.5x6x10<br>SS: 5x8, +2x10kg</td>
+      <td>PU 20x5x7 w sumie dosc łatwo poszły. To był 2 trening w tym dniu.</td>
+    </tr>
+    <tr>
+      <td>593</td>
+      <td>2023-05-28</td>
+      <td>RDL:  20x1x15, 60x1x10, 110x1x5<br>DL: 150x1x3, 175x3x3<br>KB, PR: 22 (1+2+3+4)x3 L/R<br>elbow reha<br>PSU 3x15<br>DH: 1.5 min<br>sled: 20x10m, +50kg<br>KB, SW 32x5x20</td>
+      <td>DL: 175x3x3 w sumie dosc łatwo poszly. KB; SW tez jakas adaptacja nastapila. Prawie nie mialem zadyszki</td>
+    </tr>
+    <tr>
+      <td>592</td>
+      <td>2023-05-26</td>
+      <td>Rowing:<br>5k, time: 22.09, SPM 16<br>5k, time: 22.55, SPM 16</td>
+      <td>mega bylem spompowany po wczorajszym warsztacie i całym tygodniu.</td>
+    </tr>
+    <tr>
+      <td>591</td>
+      <td>2023-05-24</td>
+      <td>PU: 10x1x5, 20x1x5, 30x5x5<br>WC: 17.5x6x10<br>SS: 3x10, +2x10kg<br>TR: 5x20</td>
+      <td>evening session. PU z 30kg poszly dosc latwo.</td>
+    </tr>
+    <tr>
+      <td>590</td>
+      <td>2023-05-24</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x10, 120x1x5<br>DL: 160x1x3<br>DL knees: 180x3x1, 180x2x2<br>DL paused: 140x2x5<br>Rowing: <br>5k, time: 22.19, SPM 16<br>5 min cool-down</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>589</td>
+      <td>2023-05-23</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x1x5, 70x2x3, 65x3x5<br>SGM: 20x1x10, 30x1x10, 40x2x10<br>SS: 2x10, +2x10kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>588</td>
+      <td>2023-05-22</td>
+      <td>Morning session><br>Rowing:<br>-5k, time: 22.24, SPM 16<br>5k, time; 22.13, SPM 16<br>5 min cool down<br>FC: 8x1min / 1 min; +2x24kg<br>Evening:<br>PU: 10x1x5, 20x6x5<br>WC: 17.5x5x10<br>JC: 20x1x5, 30x1x5, 40x3x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>587</td>
+      <td>2023-05-21</td>
+      <td>RDL: 20x1x15, 60x1x10, 100x1x5<br>DL: 140x1x5, 170x3x3<br>sled: 22x10m, +60kg<br>KB, PR: 22 (1+2+32)x10 L/R<br>PSU: 5x15, 5x10<br>KB, SW: 32x3x20<br>DH: 1min</td>
+      <td>DL ze 170 łatwo poszły. Next week w koncu powinno sie udac 175x3x3. KB; PR z 22kg tez w koncu zrobilem 60 ruchow w treningu. Dosc dlugo mi to zajelo z przerwami, ale jestem zadowolony.\n</td>
+    </tr>
+    <tr>
+      <td>586</td>
+      <td>2023-05-20</td>
+      <td>Rowing:<br>5k, time: 22.17, SPM 15<br>5k, time. 21.51, SPM 17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>585</td>
+      <td>2023-05-19</td>
+      <td>PU: 10x1x5, 20x1x5, 30x4x5<br>WC: 17.5x5x10<br>SS: 4x10, +2x10kg</td>
+      <td>trening z 17 V</td>
+    </tr>
+    <tr>
+      <td>584</td>
+      <td>2023-05-19</td>
+      <td>RDL: 60x1x10, 110x1x5<br>DL: 140x1x3, 160x1x1<br>DL knee: 175x4x3</td>
+      <td>trening z 16 V. dosc latwo poszlo!</td>
+    </tr>
+    <tr>
+      <td>583</td>
+      <td>2023-05-16</td>
+      <td>Rowing: <br>5k, time: 22.25, SPM 16<br>5k, time: 22.12, SPM 17<br>5min cool-down</td>
+      <td>zmeczony dosc bylem po porannym treningu</td>
+    </tr>
+    <tr>
+      <td>582</td>
+      <td>2023-05-16</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x5x5<br>SGM: 20x1x10, 30x1x10, 40x4x10<br>SS: 3x10, +2x10kg</td>
+      <td>morning session. We FSQ limituje mnie mobilnosc, a nie brak sily. Sztanga zsuwa mi sie  ramion.</td>
+    </tr>
+    <tr>
+      <td>581</td>
+      <td>2023-05-15</td>
+      <td>PU: 10x1x5, 20x5x5<br>WC: 17.5x6x5</td>
+      <td>evening session</td>
+    </tr>
+    <tr>
+      <td>580</td>
+      <td>2023-05-15</td>
+      <td>Morning session: Rowing:<br>5k, time: 22.28, SPM 16<br>5k, time: 22.05, SPM 17<br>10 min cool-down</td>
+      <td>przy drugiej 5k zszedlem prawie do 22 min, mimo, ze nie cisnalem bardzo. niezle!</td>
+    </tr>
+    <tr>
+      <td>579</td>
+      <td>2023-05-13</td>
+      <td>Morning: <br>KB, PR 22 (1+2+3) x 8 , L/R<br>PSU: 5x15<br>elbow reha<br>DH 1.5 min<br>sled 25x10m +50kg<br>KB, SW 32x5x20<br>JC: 20x1x5, 30x1x5,40x2x5<br>evening:<br>RDL: 20x1x15, 40x1x10, 80x1x10, 120x1x5<br>DL: 150x1x1, 165x3x3<br>SS: 3x8, +2x10kg, L/R, 2x5 +2x10kg R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>578</td>
+      <td>2023-05-12</td>
+      <td>Rowing:<br>5k, time: 22.41, SPM 16<br>5k, time: 22.21, SPM 17<br>10 min cool-down</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>577</td>
+      <td>2023-05-11</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5<br>WC: 17.5x6x10<br>JC: 20x1x5, 30x1x5, 40x3x5<br>PSU: 4x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>576</td>
+      <td>2023-05-11</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x5x5<br>SGM: 20x1x10, 30x1x10, 40x3x10<br>SS: 4x8, +2x10kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>575</td>
+      <td>2023-05-10</td>
+      <td>RDL: 20x1x15, 40x1x10, 80x1x10, 120x1x5<br>DL: 160x1x3<br>DL knees: 170x5x3<br>FC: 7x1min/1min, +2x24kg<br>PSU: 5x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>574</td>
+      <td>2023-05-10</td>
+      <td>Rowing:<br>5k, time: 22.40, SPM 16<br>5k, time: 22.26, SPM 17<br>cool-down 5min<br>TR: 5x20<br>ankle mob 1x2min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>573</td>
+      <td>2023-05-08</td>
+      <td>PU: 10x2x5, 20x5x5<br>WC: 17.5x5x10, 10x1x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>572</td>
+      <td>2023-05-08</td>
+      <td>Rowing:<br>5k, time: 22.50, SPM 16<br>5k, time: 22.30, SPM 16<br>10 min cool-down<br>JC: 20x1x5, 30x2x5, 40x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>571</td>
+      <td>2023-05-07</td>
+      <td>RDL: 20x1x12, 40x1x10, 80x1x10, 120x1x5<br>DL: 160x3x5<br>RDL: 120x1x10<br>SS: 3x8, +2x10kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>570</td>
+      <td>2023-04-27</td>
+      <td>PU: 10x1x5, 20x1x5, 27.5x5x5<br>WC: 17.5x6x5<br>SS: 3x8, +2x10kg, from the floor</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>569</td>
+      <td>2023-04-26</td>
+      <td>Rowing:<br>5k, time: 22.49, SPM 16<br>5k, time. 22.37, SPM 16<br>10 min, cool-down<br>JC: 20x1x5, 30x1x5, 40x2x5</td>
+      <td>evning session</td>
+    </tr>
+    <tr>
+      <td>568</td>
+      <td>2023-04-26</td>
+      <td>RDL: 20x1x15, 40x1x10, 80x1x10, 120x1x5<br>DL: 160x1x3, 175x4x3 knees<br>FC: 8x1min / 1 min, +2x24kg<br>TR: 5x20<br>SS: 5x8, +2x10kg, from the floor.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>567</td>
+      <td>2023-04-26</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x3x, 70x1x5, 70x1x2<br>SGM: 20x1x10, 30x1x10, 40x2x10</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>566</td>
+      <td>2023-04-25</td>
+      <td>PU: 10x1x5, 20x7x5<br>WC: 15x8x10</td>
+      <td>wczorajszy wieczorny trening</td>
+    </tr>
+    <tr>
+      <td>565</td>
+      <td>2023-04-24</td>
+      <td>Rowing:<br>5k, time: 22.41, SPM 16<br>5k, time: 22.23, SPM 17<br>cool down <br>10 min<br>JC 20x1x5, 30x3x5</td>
+      <td>morning session</td>
+    </tr>
+    <tr>
+      <td>564</td>
+      <td>2023-04-23</td>
+      <td>RDL: 20x1x15, 40x1x10, 80x1x10<br>DL: 120x1x5, 140x1x3, 165x3x3</td>
+      <td>165 DL poszly w sumie b. latwo. Jednak przez aktywne posladki DL wchodza zdecydowanie latwiej.</td>
+    </tr>
+    <tr>
+      <td>563</td>
+      <td>2023-04-22</td>
+      <td>KB, PR: 22 (1+2+3) x 8 L/R<br>ankle mob<br>elbow reha<br>PSU: 6x10<br>DH: 1.5 min<br>KB, SW 32x5x10<br><br>evening:<br>Rowing:<br>5k, time: 22.57, SPM 16<br>5k, time: 22.49, SPM 16<br>10 min cool-down</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>562</td>
+      <td>2023-04-20</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5<br>WC: 15x6x10<br>SS: 4x10; +2x10kg<br>TR: 5x20<br>JC: 20x1x5, 30x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>561</td>
+      <td>2023-04-20</td>
+      <td>Rowing: 5k, time: 23.03, SPM 17 + 5k, t: 23.02, SPM 18 + 10 min cool-down</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>560</td>
+      <td>2023-04-19</td>
+      <td>RDL:  20x1x10, 40x1x10, 80x1x5<br>DL: 120x1x5, 160x1x3<br>DL knees 170x1x2<br>FC: 7x1min / 1min; +2x24kg<br>JC: 20x2x10, 30x2x10</td>
+      <td>Fatalnie spalem i mialem stiatica promieniowanie od wczoraj. trening nie poszedl.moze musze zrobic deload.</td>
+    </tr>
+    <tr>
+      <td>559</td>
+      <td>2023-04-17</td>
+      <td>PU: 10x1x5, 20x6x5<br>WC: 15x6x12</td>
+      <td>evening session</td>
+    </tr>
+    <tr>
+      <td>558</td>
+      <td>2023-04-17</td>
+      <td>Rowing: 10k, time: 46.47, SPM 17; + 10 min cool-down</td>
+      <td>morning session</td>
+    </tr>
+    <tr>
+      <td>557</td>
+      <td>2023-04-16</td>
+      <td>Rowing: 5k, time:23.40, SPM 16; +5min cool-down<br>SS: 4x10 +2x10kg<br>TR: 5x20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>556</td>
+      <td>2023-04-15</td>
+      <td>RDL: 20x1x10, 40x1x10<br>DL: 80x1x5, 120x1x5, 160x5x5</td>
+      <td>160 x5x5 w koncu poszlo i nie bylo strasznie ciezko. Jest roznica, gdy czuje, ze w ruch angazuje posladki!</td>
+    </tr>
+    <tr>
+      <td>555</td>
+      <td>2023-04-14</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 65x5x5<br>SGM: 20x1x10, 30x1x10, 40x1x10, 50x2x10, 40x1x10<br>TR: 20x5</td>
+      <td>FSQ latwo poszly. ciekawe, czy to wplyw wioslowania w ostatnim czasie, czy po prostu adaptacja organizmu.</td>
+    </tr>
+    <tr>
+      <td>554</td>
+      <td>2023-04-13</td>
+      <td>Rowing: 10k, time: 47.41, SPM 16; +10min cool-down<br>SS:3x8 +2x10kg</td>
+      <td>nogi zmeczone jeszcze po srodowych DL. ale po 1h cardio cisnienie krwi b. dobre: ok 120/80</td>
+    </tr>
+    <tr>
+      <td>553</td>
+      <td>2023-04-12</td>
+      <td>PU: 10x1x5, 20x1x5, 30x1x3, 40x1x4, 27.5x5x5<br>WC: 15x6x12<br>Rowing: 5k, time. 22.43, SPM 18</td>
+      <td>Niespodziewany max w PU. Tak tylko chcialem dac nowy bodziec organizmowi. I mialem ochote na ERG i 5k weszlo fajnie.</td>
+    </tr>
+    <tr>
+      <td>552</td>
+      <td>2023-04-12</td>
+      <td>RDL:20x1x10, 40x1x10, 80x1x5<br>DL: 120x1x5, 160x1x3<br>DL knees 172x4x3<br>DL: 120x4x5 paused<br>FC: 6x1min / 1min break +2x24kg</td>
+      <td>DL z 172 byl ok. nie byl ciezki bardzo. FC tez ok.</td>
+    </tr>
+    <tr>
+      <td>551</td>
+      <td>2023-04-11</td>
+      <td>Rowing: 10k, time: 46.46, SPM 17; +5min cool-down<br>PSU: 5x15</td>
+      <td>evening session. Po treningu cisnienie ok 126/77!!!</td>
+    </tr>
+    <tr>
+      <td>550</td>
+      <td>2023-04-11</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x6x5<br>SGM: 20x1x10, 30x1x10, 40x1x10, 50x2x10</td>
+      <td>morning session</td>
+    </tr>
+    <tr>
+      <td>549</td>
+      <td>2023-04-10</td>
+      <td>Rowing: 5k, time: 22.43, SPM 16; + 5min cool down<br>PU: 10x1x5, 20x6x5<br>WC: 15x6x10<br>TR: 5x20<br>SS: 3x10 +2x10kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>548</td>
+      <td>2023-04-08</td>
+      <td>RDL:  20x1x10, 40x1x10<br>DL: 120x1x5, 140x1x3, 155x5x5<br>Rowing: 5k, time: 23.15, SPM 16 + 5min cool down</td>
+      <td>evening session. W DL w koncu czulem posladki i mialem wrazenie, ze samo napiecie ciala makes the bar go up. DL poszly w sumie dosc latwo. zobaczymy, jak za tydzien ze 160.</td>
+    </tr>
+    <tr>
+      <td>547</td>
+      <td>2023-04-08</td>
+      <td>KB; PR: 22 (1+2+3)x7 L/R<br>PU: 6x15<br>DH: 1.5 min<br>KB; SW: 32x5x20<br>sled 20x10m +60kg<br>JC: 20x1x5, 30x1x5, 40x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>546</td>
+      <td>2023-04-07</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x2x5, 70x3x5<br>SGM: 20x1x10, 30x1x10, 40x3x10<br>Rowing: 5k, time: 23.08, SPM 16 + 5min cool down<br>SS: 3x10 +2x10kg<br>TB: 3x20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>545</td>
+      <td>2023-04-06</td>
+      <td>Rowing 5k, time 22.42, SPM 17, +5min cool down</td>
+      <td>Od poczatku kwietnia mierze cisnienie i mialem w grnicach > 150/90, a dzis rano po raz pierwszy w obu ramionach ok. 120/80. czyzby zasluga cardio tak szybko?</td>
+    </tr>
+    <tr>
+      <td>544</td>
+      <td>2023-04-05</td>
+      <td>Rowing: 5k, time: 22.53, SPM 16<br>PU: 10x1x5, 20x6x5<br>WC:12.5x6x5</td>
+      <td>evening session. PU z 20kg dosc latwo szlo.</td>
+    </tr>
+    <tr>
+      <td>543</td>
+      <td>2023-04-05</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x5<br>DL: 120x1x5, 160x1x3<br>DL: knees: 170x5x3<br>RDL: 120x4x5<br>PSU: 4x15</td>
+      <td>morning session. 170 w DL czułem b. dobrze. Nie bylo ciezko</td>
+    </tr>
+    <tr>
+      <td>542</td>
+      <td>2023-04-04</td>
+      <td>Rowing: 5k, time: 22.52, SPM 15, + 5min cool-down<br>TR: 4x20<br>SS: 4x10 +2x10kg<br>BE: 5x10 slowly down</td>
+      <td>evening session</td>
+    </tr>
+    <tr>
+      <td>541</td>
+      <td>2023-04-04</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x6x5<br>WC 12.5x6x15</td>
+      <td>morning session</td>
+    </tr>
+    <tr>
+      <td>540</td>
+      <td>2023-04-03</td>
+      <td>PU: 10x1x5, 20x1x5, 27.5x5x5<br>WC: 15x6x10</td>
+      <td>2 wieczora sesja.</td>
+    </tr>
+    <tr>
+      <td>539</td>
+      <td>2023-04-03</td>
+      <td>Rowing: 10k, time: 47.19, SPM 16<br>FC: 6x1min/1min +2x24kg<br>PSU: 5x15</td>
+      <td>Morning session</td>
+    </tr>
+    <tr>
+      <td>538</td>
+      <td>2023-04-02</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x10<br>DL: 120x1x5, 150x5x5<br>RDL: 115x4x6<br>SS: 4x10 +2x10kg<br>TR: 4x20<br>ankle mob: 2x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>537</td>
+      <td>2023-04-01</td>
+      <td>KB, PR: 22 (1+2+3)x5 L/R<br>KB, SW 32x5x20<br>elbow reha<br>PSU 4x10<br>DH: 1.5min<br>JC: 20x1x5, 30x1x5, 40x2x5<br>sled: 20x10m +40kg, 10x10m +60kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>536</td>
+      <td>2023-03-30</td>
+      <td>PU: 10x1x5, 20x5x5<br>WC: 15x6x10<br>SS: 10x3x10<br>PSU: 15x3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>535</td>
+      <td>2023-03-30</td>
+      <td>RDL: 20x1x10, 70x1x10<br>DL: 110x1x5, 140x1x5,<br>DL up to knees: 170x4x3<br>RDL 90x4x10</td>
+      <td>wczorajszy trening. DL up to knees poszlo i nie bylo strasznie ciezko. Bede powoli dokladal, ale na dzis 177.5x3x3 wydaje sie za duzo. Moze za pare tygodni wejdzie.</td>
+    </tr>
+    <tr>
+      <td>534</td>
+      <td>2023-03-27</td>
+      <td>PU: 10x1x5, 20x2x5, 25x5x5, 15x1x10<br>WC: 15x6x10<br>SS: 4x10 +2x10kg<br>TR: 4x20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>533</td>
+      <td>2023-03-27</td>
+      <td>Rowing: 5k, time:22.31, SPM 16</td>
+      <td>poranny trening. wieczorem pewnie PU</td>
+    </tr>
+    <tr>
+      <td>532</td>
+      <td>2023-03-26</td>
+      <td>RDL> 20x1x10, 40x1x10, 80x1x5<br>DL: 120x1x5, 145x5x5<br>JC: 20x1x5, 30x1x5, 40x2x5<br>PSU: 15x4 LR<br>TR: 20x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>531</td>
+      <td>2023-03-25</td>
+      <td>KB, PR: 20 (1+2+3+4+5)x4 L/R<br>BE: 4x10 slowly down<br>SS: 10x4x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>530</td>
+      <td>2023-03-23</td>
+      <td>PU: 10x1x5, 20x3x5, 25x3x5<br>WC: 15x6x10<br>SS: 10x4x10<br>Tib Raises: 20x5<br>ankle mob: 2x2min<br>PSU: 15x2</td>
+      <td>Wymeczony bylem po wczoraj i dzisiejszym dniu.</td>
+    </tr>
+    <tr>
+      <td>529</td>
+      <td>2023-03-23</td>
+      <td>RDL: 20x1x10, 70x1x10<br>DL: 110x1x5, 140x1x3, 160x1x1<br>DL knees: 177.5x2x3, 177.5x1x1</td>
+      <td>wczorajszy trening. Mialo byc 177.5x3x3, ale nie poszlo. To jednak za duzy ciezar na ten moment dla mnie, zeby nim robic taka objetosc. Bede robil dalej do kolan DL, ale pewnie do 175kg i moze na wiecej powtorzen.</td>
+    </tr>
+    <tr>
+      <td>528</td>
+      <td>2023-03-21</td>
+      <td>Rowing: 5k, time: 22.28, SPM 15</td>
+      <td>Drugi trening dzis. nie chcialem za duzo cisnac, gdyz jutro ciezkie martwe</td>
+    </tr>
+    <tr>
+      <td>527</td>
+      <td>2023-03-21</td>
+      <td>SGM:  20x1x10, 30x1x10, 40x3x10<br>Tib Raises: 5x20<br>ankle mob: 5x1min<br>Poliquine SU: 5x15<br>DH: 1.5 min<br>WC: 15x4x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>526</td>
+      <td>2023-03-20</td>
+      <td>PU: 10x1x5, 20x6x5<br>WC: 12.5x6x10<br>ankle mob<br>Tab Raises: 3x20</td>
+      <td>2 trening dzis</td>
+    </tr>
+    <tr>
+      <td>525</td>
+      <td>2023-03-20</td>
+      <td>FSQ: 20x1x10, 40x1x5, 601x5, 70x4x3<br>KB; PR: 20x(1+2+3+4+5)x 3 L/R <br>JC: 20x1x5, 30x1x5, 40x3x5</td>
+      <td>w FSQ czułem zmeczenie po wczorajszych DL i nie weszlo mi wiecej. w PR tez ostatnie na lewa reke nie poszlo.</td>
+    </tr>
+    <tr>
+      <td>524</td>
+      <td>2023-03-19</td>
+      <td>DL: 70x1x10, 110x1x5, 140x5x8<br>FC: 5x1min / 1min +2x24kg<br>SS: 4x10 +2x10kg<br>Tab Raises: 5x20<br>WC: 12.5x4x10<br>BE: 5x10 slowly down</td>
+      <td>DL 140x5x8 w sumie poszly dosc latwo. Tak samo FC 5x1min +2x24 czuje, ze moge dodac kolejna minute.</td>
+    </tr>
+    <tr>
+      <td>523</td>
+      <td>2023-03-16</td>
+      <td>PU: 10x1x5, 20x1x5, 30x3x5, 25x2x5<br>WC: 12.5 6x12<br>SS: 3x10<br>Tib Raises: 4x20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>522</td>
+      <td>2023-03-16</td>
+      <td>DL: 20x1x10, 70x1x10, 110x1x15, 140x1x3, 170x1x1x1<br>DL up to the knees: 177.5x1x2 170x2x3</td>
+      <td>Mialem robic 177.5x3x3, ale w 1 serii przed 3 ruchem zaczalem krwawic z nosa, wiec musialem przerwac. Caly czas sie czuje, jakbym nie wyszedl w pelni z przeziebienia jeszcze. i trening ten robilem wczoraj.</td>
+    </tr>
+    <tr>
+      <td>521</td>
+      <td>2023-03-14</td>
+      <td>Rowing: 5k, time: 23.14, SPM 16 +3min break + 2k, time: 9.21, SPM 16</td>
+      <td>2 trening dzis. nie chcialem za duzo wioslowac, gdyz jutro ciezkie ciagi do kolan</td>
+    </tr>
+    <tr>
+      <td>520</td>
+      <td>2023-03-14</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 65x5x5<br>JC: 20x1x10, 30x2x10, 40x3x10<br>Tib Raises: 20x5<br>ankle mob<br>KB; PR: 16x1x3, 20kg (1+2+3+4+5)x2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>519</td>
+      <td>2023-03-13</td>
+      <td>PU: 10x1x5, 20x5x5<br>WC: 12.5x6x12<br>ankle mob<br>tib raises: 20x4<br>SS: 10x4x8<br>JC: 20x1x5, 30x1x5, 40x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>518</td>
+      <td>2023-03-12</td>
+      <td>FC: 5x1min/1min +2x24</td>
+      <td>to zapomnialem w ostatnim treningu</td>
+    </tr>
+    <tr>
+      <td>517</td>
+      <td>2023-03-12</td>
+      <td>DL: 90x2x5, 110x15, 137.5x5x8<br>SS: 4x10<br>Back Ext Loaded: 20x1x8, 30x2x8, 40x1x8, 70x2x1<br>WC: 12.5x4x10<br>Tib raises: 3x20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>516</td>
+      <td>2023-03-11</td>
+      <td>KB; PR 22 (1+2+3)x 6<br>PSU_ 5x10<br>elbow reha<br>SGM 20x2x10, 30x2x10<br>sled 20x10m + 50kg</td>
+      <td>Niby mialo byc dzis 9 serii KB, PR, ale jestem w trakcie zaziebienia i czulem sie tak sobie</td>
+    </tr>
+    <tr>
+      <td>515</td>
+      <td>2023-03-08</td>
+      <td>RDL: 20x1x10, 70x1x10<br>DL: 110x1x5, 140x1x3<br>DL knee: 160x1x3, 177.5x2x3, 170x1x3<br>DL paused: 120x1x5, 110x2x5<br>SS: 10x3x8<br>PU: 10x1x5, 20x1x3<br>WC: 10x4x15</td>
+      <td>Mega zmeczony po niedzieli i dotychczasowym tygodniu. Jestem na kursie pythona. i nie probowalem nawet dzwiga wiecej.</td>
+    </tr>
+    <tr>
+      <td>514</td>
+      <td>2023-03-06</td>
+      <td>PU> 10x1x5, 20x5x5, 10x1x10<br>WC. 12.5x7x12<br>SGM 20x1x10, 30x1x10, 40x3x10<br>SS: 10x3x10<br>Rowing:5k, time 22.46, SPM 16<br>FC 4x1min / 1min +2x24kg</td>
+      <td>czulem sie zmeczony po wczorajszych DL, glownie uklad nerwowy i w ciele w sumie tez. Glownie nogi. Zmeczenie ukladu nerwowego diagnozuje w FC, przynajmiej taka mam fantazje/hipoteze</td>
+    </tr>
+    <tr>
+      <td>513</td>
+      <td>2023-03-05</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x10<br>DL: 120x1x3, 135x5x8<br>SS: 4x10</td>
+      <td>2 trening dzis. DL w sumie latwo poszly i w dodatku sie pomylilem. mialo byc 132x5x8, a zalozylem 135. Next week robie 137x5x8</td>
+    </tr>
+    <tr>
+      <td>512</td>
+      <td>2023-03-05</td>
+      <td>KB, PR 22 (1+2+3)x8 L/R<br>elbow reha<br>ankle mob<br>DH 90 sek<br>KB, SW 32x3x20</td>
+      <td>DH b. latwo.</td>
+    </tr>
+    <tr>
+      <td>511</td>
+      <td>2023-03-02</td>
+      <td>BE: 5x10<br>PSU: 5x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>510</td>
+      <td>2023-03-02</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5,  65x5x5</td>
+      <td>65x5x5 dosc latwo poszlo, wiec pewnie next week zwiekszam ciezar</td>
+    </tr>
+    <tr>
+      <td>509</td>
+      <td>2023-03-02</td>
+      <td>PU: 10x1x5, 20x1x5, 27.5x5x5<br>WC: 10x2x15, 12.5x3x10<br>PSU (Poliquine Step up) 5x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>508</td>
+      <td>2023-03-01</td>
+      <td>RDL:  40x1x10, 80x1x5, 120x1x5<br>DL: 160x1x3<br>DL knee: 175x3x3<br>FC: 5x1min/ 1min +2x24kg<br>SS: 10x3x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>507</td>
+      <td>2023-02-28</td>
+      <td>Rowing: 5k, time: 22.32, SPM 16<br>JC: 20x1x5, 30x1x5, 40x1x5, 45x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>506</td>
+      <td>2023-02-27</td>
+      <td>PU: 10x1x5, 20x5x5, 10x1x10<br>WC: 10x5x15<br>BE: 10x5 slowly down<br>SS: 10x3x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>505</td>
+      <td>2023-02-26</td>
+      <td>SS: 10x4x8<br>PoliquineStepUp: 5x10<br>JC: 20x1x5, 30x1x5, 40x1x5<br>ankle mob</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>504</td>
+      <td>2023-02-25</td>
+      <td>KB; PR 22 (1+2+3)x7 L/R  <br>KB, SW 32x5x20<br>ankle mob<br>elbow reha<br>sled 16x10 +55kg</td>
+      <td>Faild at last rep, left hand KB, PR</td>
+    </tr>
+    <tr>
+      <td>503</td>
+      <td>2023-02-24</td>
+      <td>RDL: 40x1x10, 80x1x10, 120x1x5<br>DL: 127x5x8<br>ankle mob<br>P.StepUp: 5x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>502</td>
+      <td>2023-02-23</td>
+      <td>Rowing: 5k, time: 23.33, SPM 16<br>BE: 3x10 slowly down<br>afternoon:<br>FSQ: 20x1x10, 40x1x5, 60x1x5, 65x5x5<br>SS: 10x4x6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>501</td>
+      <td>2023-02-22</td>
+      <td>PU: 10x1x5, 20x1x5, 27.5x5x5, 15x1x10<br>WC: 10x5x15<br>SS: 10x3x8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>2023-02-22</td>
+      <td>RDL: 40x1x10, 80x1x5, 120x1x5<br>DL knee: 160x1x3, 170x3x3<br>DL paused: 120x5x5<br>FC: 5x1min/1min +2x24kg<br>FSQ: 20x1x10, 40x1x5, 60x3x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>499</td>
+      <td>2023-02-21</td>
+      <td>SGM: 20x1x10, 30x2x10, 40x2x10<br>Poliquine Step-up: 5x10<br>WC: 12.5x4x15<br>SS: 10x4x8<br>JC: 20x1x5, 30x1x5, 40x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>498</td>
+      <td>2023-02-20</td>
+      <td>PU: 10x1x5, 20x5x5<br>WC: 10x5x15<br>BE: 6x10 slowly down<br>SS: 10x4x8<br>Poliquin step-up 4x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>497</td>
+      <td>2023-02-19</td>
+      <td>Morning: FSQ: 20x1x10, 40x1x5, 60x6x5<br>ankle mob: 4x10<br>Afternoon:<br>RDL: 50x1x10, 90x1x5, 110x1x5<br>DL knee: 150x3x3<br>DL paused: 110x5x5<br>SS: 10x4x8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>496</td>
+      <td>2023-02-18</td>
+      <td>KB; PR 22 (1+2+3)x6<br>elbow reha<br>knee reha<br>ankle mob<br>KB SW, 32x5x20<br>DH: 1.5min<br>sled 20x10m +55kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>495</td>
+      <td>2023-02-16</td>
+      <td>Rowing: 10k, time: 46.44, SPM 16<br>RDL: 20x1x10, 50x1x10, 70x10x10<br>JC: 20x1x5, 30x1x5, 40x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>494</td>
+      <td>2023-02-15</td>
+      <td>SS: 10x4x10<br>BE: 6x10 slowly down<br>ankle mob 5x10<br>DL: 190x1x1</td>
+      <td>ten DL to taki spontan. Byli znajomi i sie wyglupialismy. ale co najwazniejsze moj "dolek" neurologiczny minal i czuje sie o wiele lepiej.</td>
+    </tr>
+    <tr>
+      <td>493</td>
+      <td>2023-02-15</td>
+      <td>FC: 5x1min/1min +2x24kg<br>SGM: 20x1x10, 30x1x10, 40x2x10<br>RDL: 20x1x10, 40x1x10, 70x10x10<br>PU: 10x1x6, 15x1x6, 20x1x6, 25x1x5, 30x1x3, 35x1x3, 40x1x2, 45x1x1, 50x1x1<br>WC: 10x5x10</td>
+      <td>nieplanowany max w PU. poczatek mega latwo, ostatnia faza ruchu ciezej. Zrobilem z "hopka" ten ruch.</td>
+    </tr>
+    <tr>
+      <td>492</td>
+      <td>2023-02-13</td>
+      <td>PU: 10x1x5, 20x5x5<br>WC: 10x5x15<br>SS: 10x4x8</td>
+      <td>Przepalilem bezpieczniki.... Czuje sie, jakby walec po mnie przejechal. Potrzebuje chyba zrobic deload</td>
+    </tr>
+    <tr>
+      <td>491</td>
+      <td>2023-02-12</td>
+      <td>Rowing: 2k, time: 8.38, SPM 17<br>Squats 2x15 +2x15kg<br>RDL: 20x1x10, 70x10x10<br>PU: 10x4x5<br>SS: 9x4x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>490</td>
+      <td>2023-02-11</td>
+      <td>KB, PR 22 (1+2+3)x 5<br>elbow reha<br>ankle mob<br>DH 1.5min<br>KB, SW 32x5x20<br>sled 16x10 +50kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>489</td>
+      <td>2023-02-10</td>
+      <td>PU: 10x1x5, 20x1x5, 27.5x5x5, 10x1x10<br>WC: 12.5x5x15<br>FSQ  20x1x5, 40x1x5, 60x1x5, 70x3x5<br>SS: 10x3x8</td>
+      <td>PU dosc latwo. FSQ troche ciezej, ale w sumie ok</td>
+    </tr>
+    <tr>
+      <td>488</td>
+      <td>2023-02-09</td>
+      <td>Rowing: 5k, time: 23.12, SPM 16<br>SGM 20x1x10, 30x2x10, 40x1x10<br>SS: 10x3x10<br>ankle mob</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>487</td>
+      <td>2023-02-08</td>
+      <td>RDL: 40x1x10, 80x1x10 <br>DL 120x1x3<br>DL knee: 160x1x3, 170x1x1, 180x1x3 (last rep full DL), <br>DL 190x1x1 !!! new 1RM, 200x1x1 fail, 195x1x1 fail<br>DL knee: 180x1x3<br>DL 120x4x5 paused<br>FC: 5x1min / 1min rest +2x24kg<br>PU: 10x5x5 <br>last set <br>10 reps<br>WC 12.5x2x10</td>
+      <td>niespodziewanie zrobilem 190 DL. i w sumie poszlo dosc dobrze. 200 wyciagnalem prawie do kolan, ale jeszcze brakowalo sily w prostownikach. potem 195 juz tez nie bylo energii w baku. czyli dzieki samym akcesoriom poprawilem DL o 5kg.</td>
+    </tr>
+    <tr>
+      <td>486</td>
+      <td>2023-02-07</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 65x6x5<br>WC: 12.5x5x10<br>ankle mob: 4x10<br>SGM: 17.5x1x10, 20x1x10, 30x2x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>485</td>
+      <td>2023-02-06</td>
+      <td>PU: 10x1x5, 20x8x5<br>WC: 10x7x15<br>SS: (2x10)x4x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>484</td>
+      <td>2023-02-05</td>
+      <td>Rowing: 5k, time: 22.25, SPM 16<br>RDL: 90x1x10, 120x1x5, 150x1x3<br>DL knee: 170x1x1, 180x3x3<br>SS: 10x3x10<br>Back ext 4x10, slowly down</td>
+      <td>czułem sie zmeczony i obolaly. prostowniki zmeczone. 180 w DL juz bylo ciezko i 1 ruch byl slabszy, ciagnalem "plecami". ostatni ruch w DL zrobilem pelne zakres, nie tylko do kolan</td>
+    </tr>
+    <tr>
+      <td>483</td>
+      <td>2023-02-03</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 65x6x5<br>SS: 10x3x10<br>SGM: 20x2x10, 25x1x10, 30x1x10<br>JC: 20x1x5, 30x1x5, 35x1x3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>482</td>
+      <td>2023-02-02</td>
+      <td>RDL: 60x1x10, 100x1x5<br>DL:  120x5x5 paused<br>FC: 10x1min / 1min rest +2x22kg<br>SS: 9x4x10<br>ankle mob</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>481</td>
+      <td>2023-02-01</td>
+      <td>RDL: 60x1x10, 100x1x5, 140x1x3<br>DL knee: 160x1x1,  177.5x3x3<br>PU: 10x1x5, 20x1x5, 27.5x5x5, 20x1x10<br>WC: 10x2x15, 12.5x4x15<br>ankle mob</td>
+      <td>DL do kolan weszly w sumie bez problemu i PU wiekszym ciezarm tez, wiec jestem zadowolony. nie robilem dzis DL z pausa 5x5, wiec zobacze, jak jutro prostowniki.</td>
+    </tr>
+    <tr>
+      <td>480</td>
+      <td>2023-02-01</td>
+      <td>RDL: 20x1x10, 70x1x5, 110x3x1<br>DL knee: 140x1x1, 167.5x3x3<br>ankle mob: 4x10<br>rowing: 5k, time: 22.13, SPM 13</td>
+      <td>przedpoludniowy trening. Po treningu zorientowalem sie, ze robilem martwe zbyt malym ciezarem. mialo byc 177.5x3x3, wiec postanowilem zrobic to wieczorem.</td>
+    </tr>
+    <tr>
+      <td>479</td>
+      <td>2023-01-31</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x6x5<br>WC: 12.5x5x10<br>ankle mob: 5x10<br>RDL: 60x1x10, 100x3x10</td>
+      <td>FSQ dosc lekko. pewnie cos doloze next week.. jutro ciezkie DL do kolan, wiec dzis tylko pare ruchow w RDL</td>
+    </tr>
+    <tr>
+      <td>478</td>
+      <td>2023-01-30</td>
+      <td>PU: 10x1x5, 20x6x5, 10x1x10<br>WC: 10x5x15<br>SS: 10x4x8<br>ankle mob 4x10<br>TrapBar: 40x1x10, 90x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>477</td>
+      <td>2023-01-27</td>
+      <td>Rowing: 5k, time. 23.03, SPM 16<br>FSQ: 20x1x5, 40x1x5, 60x5x5<br>ankle mob 4x10<br>SS: 10x4x8<br>shoulder mob</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>476</td>
+      <td>2023-01-26</td>
+      <td>RDL: 40x1x10, 80x1x5, 120x1x3  (warm-up for main set)<br>DL up to knee: 140x1x3, 160x1x3, 175x3x3<br>DL: 130x5x5 paused<br>FC: 9x1min/ 1 min +2x22kg<br>DH: 1 min</td>
+      <td>175 DL do kolan zaskakujaco latwo poszly</td>
+    </tr>
+    <tr>
+      <td>475</td>
+      <td>2023-01-25</td>
+      <td>PU:  10x1x5, 20x1x5, 25x5x5, 15x1x10<br>WC: 10x5x15<br>SS: 10x4x8<br>ankle mob 4x10<br>JC: 20x2x5, 25x1x5,  30x2x5<br>SGM: 20x2x10, 25x2x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>474</td>
+      <td>2023-01-23</td>
+      <td>PU: 10x1x5, 20x8x5<br>SS: 10x4x8<br>ankle mob: 4x10 <br>step-down<br>DH 1 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>473</td>
+      <td>2023-01-22</td>
+      <td>RDL:  40x1x10, 70x1x5, 90x10x10<br>ankle mobility<br>shoulder mobility<br>SS: 10x4x8<br>WC: 10x4x15<br>DH 1min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>472</td>
+      <td>2023-01-20</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x7x5<br>SS: 10x4x8<br>ankle mobility<br>KB; PR: 20x4x3<br>DH: 75 sec</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>471</td>
+      <td>2023-01-19</td>
+      <td>Rowing: 10k, time: 46.57, SPM 16<br>ankle mobility<br>SGM: 20x3x10, 25x3x10<br>WC: 10x4x15 L/R</td>
+      <td>Prostowniki grzbietu mega zmeczone po wczorajszym treningu. SGM byly dobrym rozciagajacym cwiczeniem. ale ogolnie bylem dzis bardzo zmeczony i nie robilem dlatego zdanych cwiczen silowych. SGM j- to dla mnie mobilnosc</td>
+    </tr>
+    <tr>
+      <td>470</td>
+      <td>2023-01-18</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5, 15x1x10<br>WC: 9x5x15<br>SS: 4x10 +2x9kg<br>ankle dorsiflexion: 4x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>469</td>
+      <td>2023-01-18</td>
+      <td>DL: 40x1x10, 80x1x5, 120x1x5, 140x1x3<br>DL knee: 160x1x3, 172.5x3x3<br>DL: 130x5x5 paused<br>FC: 9x1min/1min rest +2x22kg<br>DH: 1 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>468</td>
+      <td>2023-01-16</td>
+      <td>PU: 10x1x5, 20x6(7)x5, 10x1x10<br>SS: 9x4x10  (9=2x9kg KB)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>467</td>
+      <td>2023-01-15</td>
+      <td>Rowing: 5k, time: 22.33, SPM 16<br>RDL: 70x1x10, 90x1x5, 110x1x5, 120x1x5, 140x1x5<br>DL: 140x3x5 paused<br>FC: 8x1min/1 min rest +2x22kg<br>Back ext: 5x10 slowly down</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>466</td>
+      <td>2023-01-14</td>
+      <td>KB; PR: 22 (1+2+3)x5 L/R<br>KB, SW 32x5x20<br>reha elbow<br>reha knee<br>ankle mobility<br>DL: 130x1x5, 135x1x5, 140x1x5<br>Rack Pull: 140x1x5, 150x1x5, 160x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>465</td>
+      <td>2023-01-12</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x5x5<br>WC: 10x5x15<br>ankle mob 3x10<br>RDL: 80x1x5, 100x1x5, 120x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>464</td>
+      <td>2023-01-11</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5, 15x1x10<br>SS: 9x4x10<br>BE: 5x10 slowly down</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>463</td>
+      <td>2023-01-11</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x5, 100x1x5<br>DL: 120x5x5 paused<br>DL knee: 140x1x3, 160x1x3, 165x3x3, 170x3x3<br>FC: 1min x 9 / 1min  +2x22kg</td>
+      <td>170 3x3 do kolan poszly zaskakujaco dobrze. W nastepnym tygodniu doloze 2.5kg i tez chce zrobi 3x3</td>
+    </tr>
+    <tr>
+      <td>462</td>
+      <td>2023-01-09</td>
+      <td>PU: 10x1x5, 20x5x5, 10x1x10<br>WC: 9x5x15<br>RDL: 20x1x10, 40x1x10, 80x1x5, 100x5x5<br>SS: 9x5x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>461</td>
+      <td>2023-01-08</td>
+      <td>Rowing: 10k, time: 47.50<br>Back Ext: 6x10 slowly down<br>RDL: 40x1x10, 80x1x5, 100x8x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>460</td>
+      <td>2023-01-06</td>
+      <td>PU: 10x1x5, 20x6x5, 10x1x10<br>WC: 9xx15<br>SS: 9x3x10<br>Back extentions: 6x10 <br>slowly down</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>459</td>
+      <td>2023-01-04</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5</td>
+      <td>II trening tego dnia, + sauna. Bylem zmeczony po porannym treningu i po 2 dniach pracy.</td>
+    </tr>
+    <tr>
+      <td>458</td>
+      <td>2023-01-04</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x5, 100x1x5<br>DL: 120x5x5 deficit<br>DL do kolan: 140x1x3, 160x1x3, 170x1x3, 165x13x3<br>FC: 8min/1 min +2x22kg<br>SS: 9x3x10</td>
+      <td>Pierwszy raz robilem DL do kolan i wydaje mi sie, ze to jest b. dobre dla mnie cwiczenie. 170 na wiecej serii to na ta chwile za duzo, 165 wydaje sie sweet spot. Dojde do 165x5x3 i potem zwieksze ciezar. Nie bede podchodzil do 200 w DL dopoki nie poprawie sie w DL do kolan.</td>
+    </tr>
+    <tr>
+      <td>457</td>
+      <td>2023-01-03</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x5x5<br>WC: 10x1x10, 12.5x4x10<br>RDL: 20x1x10, 60x1x10, 80x1x5, 100x5x5</td>
+      <td>FSQ dosc dobrze poszly. Nie meczylem sie tak strasznie, jak zazwyczaj</td>
+    </tr>
+    <tr>
+      <td>456</td>
+      <td>2023-01-02</td>
+      <td>RDL: 60x1x5, 90x1x5, 110x5x5<br>PU: 10x1x5, 20x5x5, 10x1x10<br>SS: 9x3x10<br>WC: 10kgx5x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>455</td>
+      <td>2023-01-02</td>
+      <td>Rowing: 5k, time:23.10<br>SS: 9x4x10<br>SGM:20x2x10, 25x2x10</td>
+      <td>wczorajszy trening</td>
+    </tr>
+    <tr>
+      <td>454</td>
+      <td>2022-12-31</td>
+      <td>RDL:  90x10x10</td>
+      <td>2 trening dzis. Podjalem tez probe 1RM w DL i to 200kg, ale bylem w stanie tylko oderwac sztange od ziemi i nie pociagnalem do gory. ale pierwsze koty za ploty! \na dzis znowu duza objetosc po wczorajszym treningu. zobacze, jak cialo to zniesie.</td>
+    </tr>
+    <tr>
+      <td>453</td>
+      <td>2022-12-31</td>
+      <td>KB; PR 22 (1+2+3)x6 L/R  -<br>failed at last rep with L<br>reha <br>elbow<br>DH <br>1 min<br>sled 20x10 +55kg<br>KB; SW 32x5x20<br>SGM: 20x2x10, 25x2x10, 30x2x10<br>JC: 20x1x5, 30x1x5, 40x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>452</td>
+      <td>2022-12-30</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x5, 100x1x5<br>DL: 120x5x5 paused, 120x5x5 deficit<br>Rack Pull: 180x1x1, 200x1x1, 200x1x5, 200x1x1 lower rack pull</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>451</td>
+      <td>2022-12-29</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5, 15x1x10<br>WC: 10x5x15<br>TGU: 28x2x1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>450</td>
+      <td>2022-12-28</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x1x5, 100x1x5, 105x5x5, 100x4x5, 80x4x10<br>FC: 8x1min / 1min break +2x22kg<br>SS: 9x4x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>449</td>
+      <td>2022-12-27</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x5x5<br>WC: 10x5x15<br>RDL: 60x1x10, 80x1x5, 100x1x5, 120x1x5<br>DL: 140x2x5 paused<br>SGM: 20x1x10, 30x2x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>448</td>
+      <td>2022-12-26</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x5x5, 100x5x5<br>PU: 10x1x5, 20x5x5<br>SS: 9x4x5<br>WC: 10x4x15<br>TGU: (12, 16, 28)x1x1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>447</td>
+      <td>2022-12-24</td>
+      <td>KB; PR 22 (1+2+3) x 5 L/R<br>DH: 1.5min<br>sled: 20x10 +55kg<br>KB, SW 32x5x20<br>SGM: 20x2x10, 25x2x10<br>DL: 20x1x10 RDL, 60x1x5 RDL,100x1x5 RDL,  120x5x5 paused<br>JC: 20x1x5, 30x1x5, 40x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>446</td>
+      <td>2022-12-22</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x2x5, 60x3x5<br>WC: 10x5x15<br>RDL: 20x1x10, 40x1x10, 80x5x5, 100x5x5 (last set <br>10 reps)</td>
+      <td>bylem zmeczony po pracy i nie zrobilem FSQ 70x5x5. ale RDL zaskakujaco latwo mi poszly ze 100kg. robilem je w paskach</td>
+    </tr>
+    <tr>
+      <td>445</td>
+      <td>2022-12-22</td>
+      <td>PU: 10x1x5, 20x1x5, 25x5x5, 10x1x10<br>SS: 1x10, 2x5 +2x10kg<br>WC: 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>444</td>
+      <td>2022-12-21</td>
+      <td>RDL: 20x1x10, 40x1x10, 80x5x5<br>DL paused: 100x1x5, 120x5x5<br>FC: +2x22kg x 1min x 8 <br>break 1 min, last 3 <br>1.5min<br>back ext: 5x10 slowly down</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>443</td>
+      <td>2022-12-21</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x2x5, 70x5x5, 50x1x10<br>WC: 10x5x10<br>SGM: 20x2x10, 25x2x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>442</td>
+      <td>2022-12-19</td>
+      <td>PU: 10x1x5, 20x5x5, 10x1x10<br>back ext: 6x10 slowly down<br>SS: 4x5 +2x9kg<br></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>441</td>
+      <td>2022-12-18</td>
+      <td>rowing: 10k, time: 46.26, SPM  16<br>RDL: 50x4x10<br>WC: 9x4x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>440</td>
+      <td>2022-12-17</td>
+      <td>PU: 10x1x5, 20x6x5<br>WC: 9x4x15<br>SS: 4x5  +2x9kg<br>RDL: 25x1x10, 35x2x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>439</td>
+      <td>2022-12-17</td>
+      <td>KB; PR 22 (1+2+3)x4 L/R<br>KB, PR 24x1x1<br>DH 2min <br>with 2 breaks within<br>KB; SW, 32x5x20<br>JC: 20x2x5, 30x1x5, 35x2x5<br>sled: 20x10 +45kg<br>SGM:  20x2x10, 25x2x10<br>reha <br>elbow</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>438</td>
+      <td>2022-12-16</td>
+      <td>DL: 20x1x10, 40x1x5, 80x1x5, 120x1x3, 160x1x1<br>DL 120x5x5 paused<br>FSQ: 20x1x5, 40x1x5, 50x5x5<br>FC: 6x1min/ 1 min (last break 1.5min)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>437</td>
+      <td>2022-12-15</td>
+      <td>SGM: 20x3x10, 25x3x10, 30x3x10<br>WC 9x5x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>436</td>
+      <td>2022-12-14</td>
+      <td>PU: 10x1x5, 20x5x5<br>WC: 9x5x10<br>SS: 9x5x5<br>BW squat drill</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>435</td>
+      <td>2022-12-03</td>
+      <td>KB; PR 21(1+2+3+4+5) x 4<br>SS. 5x5 +2x8kg<br>reha <br>elbow<br>JC 20x1x5, 25x1x5, 35x1x5, 40x1x5<br>Step squat <br>one leg 4x10 L+R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>434</td>
+      <td>2022-12-01</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x5x5<br>WC: 10x5x10<br>SGM: 20x1x10, 25x2x10, 30x1x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>433</td>
+      <td>2022-11-30</td>
+      <td>DL: 20x1x10, 40x1x5, 80x1x5, 120x1x3, 160x1x1, 185x1x1<br>FC: 8x1min +2x22kg /rest 1min (last two 1.5min)<br>evening:<br>PU: 10x1x5, 20x1x5, 30x1x1, 35x1x4, 35x4x3, 20x1x10<br>WC: 9x4x15</td>
+      <td>185 - 1RM w DL! w sumie dobrze poszlo, ale juz po walce. Czuc bylo, ze to blisko maksa lub maks na ten moment. Pewnie sprobuje jeszcze pociagnac 190 z blokow po medytacjach</td>
+    </tr>
+    <tr>
+      <td>432</td>
+      <td>2022-11-28</td>
+      <td>Back ext: 5x10 slow decrease<br>PU: 10x1x5, 20x5x5, 10x1x10<br>WC: 9x6x15<br>SS: 4x5 +2x9kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>431</td>
+      <td>2022-11-27</td>
+      <td>SGM: 20x1x10, 25x4x10<br>reha elbow WC 9x5x15<br>SS: 6x5 +2x9kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>430</td>
+      <td>2022-11-26</td>
+      <td>KB, PR 21 (1+2+3+4+5)x 3 , L+R<br>reha elbow<br>reha knee<br>DH 125 sec<br>JC 20x1x5, 30x1x5, 35x1x5, 40x2x5<br>KB; SW 32x5x20<br>sled 20x10 +50kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>429</td>
+      <td>2022-11-23</td>
+      <td>DL: 20x1x10, 40x1x5, 80x1x5, 120x1x3, 160x1x1, 180x1x1<br>FC: 2x22kg x 8 x 1min / rest 1 min<br>evening:<br>PU: 10x1x5, 20x1x5, 30x1x1, 35x5x3<br>SS: 5x5 +2x9<br>WC: 9x4x10</td>
+      <td>chwilowy PR w DL. myslalem, zeby podejsc do wyzszego ciezaru, ale ewidentnie mi cialo odmowilo i nawet spiac sie nie moglem. sproboje moze jeszcze dolozyc 5 next week. i tak w sumie jestem zadowolony. dolozylem +10 w stosunku do ostatenigo cyklu</td>
+    </tr>
+    <tr>
+      <td>428</td>
+      <td>2022-11-22</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x4x5 <br>straps<br>Back ext: 4x8 <br>slow on decrease<br>SGM: 20x1x10, 25x3x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>427</td>
+      <td>2022-11-21</td>
+      <td>PU: 10x1x5, 20x6x5<br>WC: 9x4x15<br>SS: 4x5 +2x9kg</td>
+      <td>wydaje mi sie, ze robie jakis progres z SS. Jakbym mial wiecej luzu w prawej kostce tzn w kocu zaczynaja sie obie kostki robic podobnie mobilne. wczesniej prawa byla mniej mobilna</td>
+    </tr>
+    <tr>
+      <td>426</td>
+      <td>2022-11-20</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x2x5, 65x5x5, 50x1x10<br>rowing 10k, time 46.41, SPM 16<br>SS 4x5 +2x9kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>425</td>
+      <td>2022-11-19</td>
+      <td>KB; PR 21 (1+2+3+4)x6 L+R<br>reha <br>elbow<br>reha <br>knee<br>sled 20x10 +60kg<br>DH 2min<br>SGM 20x1x10, 25x3x10<br>JC 20x1x5, 30x1x5, 35x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>424</td>
+      <td>2022-11-17</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x1x5, 70x1x5, 60x1x5, 65x3x5<br>SS: 4x5 +2x9kg<br>evening:<br>SGM: 20x4x10, 25x3x10<br>SS: 4x5 +2x9kg<br>WC: 9x3x15, 10x3x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>423</td>
+      <td>2022-11-17</td>
+      <td>PU: 10x1x5, 20x1x5, 30x1x1, 32.5x5x5, 20x1x10</td>
+      <td>wczoraj wieczorem robilem ten trening</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>2022-11-16</td>
+      <td>DL: 20x1x10, 40x1x5, 80x1x8, 120x1x3, 160x1x1, 170x2x3 +170x1x1<br>FC: 2x22 x8 min / 1min. Last 2 breaks 90sek</td>
+      <td>1 raz 170x2x3. o jedna serie wiecej niz w ostatnim cyklu. chcialem zrobic 3x3, ale mi cialo odmowilo po 1 ruchu w 3 serii. ale i tak w sumie jestem zadowolony.</td>
+    </tr>
+    <tr>
+      <td>421</td>
+      <td>2022-11-15</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x5x5, 70x2x5<br>SGM: 20x4x10<br>WC: 9x3x15</td>
+      <td>FSQ po raz pierwszy z paskami od DL. nie wiem, jaka roznice to robi. ale i tak mi sie FSQ dobrze robilo. moze dlatego, ze mialem przerwe. SGM juz tez mi lepiej wchodza tzn. mam poczucie, ze glebiej schodze.</td>
+    </tr>
+    <tr>
+      <td>420</td>
+      <td>2022-11-14</td>
+      <td>PU: 10x1x5, 20x6x5<br>SS: 4x5 +2x9kg<br>WC: 9x4x15<br>SGM: 20x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>419</td>
+      <td>2022-11-12</td>
+      <td>KB; PR 21 (1+2+3+4) x 5 L+R<br>SGM 20x4x5<br>sled 20x10 +60kg<br>JC 20x1x5, 30x1x5, 35x1x5, 40x1x5<br>reha <br>elbow<br>reha <br>knee</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>418</td>
+      <td>2022-11-11</td>
+      <td>FSQ: 20x1x10, 40x1x5, 60x5x5<br>SS: 4x5 +2x9kg<br>PU: 10x1x5, 20x1x5, 30x5x5, 20x1x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>417</td>
+      <td>2022-11-10</td>
+      <td>KB, PR 21 (1+2+3+4) x 4, L+R<br>DH 2 min<br>sled 20x10 +50kg<br>SGM 20x4x5<br>JC 20x1x5, 30x1x5, 35x2x5<br>reha <br>elbow<br>reha <br>knee</td>
+      <td>w KB, PR czulem sie dosc silnie. Jest progres. W DH tez lepiej. Praca daje wyniki.</td>
+    </tr>
+    <tr>
+      <td>416</td>
+      <td>2022-11-09</td>
+      <td>DL: 80x1x5, 100x1x5, 140x1x3, 160x1x1, 167.5x3x3<br>FC 7x1min +2x22kg / break 1-1.5 min<br>WC: 9x4x10<br>SGM: 20x4x5</td>
+      <td>DL pierwszy raz takim ciezarem i w sumie dobrze weszlo. zaskakujaco czulem sie pewnie w pierwszej fazie z ziemi. next week 170 atakuje.</td>
+    </tr>
+    <tr>
+      <td>415</td>
+      <td>2022-11-08</td>
+      <td>PU: 10x1x5, 20x6x5, 30x2x3, 10x15<br>WC 15x3x15, 15x4x5<br>SS 4x5 +2x9kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>414</td>
+      <td>2022-11-06</td>
+      <td>rowing: 10k, time: 46.22, SPM 16<br>Hip thrusts: 50x1x10, 70x2x10<br>SGM: 20x3x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>413</td>
+      <td>2022-11-05</td>
+      <td>sled: 30x10 +55kg<br>SGM 20x5x10<br>JC 20x1x10, 30x1x5, 35x2x5<br>evening: FSQ: 20x1x10, 40x1x5, 60x6x5<br>SS 5x5 +2x9kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>412</td>
+      <td>2022-11-04</td>
+      <td>PU: 10x1x5, 20x1x5, 25x1x1, 30x1x1, 32.5x5x4, 20x1x10<br>SS: 4x5 +2x8<br>FC: 6x1min /1min break +2x22kg<br>WC 8x3x15, 10x2x10</td>
+      <td>pierwszy raz taka objetosc w PU. i w sumie poszlo dosc latwo. Cel 5x5</td>
+    </tr>
+    <tr>
+      <td>411</td>
+      <td>2022-11-03</td>
+      <td>KB; PR; 21 (1+2+3)x10 L+R<br>DH 2min<br>sled 24x10 +40kg<br>SGM 20x3x10<br>reha elbow<br>reha knee<br>JC 20x1x5, 30x1x5, 35x2x5<br>evening: FSQ: 20x1x10, 40x1x5, 60x5x5, 40x1x10<br>WC 9x6x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>410</td>
+      <td>2022-11-01</td>
+      <td>DL: 20x1x10, 60x1x5, 100x1x5, 140x1x1, 165x3x2, 165x1x2, 140x2x5</td>
+      <td>nie weszlo 165x3x3, ale w stosunku do ostatniego cyklu dolozylem 165x1x3, wiec jakis progres jest, ale juz dosc ciezko bylo i uklad nerwowy odmawial takiego dzwigania</td>
+    </tr>
+    <tr>
+      <td>409</td>
+      <td>2022-10-31</td>
+      <td>PU: 10x1x5, 20x1x5, 25x1x1, 30x5x5, 15x5x5<br>SS: 2x3, 2x5 +2x8<br>WC 8x4x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>408</td>
+      <td>2022-10-30</td>
+      <td>Rowing: 10k, time. 46.50; SPM 15<br>SS 4x10 +2x8kg<br>WC 8x4x10<br>SGM: 20x3x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>407</td>
+      <td>2022-10-29</td>
+      <td>KB; PR 21 (1+2+3)x9 L+R<br>DH 2min<br>sled 20x10 +50kg<br>SGM 20x3x10<br>JC 20x1x5, 30x3x5<br>reha elbow</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>406</td>
+      <td>2022-10-28</td>
+      <td>FSQ: 20x1x5, 40x1x5, 60x5x5, 70x1x3, 70x1x5, 70x1x3<br>PU: 10x1x5, 20x1x5, 27.5x5x5, 15x1x10<br>FC: 2x22kg x 6x 1min rest 1-3min<br>SS: 2x8kg, 3x5<br>WC 8x3x10, 8x2x15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>405</td>
+      <td>2022-10-27</td>
+      <td>KB, PR 21kg (1+2+3)x8 L/R<br>sled +50kg 20x10 + 14x10<br>DH 2min, rest +1.5min<br>JC: 20x1x5, 30x1x5, 35x2x5<br>SGM: 20x3x10<br>knee and elbow reha</td>
+      <td>czuje miesnie w dolnym odcinku kregoslupa po wczorajszych DL</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td>2022-10-26</td>
+      <td>DL: 20x1x15, 50x1x5, 80x1x5, 120x1x1, 140x1x1, 160x5x5 <br>FC +2x22 x 6 x 1min 1-2min break<br>WC 8kgx3x15<br>evening:<br>PU: 10x1x5, 20x1x5, 25x5x5, 15x1x10<br>WC: 8kgx3x15<br>SS: +2x8kg x 3 x 5<br>back ext 4x10</td>
+      <td>Pierwszy raz taka objetosc w DL takim ciezarem. Ostatnie powtorzenie w ostatniej serii nie weszlo. To juz byl duzy ciezar i duzo powtorzen. Przez cały dzien czulem nogi i miesnie grzbietu. Zobaczymy next week, gdy zaczne robic 3 powtorzenia w seriach.</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td>2022-10-25</td>
+      <td>FSQ 40x1x5, 50x1x5, 60x5x5, 40x1x10<br>WC 8x3x15, 10x3x10<br>SS 3x10 +2x8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>402</td>
+      <td>2022-10-24</td>
+      <td>PU: 10x1x5, 20x5x5<br>SS: 3x3, 2x5 +2x8kg<br>WC 3x10 +8kg, 2x10 +10kg<br>SGM: 3x10 +15kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>401</td>
+      <td>2022-10-24</td>
+      <td>HT 3x10x70<br>SS<br>WC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>2022-10-20</td>
+      <td>KB; PR 21 (1+2+3) L+R x7<br>DH 2 min<br>sled 20x10 +50kg<br>SGM 3x15 +15kg<br>JC jefferson curls 20x1x5, 30x1x5, 35x1x5<br>reha -wrist<br>reha <br>knee <br>slant, weighted squat</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>399</td>
+      <td>2022-10-19</td>
+      <td>PU: 10x1x5, 20x4x5, 20x1x10<br>WC 15x4 L+R +8kg, 15x2 L+R +9kg<br>SS 4x3 +2x8kg</td>
+      <td>1 raz w pullupsach 20x1x10</td>
+    </tr>
+    <tr>
+      <td>398</td>
+      <td>2022-10-19</td>
+      <td>DL: 20x1x10, 50x1x5, 90x1x5, 130x1x1, 150x1x1, 155x5x5<br>FC: +2x22 5x1min/1min last break 1.5 min</td>
+      <td>W DL wyrownalem wynik z poprzedniego cyklu. Nie wiem, czy wejdzi mi 160x5x5. To juz duzy ciezar. Pojedyncze ruchy w treningu 2-3 nie byly dobre technicznie. Ostatnio zaczalem robic HT. hip thrusty - zobaczymy, czy przełoży mi się to na DL</td>
+    </tr>
+    <tr>
+      <td>397</td>
+      <td>2022-10-17</td>
+      <td>PU: 10x1x5, 20x1x5, 25x1x5, 27.5x5x5, 15x1x10<br>WC: +2x8 4x15, 2x10<br>SGM 70x3x10<br>SS +2x8 3x3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>396</td>
+      <td>2022-10-17</td>
+      <td>Rowing: 10k, time: 46.23, SPM 16<br>reha <br>WC<br>Seated Good Mornings (SGM) 15x3x5, 15x2x10<br>evening:<br>Farmers carry (FC) +2x22 5x1min/1min <br>last break 1.5min<br>hip thrusts (HT) 4x10x70, 1x20x50<br>reha split squats (SS) 3x3 +2x8kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>395</td>
+      <td>2022-10-15</td>
+      <td>KB, PR 21 (1+2+3)x6 L/R<br>DH 2 min<br>sled 20x10 +50kg<br>hip ext on bench 15x3x10 barbell<br>JC 20x1x5, 30x2x5, 35x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>394</td>
+      <td>2022-10-14</td>
+      <td>pullups: 10x1x5, 20x1x5, 25x5x5, 10x1x10<br>hip thrusts (HP) 50x4x10<br>farmers carry 4x1 min +2x22kg<br>reha SS<br>reha wrist curls<br>evening: FSQ: 20x1x10, 40x1x5, 60x2x5, 70x3x5, 60x1x5, 40x1x10</td>
+      <td>przy ostatniej serii FSQ z 70 opuscilem ostatni ruch. Nadgarstek mnie bolał. i w ogole wczesniej pojawialy sie skurcze przedramion. sila w nogach i tulowiu byla.</td>
+    </tr>
+    <tr>
+      <td>393</td>
+      <td>2022-10-14</td>
+      <td>rowing: 5k, time: 23.15, SPM 17</td>
+      <td>Wczoraj wieczorem robiłem ten trening.</td>
+    </tr>
+    <tr>
+      <td>392</td>
+      <td>2022-10-13</td>
+      <td>KB, PR 21 (1+2+3) x 5 L/R<br>DH 2 min<br>sled 22x10 +40kg<br>KB, SW 32x6x20<br>Jefferson Curl (JC) 20x1x5, 30x2x5<br>DH 1 min<br>reha knee slant<br>reha elbow</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>391</td>
+      <td>2022-10-12</td>
+      <td>DL: 20x1x10, 50x1x8, 90x1x5, 130x1x2, 150x5x5<br>pullups: 10x1x5, 20x1x5, 25x1x5, 30x1x5, 35x1x3<br>reha<br>elbow <br>wrist curls<br>reha <br>knee <br>SS +2x8kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>390</td>
+      <td>2022-10-11</td>
+      <td>pullups: 10x1x5, 20x1x5, 25x5x5, 10x1x10<br>reha <br>knee <br>SS<br>reha <br>elbow <br>wrist curls</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>389</td>
+      <td>2022-10-09</td>
+      <td>pullups: 10x1x5, 20x5x5<br>reha <br>elbow <br>wrist curls</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>388</td>
+      <td>2022-10-07</td>
+      <td>Rowing: 5k, time: 22.34, SPM 17<br>pullups: 10x6x5<br>reha elbow <br>wrist curls<br>evening: FSQ: 20x1x10, 40x1x5, 60x5x5, 70x2x5, 50x1x10</td>
+      <td>dawno nie robilem  FSQ z 70kg. w sumie latwo bylo.</td>
+    </tr>
+    <tr>
+      <td>387</td>
+      <td>2022-10-06</td>
+      <td>KB, PR 21 (1+2+3)x4 L/R<br>DH 2min<br>reha SS +2x8kg<br>reha elbow<br>sled 24x10 +50kg<br>JC 20x1x5, 30x2x5</td>
+      <td>czułem plecy, dolny odcinek po wczorajszych DL i nie mialem checi robic KB SW</td>
+    </tr>
+    <tr>
+      <td>386</td>
+      <td>2022-10-05</td>
+      <td>DL: 20x1x10, 50x1x5, 90x1x5, 130x1x1, 145x5x5<br>pullups: 10x1x5, 20x1x5, 25x1x5, 30x1x5, 35x1x5<br>afternoon: ERG: 5k, time: 22.54; SPM 17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>385</td>
+      <td>2022-10-04</td>
+      <td>FSQ: 20x1x5, 40x1x5, 60x5x5, 40x1x10<br>reha <br>knee <br>split squats<br>reha <br>elbow <br>wrist curls</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>384</td>
+      <td>2022-10-04</td>
+      <td>pullups: 10x1x5, 20x1x5, 30x5x5, 15x1x10</td>
+      <td>pierwszy raz taka objetosc 30kg! bylem zadowolony i zaskoczony!</td>
+    </tr>
+    <tr>
+      <td>383</td>
+      <td>2022-10-01</td>
+      <td>pullups: 10x1x5, 20x1x5, 25x5x5</td>
+      <td>w nastepny pn sprobuje moze z 30kg na powtorzenia. cel minimum to 30x3x5</td>
+    </tr>
+    <tr>
+      <td>382</td>
+      <td>2022-10-01</td>
+      <td>KB; PR 20 (1+2+3+4+5) x 3 L/R<br>DH (dead hang) 2 min<br>KB, SW 32x6x20<br>reha SS split squats<br>sled 20x10 +50kg<br>muscle-up 5x1<br>jefferson curls 5x1x20, 5x2x30, 5x1x35<br>farmers carry 2x20kg x 1min</td>
+      <td>pierwszy raz wyszly mi muscle-up-y. W sumie nic dziwnego. sila jest. ale i tak mialem troche radosci. Nie cisnalem bardzo dzis, poniewaz mialem ostatni tydzien medytacje, nie cwiczylem i chcialem lagodnie wejsc na wieksze pulapy.</td>
+    </tr>
+    <tr>
+      <td>381</td>
+      <td>2022-10-01</td>
+      <td>pullups: 5x1x10, 20x5x5<br>FSQ: 20x1x5, 40x1x5, 60x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>380</td>
+      <td>2022-09-24</td>
+      <td>KB, PR 20 (1+2+3+4) x 4 L/R<br>reha <br>elbow<br>reha <br>knee <br>split squats<br>dead hang <br>2 min<br>sled 30x10  +50kg<br>reha knee slant<br>jefferson curls <br>20x1x5, 30x2x5</td>
+      <td>Czułem sie przemęczony i przetrenowany od czwartku. Dzis dluzej spałem i jadlem od rana. Dobrze, ze DH w sumie mi poszedl ok, mimo zmeczenia. W PR tez nie chcialem cisnac. Teraz 7 dni przerwy - medytacje - a potem cd treningu.</td>
+    </tr>
+    <tr>
+      <td>379</td>
+      <td>2022-09-24</td>
+      <td>FSQ: 20x1x5, 40x1x5, 50x1x5, 60x5x5<br>Pullups: 10x1x5, 20x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>378</td>
+      <td>2022-09-22</td>
+      <td>Rowing: 10k, time: 46.59, SPM 17</td>
+      <td>popoludniowy trening. zrobilem 2 trening dzis, gdyz jade na medytacje i by mi odpadlo cardio, a chcialem zrobic w tym tygodniu ERG.</td>
+    </tr>
+    <tr>
+      <td>377</td>
+      <td>2022-09-22</td>
+      <td>KB, PR 20 (1+2+3+4+5)x4 L/R<br>dead hang <br>2 min<br>KB; SW 32x6x20<br>reha <br>knee <br>slant<br>reha <br>elbow <br>sled <br>20x10m  +30kg<br>jefferson curls 20x1x5, 30x2x5 <br>barbell</td>
+      <td>trening poranny. dead hang (DH) - w sumie dosc latwo. Mimo wczorajszych DL i pullups, organizm sie zregenerowal i DH dobrze mi poszlo. moglem nawet troche dluzej wisiec.</td>
+    </tr>
+    <tr>
+      <td>376</td>
+      <td>2022-09-21</td>
+      <td>pullups: 10x1x5, 20x1x5, 27.5x5x5, 15x1x10<br>reha<br>wrist curls<br>reha<br>split squats<br>FSQ: 20x1x5, 40x1x5, 60x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>375</td>
+      <td>2022-09-21</td>
+      <td>DL: 20x1x10, 50x1x5, 90x1x5, 130x1x1, 140x5x8</td>
+      <td>Pierwszy raz taka objetosc ze 140kg! poszlo b. dobrze! Trening rano. Wieczorem 2 trening zrobilem</td>
+    </tr>
+    <tr>
+      <td>374</td>
+      <td>2022-09-20</td>
+      <td>pullups: 10x1x5, 20x1x5, 27.5x5x5, 15x1x10<br>split squats<br>FSQ: 20x1x5, 40x1x5, 60x4x5</td>
+      <td>pierwszy raz taka objetosc takim ciezarem w pullups-ach. w sumie latwo poszlo.</td>
+    </tr>
+    <tr>
+      <td>373</td>
+      <td>2022-09-19</td>
+      <td>Rowing: 10k, time: 46.52, SPM 16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>372</td>
+      <td>2022-09-17</td>
+      <td>pullups: 10x1x5, 20x1x5, 25x5x5, 15x1x10<br>split squats 3x1x5 +2x6kg<br>split squats <br>front foot raised <br>3x1x2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>371</td>
+      <td>2022-09-17</td>
+      <td>KB, PR 20 (1+2+3+4+5) x 3 L/R<br>dead hang 2 min<br>KB, SW 32x6x20<br>reha elbow<br>reha knee <br>slant<br>sled <br>20x10 +50kg<br>dead hang 1.5 min<br>jefferson curl 20x1x5, 30x2x5 <br>barbell<br>farmers carry 5x1 min 16kgx2 KB</td>
+      <td>poranny trening</td>
+    </tr>
+    <tr>
+      <td>370</td>
+      <td>2022-09-16</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x6x5, 50x1x10<br>rehab <br>knee slant <br>6x5x10 L+R<br>rehab <br>elbow</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>369</td>
+      <td>2022-09-15</td>
+      <td>pullups: 10x1x5, 20x1x5, 25x5x5, 15x1x10<br>wrist curls<br>split squats 3x5 L+R 2x7kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>368</td>
+      <td>2022-09-15</td>
+      <td>KB, PR 20 (1+2+3+4+5) x 2 L/R<br>dead hang 1 min + 40 sec<br>KB, SW 32x6x20<br>sled backwads 24x10 +50kg<br>reha knee <br>slant <br>5x10<br>jefferson curls <br>barbel <br>20x1x5, 30x2x5<br>reha <br>elbow</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>367</td>
+      <td>2022-09-14</td>
+      <td>DL: 70x1x5, 110x1x3, 130x1x1, 135x5x8<br>reha <br>wrist curls <br>reha <br>split squats</td>
+      <td>DL ze 135 w sumie zaskakujaco latwo. Czulem dobre pchanie nogami. Poprzedni trening robilem wczoraj wieczorem, tylko dzis go wpisalem. Zobaczymy jak pojdzie 140 next week.</td>
+    </tr>
+    <tr>
+      <td>366</td>
+      <td>2022-09-14</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x6x5<br>rehab <br>wrist curls <br>rehab <br>split squats 4x5 L+R +2x8 kg<br>dead hang 1 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>365</td>
+      <td>2022-09-12</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x1x3, 25x5x5, 15x1x10, 10x1x15<br>rehab <br>wrist curls 6x5x10<br>rehab <br>slant 4x1x10<br>split squats <br>+2x6 <br>5x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>364</td>
+      <td>2022-09-11</td>
+      <td>Rowing: 10k, time: 45.52, SPM 17<br>Reha <br>knee <br>slant<br>Split squats +2x12kg<br>Reha <br>wrist curls</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>363</td>
+      <td>2022-09-10</td>
+      <td>KB, PR 20 (1+2+3+4) x 6 L/R <br>dead hang <br>2 min<br>KB, SW 32x6x20<br>sled backwards 20x10 +40kg<br>reha -knee <br>slant<br>pullups: 20x7x5<br>jefferson curls: 20x1x5, 30x2x5</td>
+      <td>jeden KB PR w 5 serii (lewa) nie wszedł. \nDead hang 2 min -- coraz latwiej\nw ogole pressy 20kg jakos latwiej wchodzily</td>
+    </tr>
+    <tr>
+      <td>362</td>
+      <td>2022-09-08</td>
+      <td>KB, PR: 20 (1+2+3+4) x 5 L/R<br>dead hang: 2 min<br>KB, SW 30 x 6 x 20<br>Rehab <br>knee <br>slant<br>sledge backwards: 20x10 +40kg<br>jefferson curl: 20x1x5, 30x2x5<br>dead hang <br>1 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>361</td>
+      <td>2022-09-07</td>
+      <td>DL: 20x1x10, 70x1x5, 100x1x5, 120x1x1, 130x5x8 straps<br>dead hang <br>1 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>360</td>
+      <td>2022-09-06</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x10x5<br>Rehab <br>knee <br>slant<br>Rehab <br>elbow</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>359</td>
+      <td>2022-09-05</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x8x5, 10x1x10<br>Reha <br>elbow <br>wrist curls<br>Reha <br>knee <br>slant exercises</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>358</td>
+      <td>2022-09-05</td>
+      <td>Rowing: 10k, time: 47.26, SPM 16<br>pullups: 5x5x5<br>reha</td>
+      <td>trening robilem wczoraj, czyli 4.09</td>
+    </tr>
+    <tr>
+      <td>357</td>
+      <td>2022-09-03</td>
+      <td>KB, PR: 20 (1+2+3+4) x 4 L/R<br>deadhang: 2 min<br>KB, SW 32x6x20<br>DL 20x1x10, 60x2x5 paused, 90x4x5 paused<br>sledge backwards 30x10 + 40kg<br>jefferson curl: 20x1x5, 30x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>356</td>
+      <td>2022-09-02</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x10x5, 45x2x10<br>pullups: 5x1x5, 10x1x5, 15x10x5, 10x1x10<br>reha</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>355</td>
+      <td>2022-09-01</td>
+      <td>KB; PR  (1+2+3+4) x 4, L/R<br>dead hang <br>120 sec<br>KB, SW 32x6x20 + 32x2x15 = 150<br>sledge backwards +40kg 20x10m<br>jefferson curl: 20x1x5, 30x1x5, 25x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>354</td>
+      <td>2022-08-31</td>
+      <td>Rowing: 5k: time 23.06; SMP 17<br>FSQ: 40x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>353</td>
+      <td>2022-08-31</td>
+      <td>DL: 20x1x10, 70x1x5, 90x1x5, 110x1x3, 125x5x8<br>pullups: 5x1x5, 10x1x5, 15x8x5</td>
+      <td>zaczałem nowy cykl silowy. Ostatnie powtorzenia w seriach byly juz ciezsze i robilem je po chwilce przerwy. Zobaczymy, czy uda sie zrealizowac plan 4 tygodnie 8-emek, 4 tygodnie 5-ek, i reszta 3-ek. 140x5x8 wydaje sie chwilowo bardzo duzo. zobaczymy. Trening robilem rano. wieczorem 2.</td>
+    </tr>
+    <tr>
+      <td>352</td>
+      <td>2022-08-29</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x10x5<br>FSQ: 20x1x10, 40x5x5, 40x1x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>351</td>
+      <td>2022-08-27</td>
+      <td>KB; PR 20 (1+2+3) x 10; L/R<br>KB; SW 32x5x10 + 30x2x15<br>sledge backwards: 30x10 +45kg<br>jefferson curls: 20x1x5, 30x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>350</td>
+      <td>2022-08-26</td>
+      <td>pullups: 5x1x5,  10x1x5, 15x1x5, 20x8x5<br>FSQ: 20x1x10, 40x1x5, 50x5x5, 40x1x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>349</td>
+      <td>2022-08-25</td>
+      <td>KB, PR 20 (1+2+3)x 9; L/R<br>KB, SW 32x10<br>sledge backwards 20x10 +45kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>348</td>
+      <td>2022-08-24</td>
+      <td>DL: 20x1x10, 70x1x5, 100x1x5, 110x1x5, 120x5x5 paused, straps<br>Reha<br>Pullups: 5x1x5, 10x8x5</td>
+      <td>w sumie latwo poszyl DL:</td>
+    </tr>
+    <tr>
+      <td>347</td>
+      <td>2022-08-24</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x6x5, 50x1x10<br>Reha</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>346</td>
+      <td>2022-08-23</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x1x5, 25x5x5, 20x1x5, 15x1x7, 10x1x10<br>Reha</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>345</td>
+      <td>2022-08-21</td>
+      <td>Rowing: 10k, time: 47.36, SPM 16<br>Reha</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>344</td>
+      <td>2022-08-20</td>
+      <td>KB, PR 20 (1+2+3) x 8; L/R<br>KB, SW 32x5<br>sledge 20x10 +30kg<br>jefferson curl <br>barbell 20x2x3, 30x1x3<br>farmers carry 20kgx2 -4x1min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>343</td>
+      <td>2022-08-17</td>
+      <td>DL: 20x1x10, 70x1x5, 100x1x5, 110x5x5 <br>paused<br>Reha</td>
+      <td>110 paused -w sumie dosc lekko</td>
+    </tr>
+    <tr>
+      <td>342</td>
+      <td>2022-08-16</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x6x5, 15x1x7, 10x1x10<br>Reha</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>341</td>
+      <td>2022-08-15</td>
+      <td>Rowing: 10k, time: 48.07, SPM 16<br>distance <br>time <br>SPM <br>500 m<br>2k <br>9.40.5 <br>17 <br>2.25.1<br>4k <br>9.38.3 <br>16 <br>2.24.5<br>6k <br>9.41.2 <br>15 <br>2.25.3<br>8k <br>9.40.0 <br>16 <br>2.25.0<br>10k <br>9.27.0 <br>16 <br>2.21.8<br><br>Reha</td>
+      <td>Dawno nie jechalem 10k. w sumie bylo ok.</td>
+    </tr>
+    <tr>
+      <td>340</td>
+      <td>2022-08-13</td>
+      <td>KB, PR 20 (1+2+3) x 6 L/R<br>sledge backward 20x10 +40kg<br>KB, SW 32: 20x2, 15x4<br>Jefferson curl 20 kg, 5x2 (barbell)</td>
+      <td>KB, PR nie weszly mi wszystkie. w 5 serii ani L, ani R nie zrobila 3 powtorzen. Dolozylem 3x1x1 na koniec.\nSW weszly ok, ale czulem nogi po czwartkowych FSQ. Chce robic duzo wiecej SW</td>
+    </tr>
+    <tr>
+      <td>339</td>
+      <td>2022-08-11</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x8x5<br>pullups: 5x1x5, 10x1x5, 15x5x5, 10x1x10<br>Reha</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>338</td>
+      <td>2022-08-11</td>
+      <td>DL: 20x2x10, 70x1x5, 90x1x5, 10x8x5 paused<br>Reha</td>
+      <td>Trening wieczorny 10 VIII</td>
+    </tr>
+    <tr>
+      <td>337</td>
+      <td>2022-08-11</td>
+      <td>Rowing: 5k, time: 23.31, SPM 17<br>Reha</td>
+      <td>Trening poranny, 10 VII</td>
+    </tr>
+    <tr>
+      <td>336</td>
+      <td>2022-08-09</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5<br>reha <br>lokiec golfisty, opuszczanie sztangielki 5kg</td>
+      <td>nie czulem sie za silny w pullupsach, ale glodowka zrobila swoje, wiec jeszcze troche czasu zajmie, zeby odbudowa sile</td>
+    </tr>
+    <tr>
+      <td>335</td>
+      <td>2022-08-07</td>
+      <td>Rowing: 5k, time: 23.40, SPM 17 (rano)<br>FSQ. 20x1x10, 40x1x5, 50x1x5, 60x5x5, 50x1x10 (wieczor)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>334</td>
+      <td>2022-08-06</td>
+      <td>KB, PR: 20 (1+2+3) x 5 L/R<br>sledge backwards: 30x10 +40kg<br>DL: 60x1x10, 90x5x5<br>jefferson curls: 20x1x5 <br>barbell</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>333</td>
+      <td>2022-08-04</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x5x5<br>pullups: 5x1x5, 10x6x5</td>
+      <td>juz po glodowce. Duzo przyjemniej sie trenuje. czuc od razu wiecej energii w ciele i wieksza chec jej wykorzystania.</td>
+    </tr>
+    <tr>
+      <td>332</td>
+      <td>2022-07-30</td>
+      <td>KB, PR: 16x1x3 L/R, 20x1x3 L/R, 21 kg (1+2+3) L/R, 20 (1+2+3) x 4 L/R<br>DL: 20x1x10, 60x1x5, 100x6x5<br>back sledge 20x10<br>dead hang: 1 min</td>
+      <td>znowu chciałem troche sie poruszac podczas glodowki. male obciazenia.</td>
+    </tr>
+    <tr>
+      <td>331</td>
+      <td>2022-07-30</td>
+      <td>FSQ: 20x1x10, 40x5x5<br>pullups: 5x1x5, 10x5x5</td>
+      <td>znowu delikatny trening podczas glodowki. ale organizm b dobrze reagowal.</td>
+    </tr>
+    <tr>
+      <td>330</td>
+      <td>2022-07-27</td>
+      <td>FSQ 20x1x10, 40x8x5</td>
+      <td>Wieczorny trening 3 dnia glodowki. Nie chce przeginac z ciezarami, tylko dac organizmowi lekki bodziec</td>
+    </tr>
+    <tr>
+      <td>329</td>
+      <td>2022-07-27</td>
+      <td>pullups: 5x1x5, 10x6x5<br>back ext: 5x10</td>
+      <td>trening rano, 3 dnia glodowki. nie chcialem sie forsowac, zwlaszcza, ze chcialem robic jeszcze 2 trening wieczorem</td>
+    </tr>
+    <tr>
+      <td>328</td>
+      <td>2022-07-25</td>
+      <td>pullups:  5x1x5, 10x1x5, 15x1x5, 20x1x5, 15x3x5, 10x3x5<br>FSQ: 20x1x10, 40x4x5</td>
+      <td>lekki trening w trakcie 7 dniowego postu. dzis 1 dzien</td>
+    </tr>
+    <tr>
+      <td>327</td>
+      <td>2022-07-20</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x1x5, 25x5x5, 15x1x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>326</td>
+      <td>2022-07-18</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x7x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>325</td>
+      <td>2022-07-17</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x6x5, 50x2x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>324</td>
+      <td>2022-07-16</td>
+      <td>KB, PR 22 (1+2+3) x2 L/R 21 (1+2+3)x3 L/R<br>sledge backwards: 20x10<br>dead hang: 2min x 1,  1min x2<br>jefferson curl: 16x3x3</td>
+      <td>bylem caly czas obolaly po DL i pracy, wiec sie nie forsowalem. ostatni press z 22 L mi nie wszedl, dlatego zaczalem z 21. Mysle, ze uda mi sie zrobic cala drabine z 21, a potem doloze 1kg.</td>
+    </tr>
+    <tr>
+      <td>323</td>
+      <td>2022-07-14</td>
+      <td>Rowing: 5k, time 22.13, SPM 16 <br>no straps<br>pullups: 5x1x5, 10x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>322</td>
+      <td>2022-07-14</td>
+      <td>DL: 20x1x10, 70x1x5, 110x1x3, 140x1x1, 160x1x1, 175x1x2, 160x1x5</td>
+      <td>probowalem 175 x1 x3, ale ostatnie powtorzenie mi nie weszlo. w sumie bylem zadowolony. poprzedni tydzien sesshin i wrocilem mega zmeczony, wiec 175x1x2 to i tak max. oczywiscie z zimi, bez podkladek</td>
+    </tr>
+    <tr>
+      <td>321</td>
+      <td>2022-07-12</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x5, 50x2x5<br>pullover: 1x5</td>
+      <td>jeszcze jestem zmeczony i potrzebuje troche czasu, zeby wrocic do formy i wiekszej objetosci lub ciezarow. ale z drugiej strony do 65 nie jest tak daleko. ale mamy czas...</td>
+    </tr>
+    <tr>
+      <td>320</td>
+      <td>2022-07-11</td>
+      <td>pullups: 5x1x5, 10x8x5<br>FSQ: 20x1x10, 40x3x5, 50x3x5</td>
+      <td>Miałem ostatni tydzien b meczący - sesshin, wiec nic wielkiego nie robilem. taki rozruch</td>
+    </tr>
+    <tr>
+      <td>319</td>
+      <td>2022-07-02</td>
+      <td>KB, PR 20 (1+2+3+4+5) L/R x 4</td>
+      <td>Zbyt duszno i bylem zmeczony po ostatnich dniach i treningach. Skonczylem piramide z 20kg i pewnie teraz by sie przydalo 22 zaczac. Teraz tydzien sesshin i w lipcu 7 dni glodowki. dopiero potem zaczne znowu jakies silowe cylkle</td>
+    </tr>
+    <tr>
+      <td>318</td>
+      <td>2022-07-01</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x1x5, 20x1x5, 25x4x5, 20x1x5</td>
+      <td>Dawno nie robilem pullups z 25kg. w sumie latwo poszlo.</td>
+    </tr>
+    <tr>
+      <td>317</td>
+      <td>2022-06-30</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x1x5, 65x5x5, 50x1x10</td>
+      <td>w sumie dobrze sie czuje po wczorajszych DL. jestem tylko troche obolaly. i to nie miesnie grzbietu, ale bardziej nog.</td>
+    </tr>
+    <tr>
+      <td>316</td>
+      <td>2022-06-29</td>
+      <td>DL: 20x1x10, 70x1x5, 110x1x1, 140x1x1, 160x1x1, 170x1x1, 180x1x3 (z bloku), 185x1x1 (z bloku), 160x1x5</td>
+      <td>Kurcze, nie spodziewalem sie takich ciezarow dzis. 180 w sumie weszlo latwo, ale 185 to juz byl max. Biodra mi tanczyly przy tym ciezarze. ale i tak jestem mega zadowolony. Last week czulem sie zniechecony i slabo mi szlo. dzis bylem w duzo lepszym nastroju i bardziej chcialo mi sie dzwigac.</td>
+    </tr>
+    <tr>
+      <td>315</td>
+      <td>2022-06-28</td>
+      <td>Rowing: 5k, time: 22.35, SPM 18<br>FSQ: 20x1x10,  40x1x5, 50x1x5, 60x1x5, 65x3x5, 60x1x5</td>
+      <td>po raz pierwszy od dlugiego czasu 65 w FSQ. w sumie dosc latwo poszlo.</td>
+    </tr>
+    <tr>
+      <td>314</td>
+      <td>2022-06-27</td>
+      <td>FSQ:  20x1x10, 40x1x5, 50x1x5, 60x5x5<br>pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5, 10x1x10, 10x1x5</td>
+      <td>FSQ nawet dobrze mi wchodzily. moze niedlugo przejde na 65. pullupsy tez w sumie spoko.</td>
+    </tr>
+    <tr>
+      <td>313</td>
+      <td>2022-06-25</td>
+      <td>KB, PR 20  (1+2+3+4+5) L/R x 3<br>KB, SW 32x10x20<br>farmers carry 40kg (20 KB x 2) x 1 min x5<br>sledge backwards 24 x10 (+40kg)<br>dead hang 60 sec<br>jefferson curl 32 kg (KB 16 x2) x 2x3</td>
+      <td>B. dawno nie robilem PR 20 x5. I w sumie weszly dosc latwo. Bylem wymeczony po tygodniu i nie potrafilem sie zmusic, zeby robic dluzsze dead hangi.</td>
+    </tr>
+    <tr>
+      <td>312</td>
+      <td>2022-06-24</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x6x5, 10x4x5<br>back ext: 10x5</td>
+      <td>juz mnie nie bola plecy po DL</td>
+    </tr>
+    <tr>
+      <td>311</td>
+      <td>2022-06-23</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x6x5, 50x2x5, 50x1x10</td>
+      <td>Mimo, ze wczoraj robilem DL i obudzilem sie obolaly, to FSQ jakos dobrze mi weszly. Cos sobie naciagnalem z kregoslupem wczoraj i dzis wciaz cos czuje.</td>
+    </tr>
+    <tr>
+      <td>310</td>
+      <td>2022-06-23</td>
+      <td>DL: 20x1x10, 70x1x5, 110x1x3, 140x1x1, 160x1x1, 175x1x2, 175x1x1, 170x1x1, 160x1x5</td>
+      <td>175 z blokow. Chcialem zrobic wiecej, ale cialo odmowilo. Czulem sie zniechecony i nie chcialo mi sie dzwigac. 170 po gownej serii tez z blokow. 160 z ziemi. latwo poszlo. Kurde 175 to juz spory ciezar dla mnie. musze chyba wzmocnic plecy. wydaja sie najslabszym ogniwem.</td>
+    </tr>
+    <tr>
+      <td>309</td>
+      <td>2022-06-21</td>
+      <td>Rowing: 5k, time: 22.37, SPM 18<br>pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>308</td>
+      <td>2022-06-20</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x5<br>pullover: 1x6, 1x5, 1x4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>307</td>
+      <td>2022-06-19</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5<br>back ext: 6x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>306</td>
+      <td>2022-06-18</td>
+      <td>KB, PR 20 (1+2+3+4) L/R x5<br>sledge backwards 20x10<br>dead hang 2 min<br>farmers carry 20kg KBx2 (L+R) 5x1min<br>jefferson curl 16 kg KBx2 3x3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>305</td>
+      <td>2022-06-17</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x15, 60x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>304</td>
+      <td>2022-06-16</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x5x5, 10x1x5<br>back ext: 5x10</td>
+      <td>jeszcze bylem obolaly po wczorajszych DL, dlatego dzis lagodnie</td>
+    </tr>
+    <tr>
+      <td>303</td>
+      <td>2022-06-15</td>
+      <td>DL: 20x1x10, 70x1x5, 110x1x1, 140x1x1, 160x1x1, 175x2x3 (z blokow), 160x1x3</td>
+      <td>Pierwszy raz 175 kg. Mimo, ze z podwyzszenia, to w sumie nie bylo strasznie ciezko. Po tych  2 seriach chcialem zrobic 170x1x3 bez blokow, ale cialo mi odmowilo. Tylko sie "spialem" w pozycji, ale nie pocianalem. ostatnie 160 latwo. W sumie jestem zadowolony. Forma byla ok</td>
+    </tr>
+    <tr>
+      <td>302</td>
+      <td>2022-06-14</td>
+      <td>Rowing: 5k, time: 22.43, SPM 18<br>FSQ: 20x1x5, 40x1x5, 50x1x5, 60x5x5, 40x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td>2022-06-13</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x6x5, 10x3x5 podchwyt<br>back ext 6x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>2022-06-12</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>299</td>
+      <td>2022-06-11</td>
+      <td>pullups: 5x1x5, 10x6x5<br>back ext: 6x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>298</td>
+      <td>2022-06-11</td>
+      <td>KB, PR 20 (1+2+3+4) L/R x5<br>Sledge backwards 30x10m<br>Farmers carry KB, 20kg x2 (L+R): 5x1min /1 min break<br>Jufferson curl KB, 12x2 (L+R) : 1x3, 16x2(L+R): 2x3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>297</td>
+      <td>2022-06-09</td>
+      <td>DL: 20x1x10, 60x1x5, 100x1x3, 120x1x1, 140x1x1, 160x1x1, 170x1x3, 160x2x3</td>
+      <td>Pierwszy raz 170 i do tego na powtorzenia. Ostatni ruch nie byl zbyt ladny, ale w sumie jestem zadowolony. Po serii ze 170, te ze 160 wchodzily dobrze, ale przed ostatnim powtorzeniem zrobilem dodatkowa przerwe. juz bylem zmeczony</td>
+    </tr>
+    <tr>
+      <td>296</td>
+      <td>2022-06-09</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x5, 40x2x5<br>back ext: 5x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>295</td>
+      <td>2022-06-08</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x5<br>pullups:  5x1x5, 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>294</td>
+      <td>2022-06-06</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x6x5<br>pullups: 5x1x5, 10x5x5<br>back ext 10x6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>293</td>
+      <td>2022-06-04</td>
+      <td>KB, PR 20 (1+2+2+4) L/R x 4<br>KB, SW 32: 20+19+18+17+16+15+15+14+13+12+11+10 = 180<br>pullups: 8x6x5<br>sledge backwards 20x10<br>jefferson curls 32 (KB 16x2) 3x3</td>
+      <td>czułem się zmeczony i bez siły. to drugi trening poza oknem zywieniowym.</td>
+    </tr>
+    <tr>
+      <td>292</td>
+      <td>2022-06-03</td>
+      <td>Back ext 10x8<br>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>291</td>
+      <td>2022-06-02</td>
+      <td>DL: 60x1x5, 90x1x5, 110x1x1, 130x1x1, 150x1x1, 165x1x3, 165x1x2 165x1x1, 165x1x1</td>
+      <td>Pierwszy raz 165 kg i poszlo nawet x3 w jednej serii. Niby jestem zadowolony, ale plecy mi puszczaly w pozniejszych powtorzeniach i nie byly to ladne ciagi technicznie. ale to i tak w sumie byl duzy ciezar</td>
+    </tr>
+    <tr>
+      <td>290</td>
+      <td>2022-05-31</td>
+      <td>pullups: 5x1x5, 10x6x5<br>FSQ: 20x1x5, 40x1x5, 50x3x5, 60x4x5<br>pullups: 10x4x5<br>pullover 1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>289</td>
+      <td>2022-05-28</td>
+      <td>KB, PR 20 (1 + 2+3) L/R x 10<br>KB, SW 32 : 200 = 20, 19, 18, 17, 16, 15, 15, 14, 13, 12, 11, 15, 15<br>Sledge backwards: 20x10<br>Jefferson Curls: weight 16kgx2 (KB), 3x3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>288</td>
+      <td>2022-05-26</td>
+      <td>Rowing: 5k, time 22.23, SPM 18<br>pullups: 5x6x5<br>FSQ 20x1x5, 40x1x5, 50x5x5</td>
+      <td>Mimo wczorajszych ciezkich DL, dzis bylem w stanie zrobic dobry trening, a moje cialo nie bylo obolale.</td>
+    </tr>
+    <tr>
+      <td>287</td>
+      <td>2022-05-25</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 100x1x3, 120x1x1,  140x1x1, 160x4x3</td>
+      <td>No belt. Pierwszy raz taka objetosc 160. Niby powinienem byc zadowolony, ale forma w kolejnych seriach pozostawiala sporo do życzenia. ciagnalem za bardzo grzbietem. sztanga juz wolno szla do gory. to na ta chwil duzy ciezar dla mnie. zobaczymy, co dalej. moze sprobuje jeszcze 165x2x3 lub cos podobnego.</td>
+    </tr>
+    <tr>
+      <td>286</td>
+      <td>2022-05-24</td>
+      <td>Dzis robilem dzien wolny. Bylem mega zmeczony po pracy i czulem w miesniach wczorajsze FSQ. Regeneracja przed jutrzejszymi DL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>2022-05-23</td>
+      <td>Rowing: 5k, time: 22.49, SPM 17<br>FSQ: 20x1x10, 40x1x5, 60x4x5</td>
+      <td>chyba pierwszy raz robilem taka objetosc 60kg. w sumie nie bylo b. ciezko</td>
+    </tr>
+    <tr>
+      <td>284</td>
+      <td>2022-05-22</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5<br>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x3x5<br>back extentions: 5x10</td>
+      <td>w sumie dzis czulem sie zmeczony i bez sily, ale podciagniecia zaczely dobrze wchodzic dopiero przy 20 kg, wczesniej jakos bylo slabo. FSQ jestem zadowolony. chyba jestem pierwszy raz na tym poziomie z 60 kg i poszlo dosc latwo. bede robil wieksza objetosc 60kg</td>
+    </tr>
+    <tr>
+      <td>283</td>
+      <td>2022-05-21</td>
+      <td>KB, PR 20 (1+2+3) L/R x 9<br>Jefferson curls <br>24 kg, 3 x 2<br>Sledge backwards 20x10m</td>
+      <td>Wciaz bylem obolaly i zmeczony po ostatnich treningach i piatkowej pracy</td>
+    </tr>
+    <tr>
+      <td>282</td>
+      <td>2022-05-19</td>
+      <td>pullups: 5x8x5<br>FSQ: 20x1x5, 40x5x5</td>
+      <td>po wczorajszych ciagach bylem troche zmeczony i mialem "zjechany" uklad nerwowy i cialo nie chcialo dzwigac</td>
+    </tr>
+    <tr>
+      <td>281</td>
+      <td>2022-05-19</td>
+      <td>DL 20x1x10, 60x1x5, 90x1x5, 110x1x1x, 130x1x1, 150x1x1, 155x5x3</td>
+      <td>Pierwszy raz taka objetosc takim ciezarem! mimo 2 tygodni przerwy i przeziebienia. w ogole nie czulem sie silny, a poszlo dobrze. ostatnia seria juz ciezej.</td>
+    </tr>
+    <tr>
+      <td>280</td>
+      <td>2022-05-17</td>
+      <td>Rowing: 5k, time: 23.37, SPM 17<br>FSQ: 20x1x10, 40x1x5, 50x5x5, 40x1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>279</td>
+      <td>2022-05-15</td>
+      <td>Rowing: 5k, time: 22.47, SPM 17<br>FSQ: 20x1x5, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>278</td>
+      <td>2022-05-14</td>
+      <td>KB, PR 20 (1+2+3) L/R x8<br>pullups: 8x1x5, 12x1x5, 16x5x5<br>KB, SN 20 x10x5 L/R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>277</td>
+      <td>2022-05-12</td>
+      <td>KB, PR 20 (1, 2, 3) L/R x 7<br>sledge backwards: 25x10<br>pullovers: 1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>276</td>
+      <td>2022-05-11</td>
+      <td>DL. 20x1x10, 70x1x5, 80x1x5, 100x6x5<br>Pullups: 5x1x5, 10x6x5</td>
+      <td>jeszcze nie w pelni sil po przeziebieniu i sesshin</td>
+    </tr>
+    <tr>
+      <td>275</td>
+      <td>2022-05-10</td>
+      <td>Rowing: 5k, time: 23.57, SPM 17<br>FSQ: 20x1x5, 40x1x5, 50x4x5, 40x1x5</td>
+      <td>Po 2 dniach ciezkiej pracy i wychodze z paskudnego przeziebienia, wiec tak sobie sie czulem. i 7 dni sesshin wczesniej....</td>
+    </tr>
+    <tr>
+      <td>274</td>
+      <td>2022-05-09</td>
+      <td>pullups: 5x1x5, 10x8x5<br>FSQ: 20x1x5, 40x5x5</td>
+      <td>Bylem przeziebiony od paru dni i w ostatnim tygodniu mialem odosobnienie wyczerpujace, wiec powoli wracam do cwiczenia</td>
+    </tr>
+    <tr>
+      <td>273</td>
+      <td>2022-04-30</td>
+      <td>KB, PR: 20 (1, 2, 3) L/R x 6<br>KB, SN 20x8x10 L/R<br>sledge backwards : 30x10<br>rowing: 2k, time: 8.58, SPM 16 no straps</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>272</td>
+      <td>2022-04-29</td>
+      <td>Pullups:  5x1x5, 10x1x5, 15x5x5<br>FSQ: 20x1x5, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>271</td>
+      <td>2022-04-27</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 100x1x3, 120x1x1, 140x1x1, 150x5x5!!!!</td>
+      <td>W koncu mi weszlo 150x5x5 i to nawet w niezlym stylu. Robilem dlugie przerwy 7-8 min. Jestem mega zadowolony.</td>
+    </tr>
+    <tr>
+      <td>270</td>
+      <td>2022-04-26</td>
+      <td>Rowing: 5k time. 22.27, SPM  18<br>FSQ: 20x1x5, 40x1x5, 50x5x5<br>Rowing: 2k, cool down<br>Pullover: 1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>269</td>
+      <td>2022-04-24</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x6x5<br>FSQ: 20x1x5, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>268</td>
+      <td>2022-04-23</td>
+      <td>KB, PR 20 (1, 2, 3) L/R x 5<br>KB, SN 20 x6x10 L/R<br>KB, SW 32x10x10<br>Dead hang  100 sek<br>sledge backwards 16x10</td>
+      <td>wciaz czuje miesnie w plecach po DL. Snatche ok. nie pozrywalem dloni, ale nie robilem ich za duzo.</td>
+    </tr>
+    <tr>
+      <td>267</td>
+      <td>2022-04-22</td>
+      <td>Follow up on last dead lift session</td>
+      <td>Po ciezkich DL ze srody, nogi mnie nie bola, ale czuje miesnie wzdluz kregoslupa, w dolnej czesci</td>
+    </tr>
+    <tr>
+      <td>266</td>
+      <td>2022-04-20</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 100x1x3, 120x1x1, 140x1x1, 145x5x5</td>
+      <td>W sumie nie bylo zle i nie poszlo b. trudno. Sztanga dosc szybko szla do gory i mam nadzieje, ze 150x5x5 pojdzie next week. Mysle, ze jest szansa, ale bedzie ciezko. od 140 w paskach dzwigalem</td>
+    </tr>
+    <tr>
+      <td>265</td>
+      <td>2022-04-19</td>
+      <td>Rowing 5k, time: 22.18, SPM 18<br>FSQ: 20x1x5, 40x1x5, 50x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>264</td>
+      <td>2022-04-16</td>
+      <td>KB, PR: 16x1x1, 20x(1, 2, 3) L / R x 4<br>KB, SN 16 x 7x10 L / R<br>Sledge backwards 20x10 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>263</td>
+      <td>2022-04-15</td>
+      <td>Rowing: 5k, time: 21.47, SPM 19<br>FSQ: 20x1x5, 40x1x5, 80x8x5, 40x1x5<br>pullover 1x5</td>
+      <td>ostatnie 500 m ok 2.01 min, czyli dosc szybko.</td>
+    </tr>
+    <tr>
+      <td>262</td>
+      <td>2022-04-13</td>
+      <td>DL. 20x1x10, 70x1x5, 80x1x5, 100x1x3, 120x1x1, 130x1x1, 140x5x5</td>
+      <td>140 w paskach i robilem dluzsze przerwy nawet do8 min. 1 seria najciezej, a potem w sumie juz dosc latwo poszlo. Zaskakujaco.</td>
+    </tr>
+    <tr>
+      <td>261</td>
+      <td>2022-04-12</td>
+      <td>Rowing: 5k, time: 22.06, SPM 17<br>FSQ: 20x1x10, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>260</td>
+      <td>2022-04-11</td>
+      <td>pullups: 5x1x5, 10x10x5<br>FSQ: 20x1x5, 40x1x5, 50x5x5<br>Back extentions 3x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>259</td>
+      <td>2022-04-09</td>
+      <td>KB, PR: 20x(1, 2, 3) x3, L+R<br>KB, SN 20x5x10 L/R<br>Sledge backwards 20x10m<br>Rowing: 5k, time: 22.14, SPM 16 no straps</td>
+      <td>po dlugim czasie chcialem sprawdzic, jak mi pojda snatch-e. Nie robilem duzo i sila byla, ale oczywiscie zerwalem lape. Musze cos pomyslec o rozwiazaniu tego problemu, jesli bede chcial robic SN.</td>
+    </tr>
+    <tr>
+      <td>258</td>
+      <td>2022-04-07</td>
+      <td>Rowing: 5k, time: 22.24, SPM 16<br>KB, PR 16 (1, 2, 3, 4, 5) L+R x 4<br>Pullups: 12kg x 1x5, 20x4x5<br>Sledge backwards 12x10m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>257</td>
+      <td>2022-04-07</td>
+      <td>DL: 40x1x10, 70x1x5, 80x1x5, 100x1x1, 120x1x1, 130x1x1, 135x5x5<br>Rowing: 1k, no straps</td>
+      <td>Ciezkie DL w sumie dosc łatwo poszly. Technika ok. 140 powinno pojsc, moze nawet wiecej.</td>
+    </tr>
+    <tr>
+      <td>256</td>
+      <td>2022-04-05</td>
+      <td>Rowing: 5k, time: 22.30, SPM 19<br>FSQ: 20x1x5, 40x1x5, 50x5x5</td>
+      <td>Bylem mega zmeczony po 2 dniach pracy i nie chcialem/moglem wiecej z siebie wycisnac. a jutro ciezkie ciagi</td>
+    </tr>
+    <tr>
+      <td>255</td>
+      <td>2022-04-02</td>
+      <td>sledge backwards: 20x10m (sledge + 40kg)<br>KB, PR (1, 2, 3, 4, 5) x 3 L+R<br>KB, SW 32x12x10<br>Rowing: 5k, time 22.30, SPM 15, no straps</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>254</td>
+      <td>2022-03-31</td>
+      <td>pullups: 8x1x5, 12x8x5<br>sledge backwards: 18x10m<br>ERG: 2k, 9 min, no straps</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>253</td>
+      <td>2022-03-31</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 100x1x5, 110x1x1, 120x1x1, 130x5x8<br>ERG: 1k, no straps</td>
+      <td>pierwszy raz taka objetosc / takie sety z 130kg. w poprzednim cyklu robilem 130x5x5, wiec jest progres na tym etapie.</td>
+    </tr>
+    <tr>
+      <td>252</td>
+      <td>2022-03-29</td>
+      <td>ERG: 5k, time: 21.58, SPM 17<br>FSQ: 20x1x5, 40x1x5,  50x5x5,  40x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>251</td>
+      <td>2022-03-28</td>
+      <td>pullups: 5x1x5, 10x6x5<br>FSQ: 20x1x10, 40x1x5, 50x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>250</td>
+      <td>2022-03-26</td>
+      <td>Sledge <br>14x10m backwards<br>KB, PR 16 (1, 2, 3, 4, 5) L/R x2<br>KB,SW 32x10x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>249</td>
+      <td>2022-03-26</td>
+      <td>ERG: 5k, time: 21.53, SPM 17</td>
+      <td>bylem zbyt wyczerpany i niewyspany, zeby robic cos jeszcze.</td>
+    </tr>
+    <tr>
+      <td>248</td>
+      <td>2022-03-24</td>
+      <td>Sledge: 16x10m -backwards<br>ERG: 25min, distance 5434m, SPM 15/16 <br>no feet straps!</td>
+      <td>Przewioslowalem 25 min no straps glownie, zeby utrwalac technike. ale i tak w sumie przyzwoity dystans i tempo. Ten ERG w HardBox ladnie jedzi</td>
+    </tr>
+    <tr>
+      <td>247</td>
+      <td>2022-03-23</td>
+      <td>DL: 20x1x10, 70x1x5, 100x1x5, 110x1x1, 120x1x1, 125x5x8</td>
+      <td>W sumie dosc latwo poszlo  i czulem sile. ale tez w paskach robilem lifty i to tez roznice robilo.</td>
+    </tr>
+    <tr>
+      <td>246</td>
+      <td>2022-03-23</td>
+      <td>Rowing: 5k, time: 22.11, SPM 17<br>Pullups: 5x1x5, 10x5x5<br>FSQ: 20x1x5, 40x1x5, 50x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>245</td>
+      <td>2022-03-20</td>
+      <td>Rowing: 10k, time: 45.31, SPM 17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>244</td>
+      <td>2022-03-19</td>
+      <td>KB, PR 16 (1+2+3+4) x 6 L/R<br>KB, SW 32x15x10<br>Sledge 16x10</td>
+      <td>Sledge backwards +40kg</td>
+    </tr>
+    <tr>
+      <td>243</td>
+      <td>2022-03-18</td>
+      <td>Rowing: 5k, time: 21.43, SPM 18<br>FSQ: 5x1x5, 40x1x5, 50x8x5, 40x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>242</td>
+      <td>2022-03-16</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 100x1x5, 120x5x8</td>
+      <td>W sumie dosc latwo poszlo dzis, ale to dopiero 2 trening z 8 powtorzeniami. Zobaczymy, jak daleko zajde z 8 powtorzeniami. 130 byloby super.</td>
+    </tr>
+    <tr>
+      <td>241</td>
+      <td>2022-03-15</td>
+      <td>Rowing: 5k, time 22.14, SPM 18<br>FSQ: 20x1x5, 40x1x5, 50x4x5, 40x2x5</td>
+      <td>dzis bylem bardzo zmeczony po dniu pracy i moze jeszcze po wczorajszych fsq.</td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>2022-03-14</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x8x5<br>pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>239</td>
+      <td>2022-03-12</td>
+      <td>KB, PR 16 (1, 2, 3, 4) L/R x 5<br>KB, SW 32x12x10<br>Backwards sledge <br>100 m <br>10x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>238</td>
+      <td>2022-03-11</td>
+      <td>Rowing: 5k, time: 22.09, SPM  17<br>pullups 5x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>237</td>
+      <td>2022-03-10</td>
+      <td>Rowing: 5k, time: 22.52, SPM 17<br>FSQ: 20x1x10, 40x1x5, 50x5x5<br>Pullups: 5x1x5, 10x5x5</td>
+      <td>na ERG probowałem i wdrazałem wskazowki, ktore dostalem wczoraj od dziewczyny, ktora uprawia wioslarstwo.</td>
+    </tr>
+    <tr>
+      <td>236</td>
+      <td>2022-03-09</td>
+      <td>DL: 20x1x10, 60x1x5, 70x1x5, 90x1x5, 110x1x1, 115x5x8</td>
+      <td>zaczynam kolejny cykl siłowy</td>
+    </tr>
+    <tr>
+      <td>235</td>
+      <td>2022-03-08</td>
+      <td>Rowing: 5k, time 23.26, SPM 18<br>FSQ: 20x1x10, 40x1x5, 50x8x5, 40x1x5<br>Pullover 1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>234</td>
+      <td>2022-03-07</td>
+      <td>pullups: 5x1x5, 10x2x5<br>FSQ 20x1x10, 40x1x5, 50x6x5, 401x5<br>pullups: 5x1x5, 10x5x5, 5x1x10<br>deadhang <br>1 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>233</td>
+      <td>2022-03-07</td>
+      <td>Rowing: 5k, time 23.41, SPM 17<br>pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5, 10x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>232</td>
+      <td>2022-03-06</td>
+      <td>KB, PR 16 (1+2+3+4) L/R x4<br>KB, SW 32 10x10<br>Sledge 10x10  / 35kg + sledge (20-30kg?)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>231</td>
+      <td>2022-03-04</td>
+      <td>Rowing: 5k, time: 23.35, SPM 17<br>FSQ: 20x1x10, 40x1x5, 50x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>230</td>
+      <td>2022-03-03</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 100x1x5, 110x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>229</td>
+      <td>2022-03-01</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x5x5<br>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x5x4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>228</td>
+      <td>2022-03-01</td>
+      <td>Rowing: 5k, time: 24.00, SPM 17<br>Pullups: 5x5x5</td>
+      <td>Trening był wczoraj tzn 28 II. I tez caly dzien bolaly mnie jeszcze nogi/sciegna po sobotnich swingach.</td>
+    </tr>
+    <tr>
+      <td>227</td>
+      <td>2022-02-28</td>
+      <td>KB, PR 16 (1, 2, 3, 4) L/R x 3 -<br>a ladder<br>KB, SW 32: 20, 19, 18 .... 15, 15, 14, 13, ... 10 = 180 SW</td>
+      <td>Dawno nie trenowalem z KB i po 2 dniach naciagniete sciegna mnie bolaly.</td>
+    </tr>
+    <tr>
+      <td>226</td>
+      <td>2022-02-25</td>
+      <td>Rowing: 5k, time: 23.50, SPM 17<br>pullups: 5x1x5, 10x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>225</td>
+      <td>2022-02-24</td>
+      <td>Rowing: 5k, time: 23.4, SPM 17<br>FSQ: 20x1x10, 40x1x5, 50x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>224</td>
+      <td>2022-02-23</td>
+      <td>DL: 20x1x10, 50x1x5, 70x1x5, 80x1x5, 90x1x5, 100x5x5<br>Pullups: 5x1x5, 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td>2022-02-23</td>
+      <td>Rowing: 5k, time: 24.00, SPM 17<br>FSQ: 20x1x5, 40x1x5, 50x5x4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>222</td>
+      <td>2022-02-20</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x5x5<br>pullups: 5x1x5, 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>221</td>
+      <td>2022-02-18</td>
+      <td>Rowing 5k, time: 21.05, SPM 16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>220</td>
+      <td>2022-02-16</td>
+      <td>DL: 20x1x10, 70x1x8, 80x1x8, 90x1x8, 100x5x8</td>
+      <td>Jestem mega przemeczony. Musze zrobic ze 2 tyg lekkiego treningu, zeby sie zregenerowac</td>
+    </tr>
+    <tr>
+      <td>219</td>
+      <td>2022-02-15</td>
+      <td>Rowing: 5k, time: 23.58, SPM 17<br>pullups: 5x1x5, 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>218</td>
+      <td>2022-02-15</td>
+      <td>Rowing: 5k, time: 23:58, SPM 17<br>FSQ: 20x1x5, 40x1x5, 50x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td>2022-02-12</td>
+      <td>KB, PR 16 ((1+2+3) L/R ) x 10<br>KB, SW 32x10x10<br>Sledge 10m x6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>216</td>
+      <td>2022-02-12</td>
+      <td>Rowing: 5k, time: 23.57,  SPM 18<br>FSQ: 20x1x5, 40x1x5, 50x1x5, 60x5x4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td>2022-02-11</td>
+      <td>Rowing: 5k, time: 23.57, SPM 18<br>FSQ: 20x1x5,  40x1x5,  50x1x5, 60x5x4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>214</td>
+      <td>2022-02-11</td>
+      <td>Rowing: 5k, time: 25.01, SPM 17<br>pullups: 5x5x5, 10x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td>2022-02-10</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x1, 120x1x3, 130x1x1, 140x1x1, 150x1x1, 160x3x3!!!</td>
+      <td>160 poszlo! od 130 w paskach, a 2 ostatnie serie ze 160 w pasie. Jeden byl za szeroki i za sztywny, a drugi byl lepszy. ale w sumie jeszcze nie wiem, czy i na ile mi to pomoglo. mysle co dalej, czy do gory, czy deload.</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>2022-02-08</td>
+      <td>Rowing: 5k, time: 24.31, SPM 17<br>FSQ: 20x1x10, 40x1x5, 50x1x5, 60x4x4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>211</td>
+      <td>2022-02-07</td>
+      <td>Pullups: 5x5x5, 10x10x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>210</td>
+      <td>2022-02-05</td>
+      <td>KB, PR 16 (1+2+3) L/R x 9<br>KB, SW 32: 180 ladder (20, 19, 18, 17, 16, 15, 15, 14, 13, 12, 11, 10)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>209</td>
+      <td>2022-02-04</td>
+      <td>FSQ: 20x1x10, 40x1x5, 50x6x5<br>Rowing: 5k, time 25.01, SPM 16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>208</td>
+      <td>2022-02-03</td>
+      <td>Rowing: 5k, time: 24.59, SPM 17</td>
+      <td>Chillout po wczorajszych DL</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>2022-02-03</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 100x1x5, 110x1x5, 120x1x5, 130x1x3, 140x1x1, 145x5x5, 155x4x3</td>
+      <td>od 130 straps. Pierwszy raz taki ciezar na powtorzenia! i bylo nawet lepiej, niz 150 last week. moze ostatnie 2 ruchy w treningu byl ciezkie i gorsze technicznie. Mega bylem zadowolony. next week atakuje 160, moze 3x3. zobaczymy</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>2022-02-01</td>
+      <td>Rowing: 5k, time: 25.03, SPM17<br>Pullups: 5x1x5, 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>205</td>
+      <td>2022-01-30</td>
+      <td>Rowing: 5k, time: 25.25, SPM 17<br>FSQ: 20x1x10, 40x10x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td>2022-01-29</td>
+      <td>KB, PR: 16 kg (1+2+3) L/R x 8<br>KB, SW 32x8x10 <br>w przerwach miedzy seriami PR<br>Jefferson curl: 16kg, 3x3<br>sledge 20m x 3, push and back pull</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>203</td>
+      <td>2022-01-28</td>
+      <td>Rowing: 5k, t: 25.37, SPM 18<br>FSQ: 20x1x5, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>2022-01-28</td>
+      <td>Rowing: 5k, time 25.31, SPM 18<br>pullups: 5x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>2022-01-26</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x3, 120x1x3, 130x1x1, 140x1x1, 150x4x3</td>
+      <td>1 raz taka ilosc powtorzen ze 150. Sztanga szla juz wolno do gory, ale w sumie technika nie byla zla i w sumie jestem zadowolony z liftow. ale nie wiem, czy isc w gore do 155?</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>2022-01-26</td>
+      <td>Pullups: 5x1x5, 10x2x5, 15x2x5, 20x4x5, 15x2x5, 10x2x5<br>FSQ: 20x1x10, 40x1x5, 50x1x5, 55x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td>2022-01-25</td>
+      <td>Rowing: 5k, t: 25.31, SMP 17<br>KB, PR: 16 (1+2+3) L/P x 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>198</td>
+      <td>2022-01-21</td>
+      <td>Rowing: 5k, t: 25.40, SMP 18<br>FSQ: 20x1x10, 40x1x5, 50x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>197</td>
+      <td>2022-01-21</td>
+      <td>Rowing: 5k, t: 25.39, SPM 18<br>Pullups: 5x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>196</td>
+      <td>2022-01-20</td>
+      <td>DL: 40x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x3, 120x1x3, 130x1x1, 140x1x1, 145x5x5</td>
+      <td>Pierwszy raz 145x5x5. od 130 w paskach. w sumie poszlo lepiej niz last week 140. ale tez lepiej spalem i mialem lepsze nastawienie. Dodatkowo tez zaczalem bardziej akcentowac faze spiecia calego ciala przed rozpoczeciem lift-u. I to spiecie robi spora roznice.</td>
+    </tr>
+    <tr>
+      <td>195</td>
+      <td>2022-01-18</td>
+      <td>Pullups: 5x1x5, 10x2x5, 15x2x5, 20x5x5, 10x2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td>2022-01-18</td>
+      <td>Rowing: 5k, time: 25.29, SPM 17<br>FSQ: 20x1x10, 40x1x5, 50x1x5, 55x1x4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td>2022-01-15</td>
+      <td>KB, PR: 16 (1, 2, 3)x6 L/R<br>KB SW: 32: (10, 11, 12, 13, 14, 15, 15, 14, 13, 12, 11, 10)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>192</td>
+      <td>2022-01-13</td>
+      <td>Pullups: 5x5x5, 10x10x5<br>FSQ: 20x1x10, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>191</td>
+      <td>2022-01-13</td>
+      <td>Rowing: 5k, t: 25.39,  SPM 18</td>
+      <td>Chcialem zrobic tez KB PR, ale bylem zbyt obolaly po wczorajszych DL</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>2022-01-13</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x1x3, 130x1x3, 140x5x5</td>
+      <td>W 4 serii, przed ostatnim ruchem musialem sie rozprostowac i wtedy dokonczyc serie. Mialem falstart w  ruchu i potrzebowalem chwile sie zrenenerowac. w sumie bylo dosc ciezkawo.  5 seria latwo. chyba najtrudniejsza byla 1 seria. next week 145, a potem zobaczymy.</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>2022-01-12</td>
+      <td>Rowing:5k, time: 25.17, SPM 18<br>Pullups: 5x1x5, 10x8x5</td>
+      <td>ERG --- zone 2 experiment cd</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>2022-01-10</td>
+      <td>Rowing: 5k, time. 25:06, SPM 17<br>KB, PR 16 kg (1+2+3 L/R) x 5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>2022-01-10</td>
+      <td>Rowing: 2k<br>FSQ: 20x1x10, 40x1x5, 50x6x5,40x3x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>2022-01-08</td>
+      <td>Rowing: 5k, time 25:20, SPM 17<br>FSQ 20x1x10, 40x1x5, 50x5x5, 40x1x5</td>
+      <td>ERG b luzno. probuje zone 2 trening</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>2022-01-07</td>
+      <td>Rowing: 5k, time: 22.47, SPM 17<br>KB, PR: 16 1+2+3 L, R x 4<br>Pullups: 5x1x5, 10x7x5</td>
+      <td>ERG dosc latwo, mimo ze spm nisko i czas w sumie ok, mimo wolnego wioslowania</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>2022-01-07</td>
+      <td>Rowing: 5k, time: 24.07, SPM 18</td>
+      <td>Dawno nie wioslowalem. ostatni raz pod koniec listopada. nawet poszlo dosc latwo.</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>2022-01-06</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 100x1x5, 110x1x5, 120x1x3, 130x5x5 <br>Pullups: 5x1x5, 10x7x5</td>
+      <td>DL, 130 w paskach. nawet latwo poszlo. next week 140!</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>2022-01-04</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x1x5, 20x6x5<br>FSQ: 20x1x10, 40x1x5, 50x6x5<br>Pullups: 10x3x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>2021-12-28</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5<br>FSQ: 20x1x10, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>180</td>
+      <td>2021-12-23</td>
+      <td>DL: 50x1x5, 70x1x5, 80x1x5, 100x1x5, 110x1x5, 120x1x3, 135x5x5</td>
+      <td>Pierwsza seria ciezkawo, latwiej niz last week 130. potem ok. ostatnia seria juz na zmeczeniu.</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>2021-12-21</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x1x5, 20x4x5, 10x5x5<br>FSQ: 20x1x10, 40x1x5, 50x4x5</td>
+      <td>Jakoś ciezko mi wchodzily pullupsy. dlatego nie robilem wiecej z 20kg, tylko zszedłem do 10kg. FSQ w sumie ok</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>2021-12-18</td>
+      <td>KB, PR 16 (1+2+3) x 4 L/R<br>1HSW 28 5x10 L/R<br>Dead Hang <br>60 sek</td>
+      <td>Mega zmęczony po tygodniu. nie mialem nawet sily dluzej wisiec. Probuje w PR nowa drabine i program.</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>2021-12-17</td>
+      <td>DL: 60x1x10, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x1x5, 130x5x5 <br>Rowing: 2k</td>
+      <td>2 tygodnie przerwy od DL. nie wiedzialem, jak pojdzie. Niby sila byla, ale technika nie za dobrze. zobaczymy, jak bedzie next week. 130 w paskach, nizej bez.</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td>2021-12-14</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x6x5<br>back ext 6x10<br>FSQ: 20x1x10, 40x5x5</td>
+      <td>mialem dluzsza przerwe, wiec nie szalalem</td>
+    </tr>
+    <tr>
+      <td>175</td>
+      <td>2021-12-04</td>
+      <td>KB: PR 16x1x5 L/R, 20x4x3 L/R<br>KB, SW, 32x12x15 + 32x1x20 = 200 SW</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>2021-12-03</td>
+      <td>DL 70x1x5, 80x1x5, 100x1x5, 110x1x5, 120x1x5, 125x5x8 w paskach<br><br>Pullups 20x7x5</td>
+      <td>Słabo przespane noce 2 I biegunka, ale poszło łatwo. Może też dlatego, że ładowałem węglowodany wcześniej. Ale była siła i nigdy takiej objętości nie robiłem takim ciężarem.</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>2021-12-01</td>
+      <td>Rowing: 5k, time: 22.54, SPM 17<br>FSQ 20x1x10, 40x1x5, 60x1x5, 60x3x4</td>
+      <td>To  workout, ktory zrobilem 2 dni temu. Dzis powininem robic ciezkie ciagi, ale zle spalem i mialem biegunke, wiec pewnie cos innego zrobie</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td>2021-11-24</td>
+      <td>Rowing: 2k<br>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x5x8</td>
+      <td>DL w sumie łatwo poszly. od 110 w paskach. ostatnie powotorzenia w seriach ciezej, przerwa na 1-2 oddechy. Ostatnie 2 ruchy w treningu ciezej. przerwa przed kazdym ruchem. kurde, zastanawiam sie, na ile dam rade pocisnac 125x5x8. zobaczymy. i tak nigdy takiej objetosci z takim ciezarem nie robilem, wiec jestem zadowolony</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>2021-11-24</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5<br>FSQ: 20x1x10, 40x1x5, 50x5x5</td>
+      <td>FSQ łatwo poszły, mimo ze wczoraj robilem sporo powtorzen.</td>
+    </tr>
+    <tr>
+      <td>170</td>
+      <td>2021-11-23</td>
+      <td>Rowing 5k, time 23.40, SPM 17<br>FSQ 20x1x10, 40x4x5, 50x3x5, 60x1x3</td>
+      <td>1 raz udało mi się wolno popłynąć 5k</td>
+    </tr>
+    <tr>
+      <td>169</td>
+      <td>2021-11-20</td>
+      <td>Rowing: 5k, time: 22.39, SPM 19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>2021-11-16</td>
+      <td>Pullups: 5x1x5, 10x3x5, 15x3x5, 20x5x5<br>Back ext: 15x4<br>FSQ: 20x1x10, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>2021-11-13</td>
+      <td>KB, PR: L/R <br>16x1x5, 20x1x4, 20x2x3, 20x2x2, 20x2x1<br>KB, SW L+R, 20x7x10</td>
+      <td>Siła była, ale znowu porwałem łapy. 4 zerwane odciski na lewej i 2 na prawej</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>2021-11-11</td>
+      <td>DL 20x1x10, 60x1x10, 80x1x5, 90x1x5, 100x1x5, 110x5x8, 100x2x8<br>Rowing: 5k, time 23:03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>2021-11-10</td>
+      <td>Pullups 5x1x5, 10x1x5, 15x1x5, 20x7x5<br>FSQ: 20x1x10, 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>2021-11-07</td>
+      <td>KB, PR: 12x1x5,16x1x5, 20x3x3, 16x4x5 L/R<br>SW: 32x5x20, 32x6x15, 32x1x10</td>
+      <td>Dawno nie cwiczylem z KB i bylem bardzo wymeczony po tygodniu. PR nie wchodzily za dobrze, dlatego nie cisnalem za bardzo. i standardowo 200 SW</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>2021-11-03</td>
+      <td>DL: 60x1x5, 80x1x5, 90x1x5, 100x1x5, 105x8x5<br>Rowing: 5k, time: 23,03, SPM 19</td>
+      <td>DL dosc latwo poszly. ale w sumie to maly ciezar jeszcze</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td>2021-11-03</td>
+      <td>pullups: 5kg x 1 x5, 10x1x5, 15x10x5<br>FSQ: 20x1x10, 40x1x5, 50x5x5</td>
+      <td>niby po wczesniejszym treningu nogi mnie bolaly i miesnie byly zmeczone, ale FSQ zaskakujaco latwo mi poszly</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>2021-11-01</td>
+      <td>FSQ: 40x3x5, 50x5x5, 40x1x5<br>back ext 15x7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>2021-10-31</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x5x8<br>Rowing: 5k, time: 22:03, SPM 19</td>
+      <td>Zaczynam nowy blok siłowy w DL. Ide do gory co 5kg i robi 5 serii i 8 powtorzen. Gdy 8 nie bedzie wchodzic, przechodze na 5 powtorzen i zobaczymy, czy uda mi sie przejsc 150kg.</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td>2021-10-28</td>
+      <td>Rowing: 5k, time: 22:13, SPM 18</td>
+      <td>Dawno nie wioslowalem, ponad 3 tygodnie chyba. Dlatego nie mialem za wielkich oczekiwan co do tego treningu, ale poszlo w sumie dosc dobrze. Mimo zmęcznia po pracy i ogolnego zmeczenia po ciezkim treningu we wtorek. Chcialem nawet powioslowac w tempie na 25 min, czyli badzo swobodnie, ale po raz kolejny sie okazalo, ze nie potrafie za bardzo luzno plynac. Kurde, chyba potrzebuje troche na to zwrocic uwage, czemu prawie zawsze tylko cisne.</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>2021-10-26</td>
+      <td>Pullups 5x5, 10x5, 15x5, 20x5, 25x5, 30x2x5, 25x2x5, 20x5<br>Back ext 15x5<br>FSQ 40x1x5, 50x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>2021-10-19</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x10x5<br>Back ext: 5x10<br>FSQ: 40x1x5, 50x5x5<br>Pullover 5x1</td>
+      <td>FSQ łatwo poszły. Dwa dni odpoczynku dobrze mi zrobiły</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>2021-10-16</td>
+      <td>KB, PR  L/R hand: 16x1x5, 20x1x1 (warm-up), 20x1x4, 20x4x3, 20x4x2, 20x5x1<br>KB, SW 32: 20, 19, 18, 17, 16, 15, 15, 14, 13, 12, 11, 10, 20 = 200</td>
+      <td>troche bylem zmeczony po calym tygodniu pracy i treningow. nie cisnalem nic wiecej</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>2021-10-15</td>
+      <td>Pullups 5 x 10 x 5<br>Back ext 10 x 10<br>FSQ 20x1x10, 30x1x5, 40x1x5, 50x5x5</td>
+      <td>FSQ już dobrze wchodzly</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>2021-10-14</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x5x5</td>
+      <td>120 poszlo bardzo latwo!</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>2021-10-12</td>
+      <td>Pullups: 5x1x5, 10x1x5, 15x1x5, 20x1x5, 25x5x5, 20x2x5<br>Back ext: 15x4</td>
+      <td>Pierwszy raz takie pullupsy. Bylo dosc latwo. Po wczoraj i zeszylym tygodniu mega mam zmeczone nogi, wiec dzis nie robilem FSQ</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>2021-10-11</td>
+      <td>DL: 20x1x10, 70x5x10 <br>snatch grip, 70x5x10 deficit<br>FSQ: 20x1x10, 30x1x5, 40x1x5, 50x1x5, 60x1x5, 60x2x3, 50x1x5</td>
+      <td>FSQ jakos b. ciezko. Zastanawiajaco. DL latwo</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>2021-10-09</td>
+      <td>KB, PR 16x1x5 L/R<br>KB, PR 20x5x3, 20x3x2, 20x4x1 L/R<br>KB, 1HSW 28x7x10 L+R<br>Pullups: 6x1x5, 12x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>2021-10-06</td>
+      <td>Rowing: 5k, time: 22:08, SPM 20<br>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x5x5</td>
+      <td>120 w DL super latwo. Nadal mysle, co dalej robic.</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>2021-10-05</td>
+      <td>pullups 5x2x5, 10x2x5, 15x6x5<br>FSQ: 20x1x10, 30x1x10, 40x1x5, 50x5x5<br>back extention: 5x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>2021-10-04</td>
+      <td>Rowing: 5k, time 21:47, SPM 19<br>DL: 20x1x10, 50x1x10,70x8x10</td>
+      <td>Miałem poczucie, ze dawno nie wioslowalem. Moze bylem poirytowany lub sfrustrowany, ale  mialem troche energii i dosc szybko mi sie wioslowalo.\nW DL nie chcialem przeginac. Troche nogi mnie bolaly po poprzednim tygodniu i dzisiejszej pracy. Pierwsze serie troche trudno, potem łatwo. Nie wiem, co mam dalej robic. czy tylko 1 tydzien deload, czy dluzszy okres z wieksza objetoscia.</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>2021-10-02</td>
+      <td>KB, PR: 16x1x5 L,R,  20x3x3 L/R, 20x3x2 L/R, 20x3x1 L/R<br>KB, 1H SW 28x6x10 L/R</td>
+      <td>Bylem mega zmeczony po całym tygodniu, wiec krotki trening</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>2021-10-01</td>
+      <td>pullups: 5x1x5, 10x1x5, 15x1x5, 20x5x5<br>FSQ: 20x1x10, 30x1x5, 40x1x5, 50x5x5<br>back ext 1x10</td>
+      <td>pullups z 20kg dobrze weszly. dawno nie robilem takich ciezarow. FSQ latwo z 50</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>2021-09-29</td>
+      <td>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x1x5, 130x1x1, 140x1x1<br>150x1x4, 150x1x2, 140x2x5<br>Pullups: 5x4x5</td>
+      <td>Pierwszy raz 150 w DL. W drugiej serii odcielo mi psyche. 150 to juz troche ciezko i sztanga szła wolno do gory. Pierwsza faza ruchu jest slabsza u mnie. Musze pomyslec, jak ja poprawic. 150x5x5 jest generalnie w moim zasiegu. ostatnie 140x2x5 latwo</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>2021-09-28</td>
+      <td>pullups: 5x1x5, 10x2x5, 15x5x5, 20x1x5<br>FSQ: 20x1x10, 30x1x5, 40x10x5<br>Pullover: 1x5</td>
+      <td>jutro ciezki DL. Dzis spalem fatalnie. Ostatnie serie FSQ latwe.</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>2021-09-26</td>
+      <td>Rowing: 5k, time 22:35, SPM 19<br>FSQ 20x1x10, 30x1x5, 40x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>2021-09-25</td>
+      <td>KB, PR: 16x1x5, 20x1x3, 16x4x5<br>KB, SW: 32kg,  20, 19, 18, 17, 16, 15, 15, 14, 13 , 12, 11, 10, 10, 10<br>Pullups: 8x5x5</td>
+      <td>chciałem wiecej pocwiczyc, ale bylem bardzo zmeczony po wczorajszej pracy. po 1 serii PR 20, stwierdzilem, ze jestem zmeczony i chce sie oszczedzac i zrobic lekki trening. ale zrobilem 200 SW</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>2021-09-22</td>
+      <td>DL: 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x1x5, 130x1x3, 140x5x5</td>
+      <td>140 w DL poszlo dosc latwo. Od 130 w paskach. robilem dluzsze przerwy miedzy seriami -  nawet do 7 minut. ale technika w sumie byla ok. jestem zadowolony.nie ciagnalem grzebietem i nie puszczaly mi plecy. next week probuje 150, a potem deload.</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>2021-09-21</td>
+      <td>Rowing: 5k, time: 22:20, SPM 19<br>FSQ: 20x1x10, 30x1x5, 40x7x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>2021-09-20</td>
+      <td>DL: 30x1x10, 70x10x10<br>FSQ: 20x1x10, 30x1x5, 40x1x5, 50x4x5<br>Pullups: 5x1x5, 10x6x5</td>
+      <td>Pullupsy dobrze mi weszly. tak samo reszta</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>2021-09-18</td>
+      <td>KB; PR, 16x1x5, 20x4x3, 20x3x2, 20x3x1<br>KB, SW: 32 <br>20, 19, 18, 17, 16, 15, 15,  14, 13, 12, 11, 10<br>Pullups: 8x5x5</td>
+      <td>Jestem przeziebiony i boli mnie gardlo i nie czuje sie na 100. Nie robilem SN, ale zrobilem wiecej SW. Next week chce sprobowac DL 140!</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>2021-09-17</td>
+      <td>Rowing: 5k, time: 23.40, SPL <br>17<br>FSQ: 20x1x10, 30x1x5, 40x1x5, 50x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>2021-09-15</td>
+      <td>DL: 60x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x1x5<br>130x5x5</td>
+      <td>Dzis tylko DL. W sumie nie bylo tak ciezko. Tylko w pierwszej serii musialem sie zaadoptowac do ciezaru. Podnosilem w paskach. Ostatnie powtorzenie w treningu juz troche ciezko. Bylem bardziej zniechęcony, niz bez sily. Przerwy ok 5 min. ale w sumie jestem zadowolony z treningu.</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>2021-09-14</td>
+      <td>Rowing: 5k, time: 22:19, SPM 19<br>FSQ: 20x1x10, 30x1x5, 40x5x5<br>Pullus: 5x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>2021-09-12</td>
+      <td>Rowing: 5k, time: 23:03, SPM 18<br>FSQ: 20x1x10, 30x1x5, 40x10x5</td>
+      <td>Byłoem dość obolały po całym tygodniu treningow. I wieczorem czuje niezle miesnie ud. ale i tak jestem pełen ciekawosci i zapału do nastepnych ciezkich DL next week.</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>2021-09-11</td>
+      <td>KB; PR, 16x1x5 L/R, 20x4x3 L/R<br>KB, SW 32x20x6<br>SN 20x6x10 L+R<br>Pullups: 8x3x5<br>DL 60x5x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>2021-09-09</td>
+      <td>DL: 70x1x10, 80x1x10, 90x1x5, 100x5x5<br>FSQ: 20x1x10, 30x1x10, 40x8x5<br>Pullups: 5x8x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>2021-09-08</td>
+      <td>pullups: 5x5x5<br>DL: 30x1x10, 50x1x5, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x1x5, 125x5x5<br>ROwing: 2k</td>
+      <td>DL zaskakujaco latwo. W trakcie pierwszej serii puscil mi chwyt i musialem zastosowac hook grip, ale potem wszystko poszlo ok. I bylem zaskoczony, ze tak latwo mi idzie. Kurde, moze uda sie zrobic te 140x5x5, a moze nawet wejsc na 150</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>2021-09-06</td>
+      <td>DL 20x1x10. 40x1x10, 60x1x10, 70x10x10<br>Pullups: 5x6x5</td>
+      <td>DL byly lekkie, ale ogolnie bylem troche zmeczony. zobaczymy, jak pojda 125 this week</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>2021-09-05</td>
+      <td>Rowing: 5k, 23:03, SPL 18<br>FSQ: 20x1x10, 30x1x5, 40x10x5</td>
+      <td>chcialem duuzo wolniej powioslowac i prawie mi sie udalo. zrobilem FSq, zeby troche volume nabic. zapomnialem magnezji, a chcialem sie jeszcze podciagac.</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>2021-09-04</td>
+      <td>KB, PR: 16x1x5, 20x2x3, 20x2x3, 20x3x1<br>SW: 32x5x15 1min break, 32x5x10 1min, + 32x1x15, 32x1x10</td>
+      <td>Nie zrobilem dzis calego treningu. zamykali klub szybciej. ale porobiłem trochę PR z 20 kg i było ciężkawo, ale w sumie ok</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>2021-09-03</td>
+      <td>Rowing: 5k, time: 21:55, SPM 19<br>FSQ: 20x1x10, 30x1x5, 40x5x10, 40x2x5</td>
+      <td>Niespodziewanie znowu poniezej 22 min 5k. a początek był taki wolny... Dzis rano obudziłem się z obolałym ciałem. To chyba po wczorajszych ciągach. ale mimo tego i tak dzis zrobilem FSQ na mniejszym ciężarze. po prostu chce wzmacniać mięśnie i robic podstawe pod pozniejsze wieksze ciezary.</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>2021-09-02</td>
+      <td>DL: 20x1x10, 50x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 120x5x5<br>Pullups: 5x5x5<br>FSQ: 20x5, 30x5, 40x5, 50x5, 60x5, 70x3</td>
+      <td>pierwszy raz 70 w FSQ. DL nawet nie tak ciezko, ale uchwyt miałem słaby i troche mi zaczynała się ręka otwierac</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>2021-08-31</td>
+      <td>DL: 20x1x10, 50x1x10, 70x10x10<br>Pullups: 5x6x5</td>
+      <td>DL dosc latwo po 1 serii. Moze za niedlugo zwiększyć do 80? Pullupsy spoko. Po niedzieli czulem troche plecy, ale dzien przerwy pomogl i dzis bylo ok.</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>2021-08-29</td>
+      <td>Rowing: 5k, time: 22:03, SPM 18.<br>FSQ: 20x1x10, 30x1x5, 40x10x5<br>Pullups: 5x8x5</td>
+      <td>niby chcialem luzno powioslowac, a wyszlo znowu blisko 22 min. a bylem rano taki obolaly po martwych w piatek i kettlach wczorajszych. zaskakujaco ostatni km wyszedl dosc szybko - ok 2.02 / 500m. i wcale sie nie zmeczylem specjalnie. tylko troche bardziej przycisnalem ostatni k.</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>2021-08-28</td>
+      <td>KB, PR 16x6x5<br>SW: 32x5x10, 32x5x15<br>SN 28x5 L/R<br>SN 20x6x10 L+R</td>
+      <td>Wstałem trochę obolały po wczorajszych ciągach, ale pojechałem na trening. Ze SN musiałem uważać, żeby nie zerwać łapy.</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>2021-08-27</td>
+      <td>DL: 20x2x10, 50x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x1x5, 115x5x5<br>Pullups: 5x5x5<br>Pullover: 1x5</td>
+      <td>zadziwiajaco 115 w DL poszlo latwo. Zwracalem wieksza uwage na spiecie ciala w poczatkowej pozycji tzn. w momencie rozpoczecia ruchu. zwłaszcza napiecia w nogach i posladkach.</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>2021-08-25</td>
+      <td>Rowing: 2k<br>Pullups: 5x5x5<br>FSQ: 20x1x10, 30x1x5, 40x10x5<br>Pullover 1x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>2021-08-24</td>
+      <td>DL: 20x1x10, 70x10x10<br>Pullups: 5x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>2021-08-22</td>
+      <td>Rowing: 2k<br>FSQ: 20x1x10, 30x1x5, 40x1x5, 50x5x4<br>Pullups: 5x5x5</td>
+      <td>chciałem dzis pojsc w gore z FSQ, ale sie fatalnie czułem. nawet nie wszedłem na 60kg. wymęczony, bez siły i bez chęci.</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>2021-08-21</td>
+      <td>KB, PR 16*6*5<br>SW 32*7*10, 32*4*15<br>Pullups 8*10*5</td>
+      <td>Fatalnie spałem tej nocy, nadwyrezylem kark i w ogóle nie byłem w humorze, także nie robiłem ciężkiego treningu, ani SN. TM bardziej, że w planach są kajaki dziś z Karczewa do Wawy.</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>2021-08-20</td>
+      <td>Rowing: 2k<br>DL: 20x1x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 110x5x5<br>Pullups: 5x5x5</td>
+      <td>DL nawet lekko. Zwlaszcza ostatnie serie.</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>2021-08-18</td>
+      <td>Rowing: 5k, time: 22:40, SPM 17<br>Pullups: 5x5x5<br>FSQ: 20x1x5, 30x1x5, 40x5x5</td>
+      <td>Chciałem troche luzniej powioslowac i wyszlo mi 22:40, ale SPM byl maly. Bylem dzis zmeczony, wiec nie chcialem forsowac tempa. Pullupsy i FSq tak dla przecwiczenia wzorca. jutro chce robic martwe.</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>2021-08-17</td>
+      <td>Pullups: 5x5x5<br>DL: 70x10x10<br>FSQ: 20x1x10, 30x1x10, 40x8x5</td>
+      <td>DL lekko. pullup-y tez lekko, ale to byl maly ciezar. z FSQ tez po prostu powtarzalem wzorzec ruchowy. I tak jestem trochę obolaly. w tym tygodniu ide do gory z DL. z pullupami moze sprobuje przez jakis czas robic male ciezary, zeby zbudowac baze, a potem isc do gory z ciezarem.</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>2021-08-15</td>
+      <td>Rowing: 5k, time: 21:55, SPM: 18<br>FSQ: 20x1x10, 30x1x5, 40x10x5</td>
+      <td>Chciałem sobie luzno powioslowac ale jakos wyszlo mi pod koniec, ze mam szansę popłynąć poniżej 22 min., wiec troche przycisnałem pod koniec i sie udało. a byłem taki zmeczony na początku treningu. FSQ dosc luzno, zeby nie przegiac. Next week ide w gore z DL i sprobuje tez z FSQ.</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>2021-08-14</td>
+      <td>KB, PR 16x6x5<br>SW: 32x10x10<br>SN: 20x11x10 L+R<br>pullups: 12x6x5</td>
+      <td>pullupsy jakoś ciężko mi się robiło. SN w sumie lekko i nie zerwałem lapy.</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>2021-08-13</td>
+      <td>Rowing: 2k<br>DL: 20x1x10, 60x10, 70x1x5, 80x1x5, 90x1x5, 100x1x5, 105x5x5<br>FSQ: 20x10, 30x10, 40x2x5, 50x3x5</td>
+      <td>105 w DL nie bylo zbyt ciezkie, ale tez nie bylo b. lekkie. Robilem w nowej silowni i tam dziwnie sztanga odbijala sie od podlogi i talerze tez byly dziwne, takie gumowe. O dziwo w pierwszych seriah czulem malutki bol w lewym ramieniu, przy obojczyku.</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>2021-08-12</td>
+      <td>Rowing: 5k, time 22.06, SPM 18<br>FSQ 20x1x10, 30x1x10, 40x5x10</td>
+      <td>Pierwszy raz robiłem w serii po 10 ruchów. W sumie nie było ciężko</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>2021-08-11</td>
+      <td>FSQ 20*1*10, 30*1*5, 40*1*5, 45*1*5, 50*1*5, 60*5*5<br>Pullups 5*2*5, 10*5*5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>2021-08-08</td>
+      <td>Rowling 5k, time 22:17, SPM 17<br>FSQ 20x2x5, 30x2x5, 40x10x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>2021-08-07</td>
+      <td>KB, PR: 16x5x5<br>SW: 32x10x10<br>DL: 20x1x10, 50x1x10, 60x5x10, 60x5x15</td>
+      <td>Pressy cieżko mi się robiło. Dawno nie robiłem tego ćwiczenia. SW raczej łatwo, ale nie robiłem jeszcze dzis SN, ze względu na zmęczenie po tym tygodniu. DL większa objętość, ale dość łatwo.</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>2021-08-06</td>
+      <td>Rowing: 5k time: 22:36, SPM 17/18<br>Pullups: 5x5x5<br>FSQ: 20x2x5, 30x2x5, 40x10x5, ostatnia seria 10 powtórzeń</td>
+      <td>Kurde, cieżko mi sie wioslowalo. czułem się zmęczony i słabo wydajny. Niby czas nie był najgorszy, ale nie było łatwo. Może jest to też wynik treningów z tego tygodnia. Ciężkie DL i FSQ. Przy pullupsach też było cieżko. Jednak ostatni trening z 15kg dał się we znaki. Jutro zrobię coś lekkiego.</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>2021-08-05</td>
+      <td>DL: 20x1x10, 40x1x10, 70x1x5, 80x1x5, 90x1x5, 100x6x5<br>FSQ: 20x2x5, 30x1x5, 40x6x5</td>
+      <td>100 kg w DL dawno nie robilem. wydawalo sie troche ciezkawo, ale w sumie latwo poszlo. zobaczymy, jak bedzie dalej.</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>2021-08-04</td>
+      <td>Rowing: 2k<br>FSQ: 20x2x5, 30x5, 40x5, 50x5, 60x5x4<br>Pullups: 5x2x5, 10x5, 15x5x5, 10x5</td>
+      <td>Pierwszy raz 60kg FSQ tyle razy. Pullupsy troche ciezko mi wchodzily, ale w sumie ok</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>2021-08-02</td>
+      <td>Rowing: 2k, time: 8:43, SPM 19<br>DL: 70x10x10</td>
+      <td>Deadlifty dosc latwo. Jeszcze czulem troche w nogach poprzednia sesje z 90kg. ERG dosc swobodnie.</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>2021-08-01</td>
+      <td>DL 20*10, 50*10, 70*10, 80*10, 90*10*9</td>
+      <td>Pierwszy raz taka objętość, takim ciężarem. Pierwsze serie trochę ciężkawe, potem już łatwo.</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>2021-07-30</td>
+      <td>Rowing 2k<br>FSQ 20*5, 30*5, 40*5, 50*5, 60*5*3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>2021-07-29</td>
+      <td>DL 50*2*10, 70*1*10, 80*10*10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>2021-07-27</td>
+      <td>Rowing: 5k, time: 23:25, SPM 19<br>FSQ: 20x2x5, 30x2x5, 40x2x5, 50x5x5<br>Pullups: 5x5x5</td>
+      <td>Kurde, roznica, gdy cwiczysz podczas postu, a wtedy gdy jestes naladowany kaloriami jest kolosalna. Wczoraj tak bylo w ciagach, dzis w na ERG i FSQ tez 1 raz robilem 50x5x5, wiec jestem zadowolony. zobaczymy, jak dalej pojdzie z DL</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>2021-07-26</td>
+      <td>DL: 50x2x10, 70x10x10<br>Pullups: 5x2x5, 10x4x5</td>
+      <td>Wczoraj wieczorem skonczyłem 7 dniową głodówkę i dziś już przyjmowałem jedzenie. dzięki temu miałem dużo energii na treningu i właśnie z duża energią go zrobiłem.</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>2021-07-24</td>
+      <td>KB, PR 16x5x5<br>SW 32x10x10<br>SN 20x5x10 L/R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>2021-07-23</td>
+      <td>DL: 40x2x10, 60x10x5</td>
+      <td>Nie czułem się zbyt dobrze rano. Zle spałem i może to też efekt drugiej dawki szczepionki i/lub głodówki. Chciałem szybko skończyć trening, więc zrobiłem mało DL</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>2021-07-22</td>
+      <td>Rowing 5k, <br>FSQ 45x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>2021-07-21</td>
+      <td>Rowing 2k<br>DL 60x10x10<br>Pullups 10x5x5</td>
+      <td>W sumie dość dobrze mi się ćwiczyło. DL lekko u podciągnięcia też.</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>2021-07-20</td>
+      <td>Rowing, 5k, time 23.35, spl 18<br>FSQ 20x2x5, 30x5, 40x10x5<br>Pullover 12</td>
+      <td>Pb in Pullover! Sqauty poszły ok, mimo trwającej głodówki.</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>2021-07-19</td>
+      <td>Rowing: 5k<br>DL: 60x10x10</td>
+      <td>Wiosłowanie i DL poszły spoko. ciało sobie przypomina obciążenie. ale dodatkowo dzis jest 1 dzien glodowki. zobaczymy, jak bede sie czul dalej. mam zamiar poscic 7 dni</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>2021-07-18</td>
+      <td>Rowing: 5k, time: 23:20, SPM 18/19<br>FSQ: 20x3x10, 30x5, 40x10x5</td>
+      <td>Wioslowalem dosc swobodnie i wolno. nie chcialem forsowac tempa za bardzo. Ostatnie 500m troche szybciej. FSQ dość ciężko. cały czas jeszcze czuje przerwe w ćwiczeniach. a od jutra 7 dniowa glodowka. zobaczymy, jak mi pojdzie z cwiczeniami</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>2021-07-17</td>
+      <td>KB, PR: 16x6x5<br>SW 32x8x10 z przerwami<br>SN 20x10 L/R<br>1HSW 28x10 L/R<br>Pullups: 8x5x5</td>
+      <td>Fatalnie mi sie robilo snatche. Ręce tzn dlonie byly tak delikatne i odzwyczajone, ze mnie piekly. czyli sila w nogach i grzbiecie byla, ale dlonie potrzebuja jeszcze zaprawy. Jednak 2 tygodnie przerwy robią sporą roznice.</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>2021-07-16</td>
+      <td>Rowing 2k<br>FSQ 20x10, 30x5, 40x10x5</td>
+      <td>Ciężko mi się siadało.</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>2021-07-15</td>
+      <td>Rowing 2k<br>DL 40x10, 70x10x10<br>Pullups 5x5x5</td>
+      <td>Ciężko dość było po 2 tygodniach bez ćwiczeń. Czułem się zmęczony i myślałem, że nie zrobię dl do końca.</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>2021-07-09</td>
+      <td>Rowing: 5k <br>time 22:34, SPM 19<br>Trap bar 50x2x10<br>DL: 60x10x10</td>
+      <td>Wrocilem z odosobnienia i bylem zmeczony i obolaly i 16h na glodowce, ale i tak zrobilem 5k, mimo ze dawno nie wioslowalem takiego dystansu i bylo ok. \nDL byly ok, ale czulem sie troche glodny i taki zardzewialy. a do tego planuje niedlugo 7 dniowa glodowke, a chce zaczac znowu robic sile. zobaczymy</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>2021-07-01</td>
+      <td>Rowing 2k<br>DL 70x10x10</td>
+      <td>Strasznie ciężko mi się wioslowalo. Może dlatego że był straszny upał lub po prostu jestem zmęczony po pracy. Jutro spróbuję przy wiosłować 5 km zobaczę jak mi pójdzie kropka a może zrezygnuję.</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>2021-06-30</td>
+      <td>Rowing 2k<br>FAQ 20x5, 30x5, 40x10x5<br>Pullups 5x5, 10x5, 15x5x5, 20x3x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>2021-06-28</td>
+      <td>Rowing: 2k<br>DL: 50x10, 70x5, 80x10x10<br>Pullover: 5x1</td>
+      <td>80kg z DL poszlo dosc latwo. ERG tez dosc dobrze, choc maly dystans, ale w sumie pare dni nie wioslowalem</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>2021-06-26</td>
+      <td>KB, PR 16x6x5, 16x4x1<br>SN 20x10x10 L+R<br>DL 60x10x10</td>
+      <td>W końcu zrobiłem 200 SN. Ale zerwałem obie łapy kompletnie</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>2021-06-25</td>
+      <td>Rowing: 2k<br>FSQ: 20x5, 30x5, 40x10x5<br>Pullups: 5x2x5, 10x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>2021-06-24</td>
+      <td>Rowing 2k<br>DL 80x10x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>2021-06-22</td>
+      <td>Rowing 2k<br>FSQ 20x5, 30x5, 40x10x5<br>Pullups 5x5, 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>2021-06-21</td>
+      <td>Rowing 2k<br>DL 70x10x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>2021-06-19</td>
+      <td>KB; PR: 16x5, 20x6x6, L/R<br>KB, SN: 28x3x3 L/R<br>DL: 60x10x10</td>
+      <td>Pierwszy raz SN robilem z 28. Male ilosci, ale i tak spory ciezar dla mnie. Najslabsze ogniwo, to ręka. Sily w grzbiecie i nogach bylo dosc, ale sie obawialem, ze znowu zerwe lape.</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>2021-06-19</td>
+      <td>Rowing: 2k<br>FSQ: 20x5, 30x5, 40x5, 50x5, 55x5x5</td>
+      <td>pierwszy raz takie FSQ z 55 kg. ostatnia seria trochę ciężkawo, ale w sumie ok.</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>2021-06-19</td>
+      <td>DL: 60x10, 70x10, 80x11x10<br>Pullups: 5x2x5, 10x2x5, 15x3x5</td>
+      <td>Brałem szczepionkę tego dnia, ale w ogole nic nie czułem tego i mialem jakos sporo sily i martwe z 80kg poszly bardzo latwo.</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>2021-06-15</td>
+      <td>Rowing: 2k<br>FSQ: 20x5, 30x5, 40x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>2021-06-15</td>
+      <td>Rowing: 2k<br>DL: 70x10x10<br>KB, PR: 18x5x5 L/R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>2021-06-13</td>
+      <td>Rowing: 5k, time:  21:58, SPM 19<br>FSQ: 4x4x40<br>PUllups: 5x5x5</td>
+      <td>w sumie nie zamierzalem lamac 22 min na 5k. Chciałem wolno sobie przepłynać. 1k mega wolno. kolejne 3 spokojne, rowne tempo. nie wiem, co mnie podkusilo, zeby sie sprawdzic na ostatnim k. Przycisnalem i sie udalo. w sumie jestem zadowolony.</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>2021-06-12</td>
+      <td>KB: SN 28x5 L/R<br>SN: 20x8x10 L+R<br>DL: 60x10x10</td>
+      <td>Pierwszy raz robilem SN z 28kg. Zrobilem po 5 na rękę. Prawa silniejsza, czułem się pewniej. ale z drugiej strony lewa była bardziej porwana wczesniej. I dzis ponownie po 8 serii z 20kg  zerwałem lewą. 200 SN by weszło. siłę miałem, ale te odciski...</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>2021-06-11</td>
+      <td>Rowing: 2k<br>KB; PR: 16x5x5<br>FSQ: 20x5, 30x5, 40x5, 50x6x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>2021-06-10</td>
+      <td>Rowing: 5k, Time 22:08, SPM 18<br>DL: 70x5, 80x5, 90x5, 100x5, 110x5, 120x5<br>Pullups: 5x5, 10x6x5<br>Pullover: 5</td>
+      <td>Chciałem zrobić szybki trening, dlatego malo DL. Next week bede robil pewnie 80x10x10, a teraz dla przetarcia wszedlem na 120</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>2021-06-09</td>
+      <td>Rowing 2k<br>DL: 50x5, 70x5, 80x5, 90x5, 100x5, 110x5, 120x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>2021-06-08</td>
+      <td>Rowing: 2k<br>FSQ: 20x5, 30x5, 40x8x5<br>Pullups: 5x5, 10x5x6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>2021-06-07</td>
+      <td>Rowing: 2k<br>DL: 20x10, 40x10, 70x10x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>2021-06-06</td>
+      <td>Rowing: 5k, time: 22:38, SPM <br>18/19<br>FSQ: 20x5, 30x5, 40x5, 50x5x5, 60x3<br>Pullups: 5x3x5, 10x3x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>2021-06-05</td>
+      <td>KB, PR: 16x2x5, 20x4, 20x3, 20x2x1, 20x3, 20x2, 20x1, 20x3, 20x2,, 20x1<br>KB, SN: 20x5x10 L+P</td>
+      <td>czułem sie dzis, jakby walec mnie przejechal. zle spie ostatnio i nie chcialem przeginac.</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>2021-06-05</td>
+      <td>Rowing: 24<br>DL: 20x5, 70x5, 80x10x10<br>Pullups: 5x5, 10x4x5</td>
+      <td>Trening robilem 4 VI, ale dopiero dzis go wpisuje. DL z 80kg bylo zaskakujaco latwe</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>2021-06-03</td>
+      <td>Rowing: 5k, time: 22:35, SPM 19<br>DL: 70x5x10<br>FSQ: 20x5, 30x5, 40x5x5<br>Pullups: 10x5x5<br>Pullover: x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>2021-06-02</td>
+      <td>Rowing: 2k<br>DL: 70x10x10<br>KB, PR: 16x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>2021-06-01</td>
+      <td>Rowing: 2k x2, time ok 9min<br>FSQ: 20x5, 30x5, 40x5, 50x4x5<br>Pullups: 5x5, 10x5, 15x2x5, 10x5</td>
+      <td>Jestem jeszcze jakos zmeczony po niedzielnych ciagach. Pierwsza seria FSQ przy 50 wydawala sie ciezka, ale potem juz bylo ok. cialo sie zaadoptowalo i wlasciwie bylo dosc lekko. Pullup-y tez w ostatnim tygodniu robilem dosc czesto, wiec dzis nie chcialem forsowac za duzej liczby i ciezaru. Chcialem zrobic 3 serie z 15, ale zmienilem na 2 i ostatnia zrobilem z 10. Zastanawiam sie, czy robic dalej DL z 80, czy troche odpoczac i robic z 70.</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>2021-05-30</td>
+      <td>Rowing: 5k, time: 23:15, SPM 20<br>DL: 30x5, 40x5, 50x5, 70x5, 80x10x10<br>FSQ: 20x5, 30x5, 40x5, 50x5x4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>2021-05-29</td>
+      <td>KB, PR: 16x5, 20x2x4, 20x3<br>KB, 1SW 28x10 L+P<br>KB, SN: 20x8x10 L+P<br>Pullups: 12x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>2021-05-28</td>
+      <td>Rowing: 2k x2<br>DL: 50x5, 70x5, 80x5, 90x5, 100x5x5<br>Pullups: 5x5, 10x5, 15x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>2021-05-27</td>
+      <td>Rowing: 2k<br>FSQ: 20x5, 30x5, 40x8x5<br>Pullups: 5x5, 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>2021-05-26</td>
+      <td>Rowing: 5k, time: 23:1, SPM = 19<br>DL: 70x4x10 paused, 70x4x10 deficit<br>KB. PR: 16x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>2021-05-25</td>
+      <td>Rowing: 2k<br>FSQ: 20x5, 30x5, 40x5, 50x5x5<br>Pullups: 10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>2021-05-24</td>
+      <td>Rowing:<br>5k, time: 22:37, SPM 20<br>KB, PR: <br>18x5x5<br>DL: 70x10x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>2021-05-22</td>
+      <td>KB, PR: <br>20x5x3<br>1HSW:<br>28x10 L+P x 2<br>SN<br>20x7x10 L+P<br><br>DL: 60x10x10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>2021-05-21</td>
+      <td>Rowing:<br>5k, luzno, time: 23:40, SPM 20<br>2k cool-down<br><br>FSQ:<br>20x5, 30x5, 40x6x5<br><br>Pull-over<br>2x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>2021-05-21</td>
+      <td>DL: <br>20x10, 50x2x10 <br>70x6x10 paused<br>70x4x10 deficit<br>Pullups:<br>10x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>2021-05-19</td>
+      <td>Rowing: <br>5k, time. 21:57, SPM 20!!!<br>FSQ:<br>20x5, 30x5, 40x5, 50x5x5, 60x3<br>KB, PR:<br>16x5x5<br>Pullups:<br>10x1</td>
+      <td>Niespodziewanie pękło 22 min na 5k. nie zamierzałem robić sprawdzianu, ale jakoś tak dobrze mi się jechało, więc w ostatnim km przycisnąłem i udało się. SPM 20!!!, wiec to było b. swobodne wiosłowanie na dystansie. We FSQ też 50x5x5 poszło dość dobrze i byłem już rozgrzany, więc potem spróbowałem 60kg pierwszy chyba raz i poszło ok.</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>2021-05-18</td>
+      <td>Rowing: 2k x2<br>DL: 70x10x10 deficit<br>Pullups: 10x1</td>
+      <td>lekko mi sie wioslowalo i DL tez jakos lekkie, mimo zmeczenia po pracy</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>2021-05-17</td>
+      <td>KB: <br>1HSW 28x2x10 L/P<br>SN 20x7x10 L+P<br>Pullups:<br>8x5<br>12x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>2021-05-16</td>
+      <td>Rowing: 5k, time: 23:26<br>DL: 70x5x10 paused, 70x5x10<br>KB, PR: 16x5x5</td>
+      <td>Bylem zmęczony po całym tygodniu pracy i treningow. Czułem mięśnie nog i pierwsza seria DL wydawała się ciężka, potem już łatwo. Na ERG zadziwiająco dobrze. Nie chciałem forsować tempa i chciałem po prostu sobie gładko przejechać 5k, co mi się udało.</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>2021-05-15</td>
+      <td>Rowing: 2k<br>Pullups: 10kgx6x5<br>FSQ: 20x5, 30x5, 40x5, 50x4x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>2021-05-14</td>
+      <td>Rowing:<br>5k, time: 24min, SPM 18/19<br>DL: <br>60x10x10 paused<br>KB, PR:<br>18x5x4</td>
+      <td>Byłem zmęczony po całym tygodniu i nie śpię zbyt dobrze. Budzę się w środku nocy. Dlatego chciałem zrobić lekki trening. W rowing, przy 18 SPM generuję 130-140 Watt.\nNie znalazlem kettla 16kg, dlatego robilem 18 i wyszlo calkiem ok.</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>2021-05-13</td>
+      <td>Rowing: 2k<br>FSQ: 20x5, 30x5, 40x5, 50x5x4<br>Pullups: 5kgx7x5<br>DL: 70x5, 80x, 90x5, 100x5, 110x5, 120x5</td>
+      <td>Tak poszedłem z DL trochę w górę, żeby się przetrzeć.</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>2021-05-12</td>
+      <td>Rowing:<br>5k, time: 22:47, SPM 20<br>DL: <br>70x10x10 deficit<br>KB, PR:<br>16x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>2021-05-11</td>
+      <td>Rowing:<br>2k, time: 7:48,9, SPM = 24<br><br>FSQ: 20x5, 30x5, 40x5, 50x4x4, 40x5<br><br>Pullups: 5kg: 5x5</td>
+      <td>Niespodziewanie, po małej rozgrzewce postanowiłem sprawdzić swój wynik na 2k. Ostatnio miałem 8:06 i chciałem się przekonać, czy uda mi się złamać 8min, gdy zacznę szybciej. I udało się. Pierwsze 500m i tak było wolno, ale potem udało mi się utrzymać tempo. 1k było ok 4 min, a potem już przyspieszyłem i udało się!!! Ostatnie 500m było cieżkawo, ale dałem radę. Brakowało trochę oddechu. ale jestem mega zadowolony. złamać 8min, to jest coś, a wcale nie robiłem szczegolnego treningu pod tym kątem. Mysle, ze jest jeszcze spory potencjał na poprawę. ale czy będę chciał iść w tą stronę?\nFajnie było znowu podciągać się z ciężarem. Mam sporą chęć wrócić do tego ćwiczenia. Chce mi się trochę złamać monotonię DL.</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>2021-05-10</td>
+      <td>DL:<br>20x10, 50x10, 70x10x10<br>KB, PR: <br>16x7x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>2021-05-08</td>
+      <td>KB:<br>PR 16x6x5<br>SW 32x4x15<br>SN 20x6x20 L+R<br>PR 20x1<br>DL:<br>60x10x10<br>Pull-overs:<br>-10 !!!!</td>
+      <td>Przyszedłem do gym-u i wskoczyłem na drążek i zrobiłem 10 wymyków pod rząd, bez opuszczania się! Poprawiłem swój rekord z głębokiej młodości, kiedy zrobiłem 9 wymyków. Kurde, super, że jeszcze jestem w stanie się poprawiać w gimnastyce, mimo, że nie ćwiczę tego ruchu. Widocznie pull-ups i inne siłowe make it possible.</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>2021-05-08</td>
+      <td>Rowing:<br>10k, time: 45:55, SPM 19/20</td>
+      <td>Po całym tygodniu pracy i rannego wstawania nie chciałem przeginac z tempem oraz byłem zmęczony, ale i tak miałem ochotę na dłuższy row.</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>2021-05-06</td>
+      <td>DL:<br>70x10x10<br>FSQ:<br>30x6x5<br>Pull-ups:<br>10x2</td>
+      <td>Po wczorajszym trapbarze czuję nieźle mięśnie pośladków. Dziś 70kg było bardzo lekkie.</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>2021-05-05</td>
+      <td>Rowing: <br>5k, time: 22:50, SPM 19/20<br><br>DL:<br>Trapbar 70x8x10<br><br>Pull-ups: 10x2</td>
+      <td>Po paru dniach przerwy nie chciałem przeginać z wiosłowaniem i cieżarami, dlatego dzis było dosc luzno. Pierwszy raz cwiczyłem na trapbarze. Duzo miniejszy zakres ruchu jest wtedy, ale to ciekawa alternatywa i uzupełnienie dla klasycznego DL</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>2021-05-01</td>
+      <td>KB:<br>PR: 16x6x5<br>SW 32x10/1min x10<br>SN 20x10 L, R x 5<br>PR 20x1<br><br>DL: 60x10x10</td>
+      <td>Znowu udalo mi sie nie zerwac lapy w SN. W PR czuje wiecej sily i podnioslem 20kg. Czuje sie troche lepiej w ogole</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>2021-04-30</td>
+      <td>Rowing:<br>2k<br>FSQ:<br>20x5, 30x2x5, 40x2x5, 50x3x3, 40x3</td>
+      <td>Na ERG pierwszy 1k b. wolno, bez rozgrzewki, ok 4:50. Potem chcialem sie przekonac, czy dam rade zejsc ponizej 9 min i 2k przyspieszyłem i sie udalo. Trzecie 500m mialem 1:59, a czwarte 500m - 1:50!!! Czyli ostatni kilometr ponizej 4min! Na FSQ chcialem wejsc na troche wieksze ciezary i 50 kg bylo ok. nie chcialem przeginac i sie zmuszac do wiekszej ilosci powtorzen lub serii. ale 50kg felt ok!</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>2021-04-29</td>
+      <td>DL:<br>70x10x5<br>Rowing:<br>5k, time: 23:20, SPM 19/20</td>
+      <td>Pierwsze serie DL byly ciezkie mimo malego ciezaru. Czulem zmeczenie miesni po ostatnim treningu. Nigdy wczesniej nie robilem takiej objetosci, wiec czulem dzis jeszcze zmeczenie. i do tego praca fizyczna... Wioslowalo tez mi sie ciezko, ale chcialem tylko troche powioslowac, zeby pocwiczyc ruch.</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>2021-04-27</td>
+      <td>DL:<br>70x12x10, 50x10x3</td>
+      <td>Dzis robilem wieksza objetosc</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>2021-04-26</td>
+      <td>Rowing:<br>5k, time: around 22:58<br><br>FSQ: <br>20x5, 30x5, 40x5x5, 50x5</td>
+      <td>FSQ z 50kg juz troche ciezko. ale przeciez wczesniej wioslowalem i miałem normalna serie z 40kg</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>2021-04-25</td>
+      <td>DL:<br>70x2x5,˛80x5, 90x5, 100x5, 110x3, 120x3, 130x3<br>140x5, 140x4, 140x2x5, 140x2</td>
+      <td>Prawie zrealizowałem plan treningowy na dzisiaj. Bez jednego powtórzenia w ostatniej serii. I nawet zabrakło mi nie tyle siły, ile przekonania. Właściwie ciągi w 1 serii były ok. sztanga nawet szybciej szła do góry, ale generalnie czułem się zmęczony już na starcie po całym tygodniu pracy fizycznej i rannym wstawaniu. Drugą serię miałem zrobić na 5 powtórzeń, ale nie potrafiłem się zmusić na 5. Odpuściłem. za to 4 i 5 seria jakoś poszły, ale w 5 też mi odeszła motywacja i doszedłem do przekonania, że w obecnych warunkach tzn. pracy i jej godzinach trudno mi cisnąć DL na siłę. Dlatego od przyszłego tygodnia zmieniam podejście i zacznę robić dużą objętość z małymi ciężarami, aby po 1-2 msc znowu spróbować zacząć robić siłę.</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>2021-04-24</td>
+      <td>KB:<br>PR: 16x6x6<br>SW: 32x10/min x10. Ostatnie dwie serie 15 powtórzeń<br>SN: 20x6x10 L+R</td>
+      <td>Zadowolony jestem, że nie zerwałem odcisków w lewej ręce. SW 32kg wydawały się jakby trochę lżejsze, czyli ok. I w PR też więcej serii i lewa ręka wydawała się też trochę silniejsza.</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>2021-04-23</td>
+      <td>Rowing: <br>5k x 2, time: 23:13 i 22:44</td>
+      <td>Drugi interwał szybszy od pierwszego, mimo że nie starałem się jakoś specjalnie cisnąć i byłem zmęczony po całym tygodniu pracy i rannym wstawaniu.</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>2021-04-22</td>
+      <td>DL:<br>40x10, 70x10, 80x5, 90x5<br>100x10x5 paused<br><br>FSQ<br>20x5, 30x5, 40x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>2021-04-21</td>
+      <td>Rowing:<br>5k, time: 22:06<br>FSQ:<br> 20x5, 30x5, 40x4x5</td>
+      <td>w sumie dobrze mi sie wioslowalo. Zaskakujaco dobrze ostatnie 2k. Pierwsze 2k mega wolno. Czuje duza roznice, gdy jestem rozgrzany. Niespodziewanie prawie złamałem 22 min i widać, że jestem w stanie spokojnie to zrobic. urwac 6 sek w pierwszej polowie nie powinno byc trudno. \n\nFSQ - dość dawno nie robiłem. Nogi miałem zmęczone trochę po wiosłowaniu, ale i tak zrobiłem parę serii.</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>2021-04-19</td>
+      <td>Rowing: <br>10k, time: 45:50, around 20 SPM</td>
+      <td>pierwszy raz przejechałem 10k. Nie było strasznie. Slizgaly mi sie rece na drazku. Nie wiedzialem, jak pojdzie, dlatego tempo nie bylo forsowne. ale i tak jestem zadowolony. Ostatnie 2k najszybciej - ok 8:50 i 22 SPM</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>2021-04-18</td>
+      <td>DL:<br>70x5, 80x5, 90x5, 100x5, 110x3, 120x3, 130x3<br>140x2x5, 140x4x2, 140x3<br>Rowing:<br>2k ok 8:30, każde 500 szybciej. ostatnie ponizej 2 min</td>
+      <td>Ciągi ciężkie. Ewidentnie dotykam swojej granicy. Zastanawiam się, czy dam radę zrobic 140x5x5. niby brakuje mi tylko pare ruchow, ale te powtorzenia robia roznice. Technicznie nie najgorzej. Najtrudniej podniesc do kolan, potem juz grzbiet i posladki sa silne.</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>2021-04-17</td>
+      <td>KB: <br>PR: 16x5x5<br>SW: 32x10x10 in 1 min<br>SN: 10/10 x 10 L/R</td>
+      <td>znowu zerwałem łapę lewą, ale w innym miejscu. Odciski w lewej rece zaczynają wpływać na moją technikę. muszę coś wymyśleć na te odciski, żeby móc dalej w spokoju ćwiczyć SN</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>2021-04-16</td>
+      <td>Rowing: 5k in 23:10.</td>
+      <td>Każdy kolejny kilometr coraz szybciej. Początek wolno</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>2021-04-15</td>
+      <td>DL: <br>70x10x10<br>KB, PR<br>14x7x5</td>
+      <td>Dzis troche wieksza objetosc DL. Caly czas probuje wkomponowac trening w prace fizyczna. Na szczescie cialo sie juz troche zaadaptowalo do pracy i nie jestem tak padniety, ale i tak spie po 8-10 godzin.</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>2021-04-12</td>
+      <td>Rowing: 2k, ok 8:33 i 20 SPM. Kolejne 500m coraz szybciej<br>KB, PR: 14x5x5<br>FSQ: 20x5, 30x5, 40x4x5</td>
+      <td>czulem w nogach DL wczorajsze i nie forsowalem sie</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>2021-04-11</td>
+      <td>DL: <br>70x5, 80x5, 90x5, 100x5, 110x3, 120x3, 130x3<br>140x2x5, 140x1x4, 140x2x3, 120x5<br>FSQ: <br>20x5, 30x2x5</td>
+      <td>Wrocilem do treningu po otworzeniu ponownym silowni. Nie wiedzialem, jak wejdzie 140. Mialem paski. Bylo dosc ciezko i sztanga wolno szla do gory, ale dalem rade zrobic wszystkie zaplanowane powtorzenia. Celuje dalej w 5x5 i potem pewnie jeszcze troche w gore. Technicznie bylo ok. To duza roznica, gdy nie musze sie koncentrowac na sile uchwytu, a moge po prostu sie skupic na podnosizeniu ciezaru.</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>2021-04-04</td>
+      <td>Lockdown do odwolania</td>
+      <td>Od soboty 03 IV znowu lockdown i silownie sa zamkniete. Czyli ponownie powtarza sie sytuacja, w ktorej w DL wchodze na wyzsze ciezary i musze przerwac trening. What can I do? Jesli lockdown sie przedluzy, to moze pozycze KB z boxu.</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>2021-04-02</td>
+      <td>Rowing: 5k, ok 22:40, 20/21 SPM<br>FSQ: 20x5, 30x5, 40x5x4</td>
+      <td>Rano na treningu byłem mega zmęczony. Kumulowało sie zmęczenie z całego tygodnia fizycznej pracy. 5k na ERG była męka. chciałem robic tez KB PR, ale nie chciałem się dodatkowo masakrować. FSQ też cieżkawo, dlatego nie robiłem 5 ruchow w serii. Kicha. a na jutro planowałem cieżkie DL. Zobaczymy, czy je zrobię.</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>2021-04-01</td>
+      <td>Rowing: 2k<br>DL: <br>70x5, 80x5 paused<br>90x6x5 paused<br>100x5x5 deficit<br>Pullups 10x1</td>
+      <td>DL nie byly ciezkie, mimo intensywnej pracy wczoraj.</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>2021-03-31</td>
+      <td>Rowing: 3k, ok 13:10, 20 SPM<br>FSQ: 20x5, 30x5, 40x5x5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>2021-03-30</td>
+      <td>Rowing: 5k, ok 22:43 min, 20 SPM<br>KB, PR 14x5x5<br>Pullups 10x1<br>FSQ: 20x5, 30x5, 40x4x5</td>
+      <td>Bylem obolaly po pracy\n</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>2021-03-29</td>
+      <td>DL:<br>70x5, 80x5, 90x5, 100x5 paused<br>110x3, 120x3 HG, 130x3 HG<br>140x2x5 HG (L/R), 140x4, 140x3, 140x2  <br>straps<br>120x5<br>KB, PR 14x6x5<br>Back ext 10x3</td>
+      <td>Jakos nie moge sie jeszcze wdrozyc do Hook Grip HG. Dziwnie sie czuje robiac DL w tym uchwycie, dlatego zabralem paski. w paskach duze lepiej sie czulem z ramionami symetrycznie, niz w HG. Bardzo dawno nie podnosilem takich ciezarow, wiec nie bylem pewien, jak pojdzie. Jestem troche zadowolony, a troche nie. Czuje, ze sily mam wiecej, co widac np. przy opuszczaniu sztangi, ale pierwsze ciagi nie byly za dobre technicznie i przy tym ciezarze mam jeszcze sporo zastrzezen do techniki. Chyba przy nim pozostane na jakis czas, zanim pojde do gory.</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>2021-03-27</td>
+      <td>KB: <br>CL/PR/SQ 12 kg L+P, 1-5<br>PR 16x5x5 <br>SW: 32x10/1min x10. Ostatnie 3 serie: 12, 13, 15<br>SN: 20x3x10 <br>DL: 60x5x10<br>FSQ: 20x5, 30x5, 40x2x4<br>Pullups <br>10x2</td>
+      <td>zerwalem łapę przy SN, więc przerwałem wcześniej. chciałem zrobić więcej serii. FSQ zadziwiająco cieżko mi się robiło, więc też nie robiłem więcej serii.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>2021-03-26</td>
+      <td>Rowing: 5k, ok. 22:32 i 20/21 SPM<br>Pull-ups: 10x2</td>
+      <td>Nie robiłem FSQ. byłem wykonczony po tygodniu fizycznej pracy. a jutro rano też chcę zrobić trening.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>2021-03-25</td>
+      <td>DL: <br>70x5, 80x5, 90x5, 100x5 paused<br>100x5, 120x4, 110x3x5<br>KB, PR: 14x5x5<br>FSQ: 20x5, 30x5, 40x5, 50x3x3, 55x1<br>Pullups<br>10x1</td>
+      <td>Pullups cieżko. może ze względu na prace dziś. 1 seria DL też cieżkawo, ale potem już ok. Pierwszy raz robilem FSQ na 5 powtórzeń. 55x1 też dość łatwo.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>2021-03-24</td>
+      <td>Rowing: 3k ok 13:10 min. Ostatni kilometr trochę szybciej<br>Pull-ups : 10x3<br>FSQ:<br>20x5, 30x5, 40x5, 50x5x4</td>
+      <td>Pierwszy raz 50kg FSQ na powtórzenia. nie do konca wiem, co z moją techniką</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>2021-03-23</td>
+      <td>KB, PR <br>14x5x5<br>DL:<br>70x5, 80x5, 90x5, 100x5 paused<br>110x3, 120x3, 130x3<br>135x5x5<br>120x5<br>Pull-ups 10x3</td>
+      <td>w DL pierwsze dwie serie cieżko i słabo technicznie. Nie wiedziałem, jaki mam chwyt mieć. Probowałem zamka i przechwytu i do tego ciało i układ nerwowy adaptowały sie do ciezaru. Ponieważ mało robiłem ruchow z przechwytem, ten uchwyt czułem trochę dziwnie. Pojedyncze ciagi w 1 i 2 serii słabo technicznie i ciagnalem z grzbietu. Zastanawiałem się nawet, czy nie skonczyc po 2 seriach. ale odpoczalem i 3 seria w przechwycie poszla zaskakujaco lekko. kolejne w sumie tez ok. moze dopiero wtedy cialo sie przystosowalo. raczej sprobuje 140kg next week, ale ewidentnie sie zblizam do swojego limitu obecnego.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>2021-03-22</td>
+      <td>Rowing:<br>5k dość luźno ok 21 SPM, czas ok 22:30 chyba<br>FSQ: 30x5, 40x5x5, 50x3<br>KB: PR 14x5x5<br>Pull-ups: 10x3</td>
+      <td>Byłem trochę zmęczony dziś, po całym dniu w pracy na nogach. Noga i biodro jakby lepiej, ale dalej nie jest wszystko ok i coś tam czułem przy FSQ. Usiadłem z 50 kg i było dość lekko, ale w sumie to lekki ciężar.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>2021-03-20</td>
+      <td>KB:<br>CL/PR/SQ L+P 12kg, ladder 1-5, 5-1<br>PR L/P 16x6x5<br>SN L/P 20x6x10<br>DL:<br>60x5x10</td>
+      <td>chciałem więcej SN robić, ale znowu zerwałem skórę na ręce i w sumie musiałem więcej się zmagać z ręką niż z brakiem siły. Fajnie mi się robiło DL. Mimo małego ciężaru, to ostatnie powtórzenia w serii czułem trochę w plecach tzn w mięśniach grzbietu.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>2021-03-19</td>
+      <td>Rowing:<br>1x5k, SPM ok 20, 22:30 min<br>Pull-ups:<br>10x5<br>FSQ: 30x3x5, 40x4x5<br>Back extention: 10x3</td>
+      <td>Dość dobrze mi się wiosłowało. Mam wątpliwości co do formy/techniki swoich podciągnięć, chociaż trochę siły było. Robiłem trochę FSQ na lekko, żeby dalej ćwiczyć ruch. Nie wiem, czy moja technika jest ok w tym ruchu.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2021-03-18</td>
+      <td>DL:<br>70x5, 80x5, 90x5, 100x5 paused<br>110x1x5, 120x3, 110x4x5, 100x5<br>KB, PR: 14x6x5<br>FSQ: 30x5, 40x5x5</td>
+      <td>Te 120 bylo troche ciezko i nie chcialem cisnac wiecej po wtorkowych ciagach sprzed 2 dni. Pressy kettlami wchodzily latwo. we FSQ siadalem gleboko.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2021-03-17</td>
+      <td>Rowing:<br>3k x 3/3min. Dość luźno ok 20 <br>19 SPM. czasy ok 13.40 min.<br>PR:  <br>14kg x5x5<br>FSQ:  <br>30x3x4. 40x3x5. 40x1x3<br>Pullups:  10x2</td>
+      <td>Wiosłowało mi się dość ok. Nie spieszyłem się za bardzo, ale posiłek, który jadłem 4godz wczesniej podchodził mi pod gardło. Jakies bóle w prawym kolanie, w rzepce się odzywały.\nPrzy squatach musiałem uważać, gdyż od paru dni coś się dzieje z moją prawą nogą, w miejscu, gdzie noga łączy się z biodrem. mam odczucia, jakby kość nogi uderzała w biodro i mam mniejszy zakres ruchu i zaczynam jakby utykać. Mam nadzieję, że to samo się uspokoi lub będę musiał coś z tym zrobić. Po wczorajszych DL trochę czuję mięśnie grzbietu, ale nic poważnego.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2021-03-16</td>
+      <td>DL:<br>70x5, 80x5, 90x5, 100x5 /paused, 110x1x3, 120x1x3, 130x5x5<br>FSQ:<br>20x3, 30x5, 40x3x3<br>Pull-ups:<br>10x3</td>
+      <td>DL poszły dość łatwo. W 4 serii 4 i 5 powtorzenie i cała 5 seria - Hook Grip. Myślę. że prędkość sztangi w seriach była ok, tzn. że miałem dość siły. W następnym tygodniu idę do góry i pewnie od samego początku HG (hook grip) lub może od 2 serii. zobaczymy.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2021-03-15</td>
+      <td><br>rowing: (3k+2min)x 2, tempo ok 5m/1k, czyli luzno dosc<br>FSQ: 30x1x3, 30x1x5, 40x5x5</td>
+      <td>Po sobotnim treninug z kettlami mam bardzo powyciagane sciegna nog i obolale nogi i miesnie grzebitu od SQ i SN. Pierwsza seria FSQ ostroznie, potem juz troche lepiej.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2021-03-13</td>
+      <td>KB<br>PR: 16x4x5 + 16x1x3<br>SW: (32x10/min)x10<br>SN: 20x10 L/R x 6<br>DL<br>55x5, 75x5 paused<br>75x3x10</td>
+      <td>Robilem martwe, zeby pocwiczyc ruch. czulem sie dobrze po ostatnim tygodniu, gdzie robilem 125x5x5 oraz 120x5x4 i oczywiscie zerwalem reke przy SN. SW troche mnie zmeczyly, ale stopniowo mysle moge zwiekszac obciazenie.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2021-03-12</td>
+      <td><br>Rowing: 5k lużno, ok 5min/1k<br>Pull-ups: 10x3</td>
+      <td>Tak pomyślałem przy pull-ups, że może warto zacząć je robić wolniej, aby większą siłę wykorzystywać i mniej dynamiki.</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
