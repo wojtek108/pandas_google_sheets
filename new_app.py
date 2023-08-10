@@ -11,7 +11,7 @@ import google.auth  # Add this import for google.auth
 #credentials, project = google.auth.default()
 #gc = gspread.service_account(credentials=credentials)
 
-gc = gspread.service_account()
+gc = gspread.service_account(credentials=credentials)
 
 sheet = gc.open('WGA_Training_Log').sheet1
 data = sheet.get_all_values()
