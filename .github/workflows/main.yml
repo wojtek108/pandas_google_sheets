@@ -1,7 +1,8 @@
 name: Run new_app.py
 
 on:
-  workflow_dispatch:  # Trigger the workflow manually using the "Run workflow" button
+  schedule:
+    - cron: "0 5 * * *"
 
 jobs:
   run-main:
@@ -28,11 +29,11 @@ jobs:
 
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
-          
+
       - name: Commit changes
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add .  # This will stage all the changes, including the HTML file created by new_app.py
-          git commit -m "Add generated HTML file"
+          git add .  # This will stage all the changes, including the JSON file created by main.py
+          git commit -m "Add generated JSON file"
           git push origin HEAD
