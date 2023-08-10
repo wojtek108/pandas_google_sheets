@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -33,6 +33,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add .  # This will stage all the changes, including the JSON file created by main.py
-          git commit -m "Add generated JSON file"
+          git add .  # This will stage all the changes, including the HTML file created by new_app.py
+          git commit -m "Add generated HTML file"
           git push origin HEAD
