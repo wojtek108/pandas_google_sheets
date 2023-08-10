@@ -1,0 +1,28 @@
+name: Run Python Script
+
+on:
+  workflow_dispatch:  # Trigger the workflow manually using the "Run workflow" button
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9  # Specify the Python version you need
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Install your script's dependencies
+
+      - name: Run Python script
+        run: python new_app.py  # Replace with your script's path
+
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
