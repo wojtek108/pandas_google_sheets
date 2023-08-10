@@ -3,11 +3,12 @@ name: Run Python Script
 on:
   workflow_dispatch:  # Trigger the workflow manually using the "Run workflow" button
 
+runs:
+  using: 'node16'
+
 jobs:
   run_script:
     runs-on: ubuntu-latest
-  runs:
-  using: 'node16'
 
     steps:
       - name: Checkout code
