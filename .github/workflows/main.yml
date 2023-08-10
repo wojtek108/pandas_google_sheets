@@ -3,9 +3,6 @@ name: Run Python Script
 on:
   workflow_dispatch:  # Trigger the workflow manually using the "Run workflow" button
 
-runs:
-  using: 'node16'
-
 jobs:
   run_script:
     runs-on: ubuntu-latest
@@ -29,3 +26,8 @@ jobs:
 
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+          
+       - name: push changes
+              uses: ad-m/github-push-action@v0.6.0
+              with:
+                branch: main 
