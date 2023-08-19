@@ -12,7 +12,7 @@ credentials_dict = json.loads(credentials_json)
 # Initialize the client using the provided service account credentials
 gc = gspread.service_account_from_dict(credentials_dict)
 
-sheet = gc.open('WGA_Training_Log').sheet1
+sheet = gc.open('WGA_Training_Log_GS').sheet1
 data = sheet.get_all_values()
 
 # Convert the data to a Pandas DataFrame.
